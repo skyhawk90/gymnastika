@@ -50,6 +50,72 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   ><body
     ><a class="skip" href="#obsah">Přejít na obsah</a><Icons /><Header /><main id="obsah">
       <slot />
-    </main><Footer /></body
-  >
+    </main><Footer />
+    <script>
+      // reveal-on-scroll with stagger and a count-up for the numbers band
+      const selector = [
+        ".hero .eyebrow",
+        ".hero h1",
+        ".hero .lead",
+        ".hero-stats",
+        ".nabor",
+        ".band-red .wrap > div",
+        ".sec-head",
+        ".train > div:first-child > *",
+        ".table-scroll",
+        ".news-feature",
+        ".news-list a",
+        ".ach-year",
+        ".archive",
+        ".album",
+        ".article-grid > *",
+        ".hist > div:first-child > .eyebrow",
+        ".hist h2",
+        ".timeline li",
+        ".hist blockquote",
+        ".videos",
+        "footer .wrap > div:not(.legal)",
+      ].join(",");
+      const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      function countUp(el: HTMLElement) {
+        const m = el.textContent?.match(/^(\D*)(\d+)(\D*)$/);
+        if (!m) return;
+        const [, before, digits, after] = m;
+        const target = Number(digits);
+        const start = performance.now();
+        const step = (t: number) => {
+          const k = Math.min(1, (t - start) / 1200);
+          el.textContent = before + Math.round(target * (1 - Math.pow(1 - k, 3))) + after;
+          if (k < 1) requestAnimationFrame(step);
+        };
+        el.textContent = before + "0" + after;
+        requestAnimationFrame(step);
+      }
+
+      if (!reduced && "IntersectionObserver" in window) {
+        document.documentElement.classList.add("js-rv");
+        const els = [...document.querySelectorAll<HTMLElement>(selector)];
+        const io = new IntersectionObserver(
+          (entries) =>
+            entries.forEach((e) => {
+              if (!e.isIntersecting) return;
+              const el = e.target as HTMLElement;
+              el.classList.add("in");
+              io.unobserve(el);
+              const num = el.closest(".band-red") && el.querySelector("b");
+              if (num)
+                setTimeout(() => countUp(num), parseInt(el.style.getPropertyValue("--d")) || 0);
+            }),
+          { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
+        );
+        els.forEach((el) => {
+          const i = [...el.parentElement!.children].indexOf(el);
+          el.style.setProperty("--d", `${Math.min(i, 6) * 80}ms`);
+          el.classList.add("rv");
+          io.observe(el);
+        });
+      }
+    </script>
+  </body>
 </html>
