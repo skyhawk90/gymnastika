@@ -1,0 +1,65 @@
+---
+import { treninky } from "../data";
+---
+
+<section id="treninky" class="band">
+  <div class="wrap train">
+    <div>
+      <div class="eyebrow">Tréninky</div><h2 class="page-title">
+        Tři skupiny podle věku a úrovně
+      </h2><p>
+        Děvčata trénují 2–3× týdně 1–3 hodiny a během roku se účastní až dvaceti závodů. Sportovní
+        gymnastika je dobrá průprava i pro ostatní sporty.
+      </p><div class="apparatus">
+        {
+          [
+            ["vault", "Přeskok"],
+            ["bars", "Bradla"],
+            ["beam", "Kladina"],
+            ["floor", "Prostná"],
+          ].map(([id, label]) => (
+            <div>
+              <svg aria-hidden="true">
+                <use href={`#i-${id}`} />
+              </svg>
+              {label}
+            </div>
+          ))
+        }
+      </div>
+    </div><div class="table-scroll">
+      <table class="sched">
+        <caption class="sr-only">Rozvrh tréninkových skupin</caption><thead
+          ><tr><th scope="col">Skupina</th><th scope="col">Dny</th><th scope="col">Čas</th></tr
+          ></thead
+        ><tbody
+          >{
+            treninky.map((t) => (
+              <tr>
+                <>
+                  <td>
+                    {t.group}
+                    <small>{t.note}</small>
+                  </td>
+                  <td>
+                    <div class="days">
+                      {["po", "út", "st", "čt", "pá"].map((d) => (
+                        <i
+                          class:list={{ on: t.days.includes(d) }}
+                          aria-label={`${d}${t.days.includes(d) ? ": trénink" : ": volno"}`}
+                        >
+                          {d}
+                        </i>
+                      ))}
+                    </div>
+                  </td>
+                  <td class="mono">{t.time}</td>
+                </>
+              </tr>
+            ))
+          }</tbody
+        >
+      </table>
+    </div>
+  </div>
+</section>

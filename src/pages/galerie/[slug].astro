@@ -1,0 +1,303 @@
+---
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { Image, getImage } from "astro:assets";
+import Base from "../../layouts/Base.astro";
+import { date } from "../../data";
+export async function getStaticPaths() {
+  return (await getCollection("galerie")).map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+interface Props {
+  entry: CollectionEntry<"galerie">;
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const photos = await Promise.all(
+  entry.data.photos.map(async (p) => {
+    const full = await getImage({
+      src: p.src,
+      width: Math.min(p.src.width, 1920),
+      format: "webp",
+      quality: 82,
+    });
+    return { ...p, full, w: full.attributes.width, h: full.attributes.height };
+  }),
+);
+const count = photos.length;
+const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
+---
+
+<Base
+  title={`Fotogalerie ${entry.data.title}`}
+  description={`Album ${entry.data.title} – fotografie oddílu sportovní gymnastiky Chrudim.`}
+>
+  <section>
+    <div class="wrap">
+      <a class="more" href="/galerie/">← Všechna alba</a>
+      <header class="album-head">
+        <h1 class="page-title">{entry.data.title}</h1>
+        <p class="album-meta mono">
+          {count}
+          {noun} · {date(entry.data.date)}
+        </p>
+      </header>
+      <Content />
+      <div class="photos">
+        {
+          photos.map((p, i) => (
+            <a
+              class="photo"
+              href={p.full.src}
+              data-w={p.w}
+              data-h={p.h}
+              aria-label={`Otevřít fotografii ${i + 1} z ${count}${p.alt ? `: ${p.alt}` : ""}`}
+            >
+              <Image
+                src={p.src}
+                alt={p.alt}
+                width={600}
+                height={450}
+                widths={i === 0 ? [600, 1200] : [300, 600]}
+                sizes={i === 0 ? "(max-width: 600px) 100vw, 66vw" : "(max-width: 600px) 50vw, 33vw"}
+                loading={i < 4 ? "eager" : "lazy"}
+              />
+              <span class="photo-zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="10.5" cy="10.5" r="6.5" />
+                  <path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6" />
+                </svg>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <dialog class="lb" id="lightbox" aria-label="Prohlížeč fotografií">
+    <div class="lb-bg"></div>
+    <div class="lb-top">
+      <span class="lb-count mono" id="lbCount"></span>
+      <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Zavřít">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      </button>
+    </div>
+    <div class="lb-stage" id="lbStage">
+      <img class="lb-img" id="lbImg" alt="" draggable="false" />
+    </div>
+    <button
+      class="lb-btn lb-nav lb-prev"
+      id="lbPrev"
+      type="button"
+      aria-label="Předchozí fotografie"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+    </button>
+    <button class="lb-btn lb-nav lb-next" id="lbNext" type="button" aria-label="Další fotografie">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+    </button>
+    <div class="lb-bottom">
+      <p class="lb-caption" id="lbCaption" aria-live="polite"></p>
+      <div class="lb-strip" id="lbStrip"></div>
+    </div>
+  </dialog>
+</Base>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("#lightbox")!;
+  const stage = document.querySelector<HTMLElement>("#lbStage")!;
+  const img = document.querySelector<HTMLImageElement>("#lbImg")!;
+  const counter = document.querySelector<HTMLElement>("#lbCount")!;
+  const caption = document.querySelector<HTMLElement>("#lbCaption")!;
+  const strip = document.querySelector<HTMLElement>("#lbStrip")!;
+  const bg = dialog.querySelector<HTMLElement>(".lb-bg")!;
+  const links = [...document.querySelectorAll<HTMLAnchorElement>("a.photo")];
+  const thumbs = links.map((l) => l.querySelector("img")!);
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ease = "cubic-bezier(.2,.7,.15,1)";
+  let current = 0;
+  let busy = false;
+
+  // filmstrip reuses the already loaded thumbnails
+  const stripButtons = thumbs.map((t, i) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "lb-thumb";
+    b.setAttribute("aria-label", `Fotografie ${i + 1}`);
+    const s = document.createElement("img");
+    s.alt = "";
+    s.loading = "lazy";
+    s.src = t.currentSrc || t.src;
+    b.append(s);
+    b.addEventListener("click", () => go(i));
+    strip.append(b);
+    return b;
+  });
+
+  function dur(ms: number) {
+    return reduced ? 0 : ms;
+  }
+
+  // size the large image to fit the stage before it has loaded, so the zoom has a target
+  function fit(i: number) {
+    const w = Number(links[i].dataset.w);
+    const h = Number(links[i].dataset.h);
+    const css = getComputedStyle(stage);
+    const boxW = stage.clientWidth - parseFloat(css.paddingLeft) - parseFloat(css.paddingRight);
+    const boxH = stage.clientHeight - parseFloat(css.paddingTop) - parseFloat(css.paddingBottom);
+    const scale = Math.min(boxW / w, boxH / h, 2);
+    img.style.width = `${Math.round(w * scale)}px`;
+    img.style.height = `${Math.round(h * scale)}px`;
+  }
+
+  function load(i: number) {
+    current = (i + links.length) % links.length;
+    const link = links[current];
+    const thumb = thumbs[current];
+    img.src = thumb.currentSrc || thumb.src;
+    img.alt = thumb.alt;
+    fit(current);
+    const full = new Image();
+    full.onload = () => {
+      if (links[current] === link) img.src = full.src;
+    };
+    full.src = link.href;
+    counter.textContent = `${current + 1} / ${links.length}`;
+    caption.textContent = thumb.alt;
+    stripButtons.forEach((b, n) => b.toggleAttribute("aria-current", n === current));
+    stripButtons[current].scrollIntoView({ inline: "center", block: "nearest" });
+    [current + 1, current - 1].forEach((n) => {
+      new Image().src = links[(n + links.length) % links.length].href;
+    });
+  }
+
+  // transform that puts the large image exactly over a thumbnail
+  function fromThumb(i: number) {
+    const t = thumbs[i].getBoundingClientRect();
+    const f = img.getBoundingClientRect();
+    if (!t.width || t.bottom < 0 || t.top > innerHeight) return null;
+    const s = Math.max(t.width / f.width, t.height / f.height);
+    const dx = t.left + t.width / 2 - (f.left + f.width / 2);
+    const dy = t.top + t.height / 2 - (f.top + f.height / 2);
+    return `translate(${dx}px, ${dy}px) scale(${s})`;
+  }
+
+  function open(i: number) {
+    dialog.showModal();
+    document.documentElement.classList.add("lb-open");
+    load(i);
+    const from = fromThumb(i);
+    thumbs[i].style.visibility = "hidden";
+    bg.animate([{ opacity: 0 }, { opacity: 1 }], { duration: dur(320), easing: "ease-out" });
+    dialog
+      .querySelectorAll(".lb-top, .lb-nav, .lb-bottom")
+      .forEach((el) =>
+        el.animate([{ opacity: 0 }, { opacity: 1 }], {
+          duration: dur(260),
+          delay: dur(160),
+          fill: "backwards",
+        }),
+      );
+    const a = img.animate(
+      [
+        { transform: from ?? "scale(.92)", opacity: from ? 1 : 0, borderRadius: "6px" },
+        { transform: "none", opacity: 1, borderRadius: "2px" },
+      ],
+      { duration: dur(420), easing: ease },
+    );
+    a.finished.then(() => (thumbs[i].style.visibility = ""));
+  }
+
+  async function close() {
+    if (busy || !dialog.open) return;
+    busy = true;
+    const i = current;
+    const to = fromThumb(i);
+    if (to) thumbs[i].style.visibility = "hidden";
+    dialog
+      .querySelectorAll(".lb-top, .lb-nav, .lb-bottom")
+      .forEach((el) =>
+        el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: dur(150), fill: "forwards" }),
+      );
+    bg.animate([{ opacity: 1 }, { opacity: 0 }], { duration: dur(320), fill: "forwards" });
+    await img.animate(
+      [
+        { transform: "none", opacity: 1 },
+        { transform: to ?? "scale(.92)", opacity: to ? 1 : 0, borderRadius: "6px" },
+      ],
+      { duration: dur(360), easing: ease, fill: "forwards" },
+    ).finished;
+    thumbs[i].style.visibility = "";
+    dialog.close();
+    document.documentElement.classList.remove("lb-open");
+    dialog.getAnimations({ subtree: true }).forEach((a) => a.cancel());
+    busy = false;
+  }
+
+  async function go(i: number, dir = Math.sign(i - current) || 1) {
+    if (busy || i === current) return;
+    busy = true;
+    await img.animate(
+      [
+        { transform: "none", opacity: 1 },
+        { transform: `translateX(${-dir * 60}px)`, opacity: 0 },
+      ],
+      { duration: dur(160), easing: "ease-in", fill: "forwards" },
+    ).finished;
+    load(i);
+    await img.animate(
+      [
+        { transform: `translateX(${dir * 60}px)`, opacity: 0 },
+        { transform: "none", opacity: 1 },
+      ],
+      { duration: dur(260), easing: ease },
+    ).finished;
+    img.getAnimations().forEach((a) => a.cancel());
+    busy = false;
+  }
+
+  const next = () => go((current + 1) % links.length, 1);
+  const prev = () => go((current - 1 + links.length) % links.length, -1);
+
+  links.forEach((link, i) =>
+    link.addEventListener("click", (e) => {
+      if (!dialog.showModal || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      open(i);
+    }),
+  );
+  document.querySelector("#lbClose")!.addEventListener("click", close);
+  document.querySelector("#lbNext")!.addEventListener("click", next);
+  document.querySelector("#lbPrev")!.addEventListener("click", prev);
+  dialog.addEventListener("cancel", (e) => {
+    e.preventDefault();
+    close();
+  });
+  dialog.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") next();
+    else if (e.key === "ArrowLeft") prev();
+    else return;
+    e.preventDefault();
+  });
+  stage.addEventListener("click", (e) => {
+    if (e.target === stage) close();
+  });
+  addEventListener("resize", () => dialog.open && fit(current));
+
+  // swipe left/right to browse, down to close
+  let startX = 0;
+  let startY = 0;
+  stage.addEventListener("pointerdown", (e) => {
+    startX = e.clientX;
+    startY = e.clientY;
+  });
+  stage.addEventListener("pointerup", (e) => {
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) (dx < 0 ? next : prev)();
+    else if (dy > 90) close();
+  });
+</script>

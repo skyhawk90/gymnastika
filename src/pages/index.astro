@@ -1,0 +1,143 @@
+---
+import Base from "../layouts/Base.astro";
+import Nabor from "../components/Nabor.astro";
+import Training from "../components/Training.astro";
+import Achievements from "../components/Achievements.astro";
+import Albums from "../components/Albums.astro";
+import NewsCard from "../components/NewsCard.astro";
+import { getCollection } from "astro:content";
+import { date } from "../data";
+const articles = (await getCollection("clanky", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 5);
+---
+
+<Base title="Úvod">
+  <div class="hero">
+    <div class="wrap">
+      <svg class="arc" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          class="flight"
+          d="M-20 400 C 260 380, 420 60, 640 50 S 980 300, 1220 120"
+          fill="none"
+          stroke="var(--crimson-ink)"
+          stroke-width="2"
+          stroke-dasharray="1400"></path>
+      </svg>
+      <div class="hero-text">
+        <div class="eyebrow">Oddíl sportovní gymnastiky žen</div>
+        <h1>Sportovní gymnastika <span>Chrudim</span></h1>
+        <p class="lead">
+          Závodní oddíl pro děvčata od 5 let. Trénujeme přeskok, bradla, kladinu a prostná v sálech
+          Tyršova domu.
+        </p>
+        <div class="hero-stats">
+          <div><b class="mono">1953</b><span>založení</span></div>
+          <div><b>T.J. Sokol</b><span>Chrudim</span></div>
+        </div>
+      </div>
+      <Nabor />
+    </div>
+  </div>
+
+  <div class="band-red" aria-label="Oddíl v číslech">
+    <div class="wrap">
+      <div><b class="mono">73</b><span>let oddílu</span></div>
+      <div><b class="mono">2×</b><span>mistryně ČR</span></div>
+      <div><b class="mono">4</b><span>nářadí</span></div>
+      <div><b class="mono">~20</b><span>závodů ročně</span></div>
+    </div>
+  </div>
+
+  <section id="clanky">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Z oddílu</div><h2>Články a novinky</h2></div><a
+          class="more"
+          href="/clanky/">Všechny články →</a
+        >
+      </div><div class="news">
+        {articles[0] && <NewsCard entry={articles[0]} />}<div class="news-list">
+          {
+            articles.slice(1).map((a) => (
+              <a href={`/clanky/${a.id}/`}>
+                <>
+                  <time datetime={a.data.date.toISOString()}>{date(a.data.date)}</time>
+                  <h3>{a.data.title}</h3>
+                  <span>{a.data.summary}</span>
+                </>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+  <Training />
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Úspěchy</div><h2>Mistrovské přebory</h2></div><a
+          class="more"
+          href="/uspechy/">Všechny úspěchy →</a
+        >
+      </div><Achievements limit={3} /><div class="archive">
+        <b>Výsledkové listiny</b><a class="chip" href="/vysledky/">Archiv 2025–1996 →</a>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Fotogalerie</div><h2>Alba ze závodů a tréninků</h2></div><a
+          class="more"
+          href="/galerie/">Všechna alba →</a
+        >
+      </div><Albums limit={4} />
+    </div>
+  </section>
+  <section id="historie">
+    <div class="wrap hist">
+      <div>
+        <div class="eyebrow">Historie a osobnosti</div>
+        <h2 style="font-size:var(--s3);font-stretch:112%;font-weight:850;margin:6px 0 28px">
+          Přes 70 let gymnastiky v Tyršově domě
+        </h2>
+        <ol class="timeline">
+          <li>
+            <b>1927</b><p>
+              Narodily se Lída Pejchová a Miroslava Šplíchalová, dvě sokolky, které stály u začátků
+              chrudimské gymnastiky.
+            </p>
+          </li>
+          <li>
+            <b>1953</b><p>
+              Jaroslav Šplíchal zakládá oddíl a buduje gymnastické sály s pevně upevněným nářadím.
+            </p>
+          </li>
+          <li>
+            <b>1956</b><p>Miroslava Šplíchalová startuje na olympijských hrách v Melbourne.</p>
+          </li>
+          <li><b>2017 a 2021</b><p>Sára Kulhavá získává titul mistryně České republiky.</p></li>
+        </ol>
+      </div>
+      <div>
+        <blockquote>
+          „Vždyť jsem tvrdila, že budu cvičit tak dlouho jako Mirka Šplíchalová. Když zemřela ve
+          třiceti letech, splnila jsem své předsevzetí, stala se trenérkou a snažila se děvčata
+          dostat na vyšší úroveň.“
+          <cite>Lída Pejchová, trenérka</cite>
+        </blockquote>
+        <p><a class="more" href="/historie/">Celá historie a osobnosti →</a></p><div class="videos">
+          <b style="font:700 .95rem var(--f-display)">Videa</b>
+          <a
+            class="chip"
+            href="https://www.youtube.com/watch?v=DSXDI9XjyKc"
+            target="_blank"
+            rel="noopener">8 videí na YouTube ↗</a
+          >
+        </div>
+      </div>
+    </div>
+  </section></Base
+>

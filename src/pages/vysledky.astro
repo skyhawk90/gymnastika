@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import { vysledky } from "../data";
+---
+
+<Base
+  title="Výsledky"
+  description="Archiv výsledkových listin chrudimských sportovních gymnastek od roku 1996."
+  ><section>
+    <div class="wrap">
+      <h1 class="page-title">Výsledkové listiny</h1><div class="archive">
+        {
+          vysledky.map((v) => (
+            <a class="chip" href={v.file}>
+              {v.year}
+              <em>{v.file.split(".").pop()?.toUpperCase()}</em>
+            </a>
+          ))
+        }
+      </div><p><a class="more" href="/uspechy/">Největší úspěchy oddílu →</a></p>
+    </div>
+  </section></Base
+>

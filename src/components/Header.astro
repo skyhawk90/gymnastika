@@ -1,0 +1,68 @@
+---
+const links = [
+  ["clanky", "Články"],
+  ["treninky", "Tréninky"],
+  ["uspechy", "Úspěchy"],
+  ["galerie", "Fotogalerie"],
+  ["vysledky", "Výsledky"],
+  ["historie", "Historie"],
+  ["kontakt", "Kontakt"],
+];
+---
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"
+      ><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"
+        ><rect width="40" height="40" rx="6" fill="var(--crimson)"></rect><path
+          d="M9 31c6-1 11-7 14-13s6-8 9-8M23 18l5 13M19 23l-8-3"
+          fill="none"
+          stroke="var(--crimson-ink)"
+          stroke-width="2.6"
+          stroke-linecap="round"></path><circle cx="30" cy="8" r="2.6" fill="var(--crimson-ink)"
+        ></circle></svg
+      ><span><b>Gymnastika Chrudim</b><small>T.J. Sokol Chrudim · od 1953</small></span></a
+    ><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav"
+      >☰ Menu</button
+    ><nav class="main" id="mainNav" aria-label="Hlavní navigace">
+      {
+        links.map(([slug, label]) => (
+          <a
+            href={`/${slug}/`}
+            aria-current={Astro.url.pathname.startsWith(`/${slug}/`) ? "page" : undefined}
+          >
+            {label}
+          </a>
+        ))
+      }<a class="cta" href="/kontakt/#nabor">Přihlásit dceru</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const btn = document.querySelector<HTMLButtonElement>("#menuBtn");
+  const nav = document.querySelector<HTMLElement>("#mainNav");
+  btn?.addEventListener("click", () => {
+    const open = nav?.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(!!open));
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      nav?.classList.remove("open");
+      btn?.setAttribute("aria-expanded", "false");
+    }
+  });
+</script>
+<noscript
+  ><style>
+    @media (max-width: 900px) {
+      nav.main {
+        display: flex;
+        position: static;
+        width: 100%;
+      }
+      .menu-btn {
+        display: none;
+      }
+    }
+  </style></noscript
+>

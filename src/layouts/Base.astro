@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Icons from "../components/Icons.astro";
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
+}
+const {
+  title,
+  description = "Sportovní gymnastika žen T.J. Sokol Chrudim. Tréninky, nábor děvčat, zprávy ze závodů, výsledky a fotogalerie.",
+  image,
+  article = false,
+} = Astro.props;
+const fullTitle = `${title} · Sportovní gymnastika Chrudim`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="cs">
+  <head
+    ><meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    /><title>{fullTitle}</title><meta name="description" content={description} /><link
+      rel="canonical"
+      href={canonical}
+    /><meta property="og:title" content={fullTitle} /><meta
+      property="og:description"
+      content={description}
+    /><meta property="og:url" content={canonical} /><meta
+      property="og:locale"
+      content="cs_CZ"
+    /><meta property="og:type" content={article ? "article" : "website"} />{
+      image && <meta property="og:image" content={new URL(image, Astro.site)} />
+    }<link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link
+      rel="sitemap"
+      href="/sitemap-index.xml"
+    /><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    /><link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    /></head
+  ><body
+    ><a class="skip" href="#obsah">Přejít na obsah</a><Icons /><Header /><main id="obsah">
+      <slot />
+    </main><Footer /></body
+  >
+</html>

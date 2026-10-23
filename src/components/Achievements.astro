@@ -1,0 +1,38 @@
+---
+import { uspechy } from "../data";
+interface Props {
+  limit?: number;
+}
+const years = [...new Set(uspechy.map((u) => u.year))]
+  .sort((a, b) => b - a)
+  .slice(0, Astro.props.limit);
+---
+
+<div class="ach">
+  {
+    years.map((year) => (
+      <div class="ach-year">
+        <>
+          <h3>{year}</h3>
+          <ul>
+            {uspechy
+              .filter((u) => u.year === year)
+              .map((u) => (
+                <li>
+                  <span class={`place p${u.place}`}>{u.place}.</span>
+                  <span>
+                    {u.name}
+                    {u.title && `, ${u.title}`}
+                    <small>
+                      {u.competition}
+                      {u.category && ` · ${u.category}`}
+                    </small>
+                  </span>
+                </li>
+              ))}
+          </ul>
+        </>
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,36 @@
+---
+import { kontakt as k, odkazy } from "../data";
+---
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>Kontakt</h3><p>{k.name}<br />{k.role}</p><p class="mono">
+        <a href={`tel:+420${k.phone.replaceAll(" ", "")}`}>{k.phone}</a><br /><a
+          href={`mailto:${k.email}`}>{k.email}</a
+        >
+      </p>
+    </div><div>
+      <h3>Kde nás najdete</h3><address>{k.directions}<br />{k.address}</address><p>
+        <a href={k.map}>Otevřít v Mapy.cz ↗</a>
+      </p>
+    </div><div>
+      <h3>Odkazy</h3><p>
+        {
+          odkazy.map((o) => (
+            <Fragment>
+              <>
+                <a href={o.url}>{o.title} ↗</a>
+                <br />
+              </>
+            </Fragment>
+          ))
+        }
+      </p>
+    </div><div class="legal">
+      <span>{k.organization} · IČ {k.ico}</span><span
+        >© {new Date().getFullYear()} Sportovní gymnastika Chrudim</span
+      >
+    </div>
+  </div>
+</footer>

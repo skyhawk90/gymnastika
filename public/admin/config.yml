@@ -1,0 +1,276 @@
+backend:
+  name: github
+  repo: skyhawk90/gymnastika
+  branch: main
+locale: cs
+media_folder: src/assets/uploads
+public_folder: /src/assets/uploads
+site_url: https://www.gymnastika.chrudim.cz
+display_url: https://www.gymnastika.chrudim.cz
+collections:
+  - name: clanky
+    label: Články
+    folder: src/content/clanky
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}}"
+    sortable_fields:
+      fields: [date, title]
+      default:
+        field: date
+        direction: descending
+    view_filters:
+      - label: Koncepty
+        field: draft
+        pattern: true
+    fields:
+      - name: title
+        label: Nadpis
+        widget: string
+      - name: date
+        label: Datum
+        widget: datetime
+        time_format: false
+      - name: place
+        label: Místo
+        widget: string
+        required: false
+      - name: medals
+        label: Medaile
+        widget: string
+        required: false
+      - name: summary
+        label: Krátké shrnutí
+        widget: text
+      - name: cover
+        label: Úvodní fotografie
+        widget: image
+        required: false
+      - name: coverAlt
+        label: Popis fotografie
+        widget: string
+        required: false
+      - name: draft
+        label: Koncept – nezveřejňovat
+        widget: boolean
+        default: false
+      - name: body
+        label: Text článku
+        widget: markdown
+  - name: galerie
+    label: Fotogalerie
+    folder: src/content/galerie
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}}"
+    sortable_fields:
+      fields: [date, title]
+      default:
+        field: date
+        direction: descending
+    view_filters: []
+    fields:
+      - name: title
+        label: Název alba
+        widget: string
+      - name: date
+        label: Datum pro řazení
+        widget: datetime
+        time_format: false
+      - name: cover
+        label: Titulní fotografie
+        widget: image
+      - name: photos
+        label: Fotografie
+        widget: list
+        fields:
+          - name: src
+            label: Fotografie
+            widget: image
+          - name: alt
+            label: Popis fotografie
+            widget: string
+            default: ""
+      - name: body
+        label: Popis alba
+        widget: markdown
+        required: false
+  - name: data
+    label: Nastavení a přehledy
+    files:
+      - name: nabor
+        label: Nábor
+        file: src/data/nabor.yaml
+        fields:
+          - name: active
+            label: Zobrazovat nábor
+            widget: boolean
+          - name: heading
+            label: Nadpis
+            widget: string
+          - name: text
+            label: Text
+            widget: text
+          - name: when
+            label: Kdy
+            widget: string
+          - name: where
+            label: Kde
+            widget: text
+      - name: treninky
+        label: Tréninky
+        file: src/data/treninky.yaml
+        fields:
+          - name: items
+            label: Položky
+            widget: list
+            root: true
+            fields:
+              - name: group
+                label: Skupina
+                widget: string
+              - name: note
+                label: Poznámka
+                widget: string
+                required: false
+              - name: days
+                label: Dny
+                widget: select
+                multiple: true
+                options:
+                  - po
+                  - út
+                  - st
+                  - čt
+                  - pá
+                  - so
+                  - ne
+              - name: time
+                label: Čas
+                widget: string
+      - name: uspechy
+        label: Úspěchy
+        file: src/data/uspechy.yaml
+        fields:
+          - name: items
+            label: Položky
+            widget: list
+            root: true
+            fields:
+              - name: year
+                label: Rok
+                widget: number
+                value_type: int
+              - name: competition
+                label: Soutěž
+                widget: string
+              - name: place
+                label: Umístění
+                widget: number
+                value_type: int
+                min: 1
+              - name: name
+                label: Jméno nebo družstvo
+                widget: string
+              - name: category
+                label: Kategorie
+                widget: string
+                required: false
+              - name: title
+                label: Titul / poznámka
+                widget: string
+                required: false
+      - name: vysledky
+        label: Výsledky
+        file: src/data/vysledky.yaml
+        fields:
+          - name: items
+            label: Položky
+            widget: list
+            root: true
+            fields:
+              - name: year
+                label: Rok
+                widget: number
+                value_type: int
+              - name: file
+                label: Výsledková listina
+                widget: file
+                media_folder: /public/vysledky
+                public_folder: /vysledky
+      - name: kontakt
+        label: Kontakt
+        file: src/data/kontakt.yaml
+        fields:
+          - name: name
+            label: Jméno
+            widget: string
+          - name: role
+            label: Funkce a kvalifikace
+            widget: string
+          - name: phone
+            label: Telefon
+            widget: string
+          - name: email
+            label: E-mail
+            widget: string
+            required: false
+          - name: organization
+            label: Organizace
+            widget: string
+          - name: address
+            label: Adresa
+            widget: string
+          - name: directions
+            label: Cesta do tělocvičny
+            widget: string
+          - name: ico
+            label: IČ
+            widget: string
+          - name: map
+            label: Odkaz na mapu
+            widget: string
+      - name: odkazy
+        label: Odkazy
+        file: src/data/odkazy.yaml
+        fields:
+          - name: items
+            label: Položky
+            widget: list
+            root: true
+            fields:
+              - name: title
+                label: Název
+                widget: string
+              - name: url
+                label: Webová adresa
+                widget: string
+  - name: stranky
+    label: Stránky
+    files:
+      - name: historie
+        label: Historie
+        file: src/content/stranky/historie.md
+        fields:
+          - name: title
+            label: Nadpis
+            widget: string
+          - name: body
+            label: Obsah
+            widget: markdown
+      - name: osobnosti
+        label: Osobnosti
+        file: src/content/stranky/osobnosti.md
+        fields:
+          - name: title
+            label: Nadpis
+            widget: string
+          - name: body
+            label: Obsah
+            widget: markdown

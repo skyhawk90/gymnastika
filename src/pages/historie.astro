@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import { getEntry, render } from "astro:content";
+const history = await getEntry("stranky", "historie");
+const people = await getEntry("stranky", "osobnosti");
+if (!history || !people) throw new Error("Chybí historie nebo osobnosti");
+const { Content: History } = await render(history);
+const { Content: People } = await render(people);
+---
+
+<Base
+  title="Historie a osobnosti"
+  description="Historie sportovní gymnastiky v Chrudimi a osobnosti, které stály u zrodu oddílu."
+  ><section>
+    <div class="wrap prose">
+      <h1 class="page-title">Historie a osobnosti</h1><nav aria-label="Na této stránce">
+        <a href="#historie">Historie oddílu</a> · <a href="#osobnosti">Osobnosti</a>
+      </nav><div id="historie"><History /></div><div id="osobnosti"><People /></div>
+    </div>
+  </section></Base
+>

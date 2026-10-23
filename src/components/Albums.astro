@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+interface Props {
+  limit?: number;
+}
+const albums = (await getCollection("galerie"))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, Astro.props.limit);
+---
+
+<div class="albums">
+  {
+    albums.map((a) => (
+      <a class="album" href={`/galerie/${a.id}/`}>
+        <>
+          <div class="ph">
+            <Image
+              src={a.data.cover}
+              alt={`Album ${a.data.title}`}
+              width={560}
+              height={420}
+              loading="lazy"
+              widths={[280, 560]}
+              sizes="(max-width: 900px) 45vw, 280px"
+            />
+          </div>
+          <b>{a.data.title}</b>
+          <span>{a.data.photos.length} fotografií</span>
+        </>
+      </a>
+    ))
+  }
+</div>

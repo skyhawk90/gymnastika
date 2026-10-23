@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import Nabor from "../components/Nabor.astro";
+import { kontakt as k } from "../data";
+---
+
+<Base
+  title="Kontakt a nábor"
+  description="Přihlaste dceru na sportovní gymnastiku. Kontakt na trenérku Simonu Linkovou a cesta do Tyršova domu v Chrudimi."
+  ><section>
+    <div class="wrap hist">
+      <div id="kontaktni-udaje">
+        <h1 class="page-title">Kontakt</h1><h2>{k.name}</h2><p>{k.role}</p><p>
+          <a href={`tel:+420${k.phone.replaceAll(" ", "")}`}>{k.phone}</a><br /><a
+            href={`mailto:${k.email}`}>{k.email}</a
+          >
+        </p><h2>Kde nás najdete</h2><address>{k.organization}<br />{k.address}</address><p>
+          {k.directions}
+        </p><a class="more" href={k.map}>Otevřít mapu ↗</a>
+      </div><Nabor />
+    </div>
+  </section></Base
+>

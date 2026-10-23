@@ -1,0 +1,19 @@
+- group: Přípravka
+  note: začátečnice od 5 let
+  days:
+    - út
+    - čt
+  time: 15:30–16:30
+- group: Mírně pokročilé
+  note: ""
+  days:
+    - út
+    - čt
+  time: 15:00–17:00
+- group: Závodní tým
+  note: ""
+  days:
+    - út
+    - čt
+    - pá
+  time: 15:00–17:30

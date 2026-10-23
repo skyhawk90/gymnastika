@@ -1,0 +1,26 @@
+---
+import { nabor as n } from "../data";
+---
+
+{
+  n.active && (
+    <aside class="nabor" id="nabor">
+      <>
+        <div class="eyebrow">Hledáme talenty</div>
+        <h2>{n.heading}</h2>
+        <p>{n.text}</p>
+        <dl>
+          <>
+            <dt>Kdy</dt>
+            <dd>{n.when}</dd>
+            <dt>Kde</dt>
+            <dd>{n.where}</dd>
+          </>
+        </dl>
+        <a class="btn" href="/kontakt/#kontaktni-udaje">
+          Kontaktovat trenérku
+        </a>
+      </>
+    </aside>
+  )
+}
