@@ -19,7 +19,7 @@ Výstup najdete v `dist/`. Schválený návrh zůstává v `prototype/index.html
 
 ## Redakční systém
 
-Otevřete `/admin/`. Sveltia se načítá z CDN, takže redakce potřebuje internet. Konfigurace je v `public/admin/config.yml`. Repozitář je `skyhawk90/gymnastika`, větev `main`. Pro produkční přihlášení přes GitHub nastavte GitHub OAuth aplikaci a kompatibilní OAuth službu (její adresu zadejte do `backend.base_url`; případně `auth_endpoint`). Samotné statické hostování přihlašovací službu neposkytuje. GitHub účet redaktorky musí mít právo zápisu do repozitáře. Přihlašovací tajemství nepatří do tohoto veřejného souboru.
+Otevřete `/admin/`. Sveltia se načítá z CDN, takže redakce potřebuje internet. Konfigurace je v `public/admin/config.yml`. Repozitář je `skyhawk90/gymnastika`, větev `main`. Přihlášení přes GitHub obsluhuje Worker `sveltia-cms-auth` na `https://sveltia-cms-auth.musil-matej.workers.dev` (nastavený v `backend.base_url`) spolu s GitHub OAuth aplikací; povolené domény jsou v jeho proměnné `ALLOWED_DOMAINS`. GitHub účet redaktorky musí mít právo zápisu do repozitáře. Přihlašovací tajemství nepatří do tohoto veřejného souboru.
 
 Pro místní zkoušku otevřete administraci v Chromium při spuštěném `npm run dev`, zvolte Sveltia **Work with Local Repository** a vyberte kořen tohoto repozitáře. Uložení zapíše místní soubory. Změny poté commitněte a odešlete na GitHub. Produkční úpravy ukládá CMS jako commity do GitHubu; Cloudflare následně spustí nové sestavení.
 

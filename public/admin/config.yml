@@ -2,6 +2,7 @@ backend:
   name: github
   repo: skyhawk90/gymnastika
   branch: main
+  base_url: https://sveltia-cms-auth.musil-matej.workers.dev
 locale: cs
 media_folder: src/assets/uploads
 public_folder: /src/assets/uploads
