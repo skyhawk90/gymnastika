@@ -1,0 +1,455 @@
+<title>Sportovní gymnastika Chrudim</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: white and Sokol red in the spirit of sokol.eu: full-bleed red bands with white type,
+   white content sections, apparatus glyphs as wayfinding, scores and dates set in mono like a judges' sheet. */
+:root{
+  --chalk:#faf6f6;        /* faint red-tinted white for alternate sections */
+  --paper:#ffffff;
+  --ink:#2a2224;
+  --ink-2:#6b5f62;
+  --line:#ecdfe0;
+  --crimson:#e40521;      /* Sokol red (sokol.eu) */
+  --crimson-deep:#b8031a;
+  --crimson-ink:#ffffff;
+  --beam:#f4a3ad;         /* light red for lines and accents on white */
+  --beam-soft:#fde9eb;
+  --gold:#b88a1b; --silver:#7d8590; --bronze:#a2602f;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Work Sans","Segoe UI",Roboto,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --s-1:.8125rem; --s0:1rem; --s1:1.25rem; --s2:1.6rem; --s3:2.2rem; --s4:clamp(2.6rem,7vw,5.2rem);
+  --r:6px;
+  --max:1180px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --chalk:#1a1314; --paper:#221a1b; --ink:#f3eced; --ink-2:#bba9ac; --line:#3a2c2e;
+  --crimson:#e40521; --crimson-deep:#a80318; --crimson-ink:#ffffff; --beam:#8a3540; --beam-soft:#3a2125;
+  --gold:#e0b44a; --silver:#b5bcc6; --bronze:#d08a52; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --chalk:#1a1314; --paper:#221a1b; --ink:#f3eced; --ink-2:#bba9ac; --line:#3a2c2e;
+  --crimson:#e40521; --crimson-deep:#a80318; --crimson-ink:#ffffff; --beam:#8a3540; --beam-soft:#3a2125;
+  --gold:#e0b44a; --silver:#b5bcc6; --bronze:#d08a52; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1.02rem;line-height:1.65}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--crimson);outline-offset:2px;border-radius:3px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.05}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--f-display);font-size:var(--s-1);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--crimson)}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:36px;height:36px;flex:none}
+.brand b{font-family:var(--f-display);font-stretch:118%;font-weight:850;font-size:1rem;letter-spacing:.02em;line-height:1;text-transform:uppercase}
+.brand small{display:block;font-family:var(--f-mono);font-size:.7rem;color:var(--ink-2);margin-top:3px}
+nav.main{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}
+nav.main a{font-family:var(--f-display);font-weight:600;font-size:.92rem;text-decoration:none;padding:8px 11px;border-radius:var(--r);color:var(--ink-2)}
+nav.main a:hover{color:var(--crimson);background:var(--beam-soft)}
+nav.main a.cta{background:var(--crimson);color:var(--crimson-ink);margin-left:6px}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:var(--r);color:var(--ink);font:600 .9rem var(--f-display);padding:8px 12px;cursor:pointer}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;padding:8px max(16px,env(safe-area-inset-right,0px)) 16px max(16px,env(safe-area-inset-left,0px))}
+  nav.main.open{display:flex}
+  nav.main a.cta{margin:6px 0 0;text-align:center}
+}
+
+/* hero */
+.hero{background:var(--crimson);color:var(--crimson-ink);overflow:hidden}
+.hero .eyebrow{color:var(--crimson-ink);opacity:.85}
+.hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;padding-block:60px 56px;position:relative}
+.hero h1{font-size:var(--s4);font-stretch:125%;font-weight:900;letter-spacing:-.01em;text-transform:uppercase;line-height:.92;margin-top:10px}
+.hero h1 span{display:block}
+.hero p.lead{font-size:var(--s1);max-width:34ch;margin:22px 0 0;opacity:.92}
+.arc{position:absolute;inset:auto 0 0 0;height:100%;pointer-events:none;opacity:.35}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap;margin-top:32px}
+.hero-stats div{border-left:2px solid color-mix(in srgb,var(--crimson-ink) 50%,transparent);padding-left:12px}
+.hero-stats b{display:block;font-family:var(--f-display);font-size:var(--s3);font-weight:850;font-stretch:115%;line-height:1}
+.hero-stats span{font-size:var(--s-1);font-family:var(--f-display);font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+
+.nabor{align-self:end;background:var(--paper);color:var(--ink);border-radius:var(--r);padding:28px;position:relative;z-index:1;box-shadow:0 18px 40px -18px rgba(60,0,8,.45)}
+.nabor .eyebrow{color:var(--crimson);opacity:1}
+.nabor h2{font-size:var(--s3);font-stretch:115%;font-weight:850;margin:8px 0 10px;color:var(--crimson)}
+.nabor p{margin:0 0 16px;font-size:1rem;color:var(--ink-2)}
+.nabor dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0 0 20px;font-family:var(--f-mono);font-size:.86rem}
+.nabor dt{color:var(--crimson)}.nabor dd{margin:0}
+.btn{display:inline-block;font:700 .95rem var(--f-display);text-decoration:none;padding:12px 20px;border-radius:var(--r);border:2px solid currentColor;text-transform:uppercase;letter-spacing:.04em}
+.nabor .btn{background:var(--crimson);color:var(--crimson-ink);border-color:var(--crimson)}
+.nabor .btn:hover{background:var(--crimson-deep);border-color:var(--crimson-deep)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:32px;padding-block:36px}}
+
+/* sections */
+section{padding-block:64px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head h2{font-size:var(--s3);font-stretch:112%;font-weight:850;margin-top:6px;text-transform:uppercase}
+.more{font:600 .95rem var(--f-display);color:var(--crimson);text-decoration:none}
+.more:hover{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+.news-feature{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.ph{position:relative;background:var(--beam-soft);display:grid;place-items:center;color:var(--beam);aspect-ratio:16/9;max-width:100%}
+.ph svg{width:28%;height:auto;opacity:.9}
+.ph .tag{position:absolute;left:12px;bottom:12px;font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);background:var(--paper);padding:3px 8px;border-radius:4px}
+.news-feature .body{padding:22px 24px 26px}
+.news-feature h3{font-size:var(--s2);font-weight:800;font-stretch:105%;margin:8px 0 10px}
+.news-feature p{margin:0;color:var(--ink-2)}
+.meta{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2);display:flex;gap:10px;flex-wrap:wrap}
+.meta .medal{color:var(--ink)}
+.news-list{display:flex;flex-direction:column}
+.news-list a{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;padding:16px 0;border-top:1px solid var(--line);text-decoration:none}
+.news-list a:last-child{border-bottom:1px solid var(--line)}
+.news-list time{grid-row:span 2;font-family:var(--f-mono);font-size:.78rem;color:var(--crimson);width:4.6em;padding-top:3px}
+.news-list h3{font-size:1.08rem;font-weight:700;line-height:1.25}
+.news-list a:hover h3{color:var(--crimson)}
+.news-list span{font-size:.95rem;color:var(--ink-2);line-height:1.4}
+@media (max-width:860px){.news{grid-template-columns:1fr}}
+
+/* training */
+.band{background:var(--chalk);border-block:1px solid var(--line)}
+.band .apparatus div{background:var(--paper)}
+.band-red{background:var(--crimson);color:var(--crimson-ink);padding-block:44px}
+.band-red .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.band-red b{display:block;font:850 var(--s4)/1 var(--f-display);font-stretch:118%}
+.band-red span{font:600 var(--s-1) var(--f-display);letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+@media (max-width:760px){.band-red .wrap{grid-template-columns:1fr 1fr;gap:28px 16px}.band-red b{font-size:var(--s3)}}
+.train{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
+.train p{max-width:52ch;color:var(--ink-2);margin:14px 0 0}
+.apparatus{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.apparatus div{border:1px solid var(--line);border-radius:var(--r);padding:12px 8px 10px;text-align:center;font:600 .82rem var(--f-display);color:var(--ink-2)}
+.apparatus svg{width:44px;height:30px;display:block;margin:0 auto 6px;color:var(--crimson)}
+.sched{width:100%;border-collapse:collapse;font-size:.98rem}
+.sched th{font:700 var(--s-1) var(--f-display);letter-spacing:.1em;text-transform:uppercase;color:var(--crimson);text-align:left;padding:0 10px 10px 0;border-bottom:2px solid var(--crimson)}
+.sched td{padding:14px 10px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.sched td:first-child{font-family:var(--f-display);font-weight:700}
+.sched td small{display:block;font-family:var(--f-body);font-weight:400;color:var(--ink-2);font-size:.88rem}
+.days{display:flex;gap:4px}
+.days i{font:500 .74rem var(--f-mono);font-style:normal;width:26px;height:26px;display:grid;place-items:center;border-radius:4px;border:1px solid var(--line);color:var(--ink-2)}
+.days i.on{background:var(--crimson);color:var(--crimson-ink);border-color:var(--crimson)}
+.table-scroll{overflow-x:auto;min-width:0}
+@media (max-width:860px){.train{grid-template-columns:1fr;gap:32px}}
+
+/* results / achievements */
+.ach{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ach-year{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.ach-year{border-top:4px solid var(--crimson)}
+.ach-year h3{font:800 var(--s2)/1 var(--f-mono);letter-spacing:-.02em;margin-bottom:12px;color:var(--crimson)}
+.ach-year ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.ach-year li{display:grid;grid-template-columns:2.2em 1fr;gap:10px;align-items:baseline;font-size:.98rem;line-height:1.35}
+.place{font:600 .8rem var(--f-mono);text-align:center;border-radius:999px;padding:2px 0;border:1.5px solid var(--line)}
+.p1{border-color:var(--gold);color:var(--gold)}.p2{border-color:var(--silver);color:var(--silver)}.p3{border-color:var(--bronze);color:var(--bronze)}
+.ach-year li small{display:block;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2)}
+@media (max-width:900px){.ach{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.ach{grid-template-columns:1fr}}
+
+.archive{margin-top:36px;display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap}
+.archive b{font:700 .95rem var(--f-display);margin-right:6px}
+.chip{font:500 .8rem var(--f-mono);text-decoration:none;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+.chip:hover{border-color:var(--crimson);color:var(--crimson)}
+.chip em{font-style:normal;color:var(--ink-2);margin-left:4px;font-size:.7rem}
+
+/* gallery */
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{font:600 .85rem var(--f-display);background:none;border:1px solid var(--line);color:var(--ink-2);border-radius:999px;padding:6px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--crimson);color:var(--crimson-ink);border-color:var(--crimson)}
+.albums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.album{text-decoration:none;display:flex;flex-direction:column;gap:8px}
+.album .ph{aspect-ratio:4/3;border-radius:var(--r);overflow:hidden}
+.album .ph svg{width:34%}
+.album:hover .ph{outline:2px solid var(--crimson);outline-offset:2px}
+.album b{font:700 1rem var(--f-display)}
+.album span{font:400 .78rem var(--f-mono);color:var(--ink-2)}
+@media (max-width:900px){.albums{grid-template-columns:repeat(2,1fr)}}
+
+/* history + contact */
+.hist{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--beam);display:flex;flex-direction:column;gap:20px}
+.timeline li{padding-left:22px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.45em;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--crimson)}
+.timeline b{font:600 .85rem var(--f-mono);color:var(--crimson);display:block}
+.timeline p{margin:2px 0 0;color:var(--ink-2)}
+.hist blockquote{margin:0;font-size:var(--s1);line-height:1.5;border-left:3px solid var(--crimson);padding-left:20px}
+.hist blockquote cite{display:block;font:500 .82rem var(--f-mono);color:var(--ink-2);margin-top:12px;font-style:normal}
+.videos{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+@media (max-width:860px){.hist{grid-template-columns:1fr;gap:32px}}
+
+footer{background:var(--crimson);color:var(--crimson-ink)}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-block:52px 40px}
+footer h3{font-size:var(--s1);font-stretch:112%;font-weight:800;margin-bottom:12px}
+footer h3{text-transform:uppercase}
+footer p,footer address{margin:0;font-style:normal;font-size:.98rem;line-height:1.65;opacity:.92}
+footer .mono{font-size:.85rem}
+footer a{color:var(--crimson-ink)}
+.copyable{display:inline-flex;align-items:center;gap:8px}
+.copyable button{font:500 .72rem var(--f-mono);background:none;border:1px solid currentColor;color:inherit;opacity:.7;border-radius:4px;padding:2px 7px;cursor:pointer}
+.legal{grid-column:1/-1;border-top:1px solid color-mix(in srgb,var(--crimson-ink) 30%,transparent);padding-top:20px;font:400 .78rem var(--f-mono);opacity:.6;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr;gap:28px}}
+
+.proto{background:var(--beam-soft);color:var(--ink);font:500 .78rem var(--f-mono);text-align:center;padding:7px 16px}
+@media (prefers-reduced-motion:no-preference){
+  .arc path.flight{stroke-dasharray:1400;stroke-dashoffset:1400;animation:fly 1.6s .2s cubic-bezier(.3,.1,.2,1) forwards}
+  @keyframes fly{to{stroke-dashoffset:0}}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-vault" viewBox="0 0 44 30"><path d="M8 10h28a3 3 0 0 1 0 6H8a3 3 0 0 1 0-6Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M22 16v12M15 28h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-bars" viewBox="0 0 44 30"><path d="M6 28V12M18 28V12M26 28V4M38 28V4M4 12h16M24 4h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-beam" viewBox="0 0 44 30"><rect x="3" y="10" width="38" height="4" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 14l-3 14M34 14l3 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-floor" viewBox="0 0 44 30"><path d="M4 24 18 6h22L26 24Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 21l2-2M33 9l-2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-gymnast" viewBox="0 0 64 64"><circle cx="45" cy="12" r="5" fill="currentColor"/><path d="M8 52c8-2 16-10 22-20s10-14 14-14M30 32l10 20M24 40l-12-6M44 18l10 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="proto">Prototyp nového webu (v2, bílo-červená) · obsah převzatý z gymnastika.chrudim.cz · místa pro fotografie jsou zatím zástupná</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#uvod">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="var(--crimson)"/><path d="M9 31c6-1 11-7 14-13s6-8 9-8M23 18l5 13M19 23l-8-3" fill="none" stroke="var(--crimson-ink)" stroke-width="2.6" stroke-linecap="round"/><circle cx="30" cy="8" r="2.6" fill="var(--crimson-ink)"/></svg>
+      <span><b>Gymnastika Chrudim</b><small>T.J. Sokol Chrudim · od 1953</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main" id="mainNav">
+      <a href="#clanky">Články</a>
+      <a href="#treninky">Tréninky</a>
+      <a href="#vysledky">Výsledky</a>
+      <a href="#galerie">Fotogalerie</a>
+      <a href="#historie">Historie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="cta" href="#nabor">Přihlásit dceru</a>
+    </nav>
+  </div>
+</header>
+
+<main id="uvod">
+  <div class="hero">
+    <div class="wrap">
+      <svg class="arc" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
+        <path class="flight" d="M-20 400 C 260 380, 420 60, 640 50 S 980 300, 1220 120" fill="none" stroke="var(--crimson-ink)" stroke-width="2" stroke-dasharray="1400"/>
+      </svg>
+      <div style="position:relative;z-index:1">
+        <div class="eyebrow">Oddíl sportovní gymnastiky žen</div>
+        <h1>Sportovní gymnastika <span>Chrudim</span></h1>
+        <p class="lead">Závodní oddíl pro děvčata od 5 let. Trénujeme přeskok, bradla, kladinu a prostná v sálech Tyršova domu.</p>
+        <div class="hero-stats">
+          <div><b class="mono">1953</b><span>založení</span></div>
+          <div><b>T.J. Sokol</b><span>Chrudim</span></div>
+        </div>
+      </div>
+      <aside class="nabor" id="nabor">
+        <div class="eyebrow">Hledáme talenty</div>
+        <h2>Nábor ročník 2021</h2>
+        <p>Hledáme drobná, štíhlá a šikovná děvčátka, která chtějí trénovat na nářadí a závodit. Přijďte s rodiči na trénink.</p>
+        <dl>
+          <dt>Kdy</dt><dd>út a pá, 15:30–16:30</dd>
+          <dt>Kde</dt><dd>Tyršův dům, 1. patro, vchod vpravo od sportovní haly</dd>
+        </dl>
+        <a class="btn" href="#kontakt">Kontaktovat trenérku</a>
+      </aside>
+    </div>
+  </div>
+
+  <div class="band-red" aria-label="Oddíl v číslech">
+    <div class="wrap">
+      <div><b class="mono">73</b><span>let oddílu</span></div>
+      <div><b class="mono">2×</b><span>mistryně ČR</span></div>
+      <div><b class="mono">4</b><span>nářadí</span></div>
+      <div><b class="mono">~20</b><span>závodů ročně</span></div>
+    </div>
+  </div>
+
+  <section id="clanky">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Z oddílu</div><h2>Články a novinky</h2></div>
+        <a class="more" href="#clanky">Všechny články (100+) →</a>
+      </div>
+      <div class="news">
+        <article class="news-feature">
+          <div class="ph"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-gymnast"/></svg><span class="tag">foto ze závodu</span></div>
+          <div class="body">
+            <div class="meta"><time class="mono">10. 10. 2026</time><span>Pardubice</span><span class="medal">1× zlato · 1× stříbro</span></div>
+            <h3>Máme zlato a stříbro z Memoriálu Blanky a Verunky Horákových</h3>
+            <p>Oddíl Loko Pardubice pořádal už 23. ročník memoriálu. Závodem každý rok uctívá památku trenérky Blanky Horákové a její desetileté dcery Verunky.</p>
+          </div>
+        </article>
+        <div class="news-list">
+          <a href="#clanky"><time>25. 6.</time><h3>Maya Matušek reprezentovala kraj na Olympiádě dětí a mládeže</h3><span>Praha, 21.–25. 6. 2026, spolu s gymnastkami z Pardubic</span></a>
+          <a href="#clanky"><time>20. 6.</time><h3>Bronz z mistrovství republiky. První mistrovská medaile po pěti letech</h3><span>MČR jednotlivkyň v Praze, 56 závodnic z celé republiky</span></a>
+          <a href="#clanky"><time>6. 6.</time><h3>Nejmladší gymnastky přivezly stříbro a dva bronzy z krajského přeboru</h3><span>Krajský přebor Pardubického a Královéhradeckého kraje</span></a>
+          <a href="#clanky"><time>30. 5.</time><h3>Maya Matušek krajskou přebornicí, Sára Svatková bronzová</h3><span>Vrchlabí, 95 děvčat, postup na MČR</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="treninky" class="band">
+    <div class="wrap train">
+      <div>
+        <div class="eyebrow">Tréninky</div>
+        <h2 style="font-size:var(--s3);font-stretch:112%;font-weight:850;margin-top:6px">Tři skupiny podle věku a úrovně</h2>
+        <p>Děvčata trénují 2–3× týdně 1–3 hodiny a během roku se účastní až dvaceti závodů. Sportovní gymnastika je dobrá průprava i pro ostatní sporty.</p>
+        <div class="apparatus">
+          <div><svg aria-hidden="true"><use href="#i-vault"/></svg>Přeskok</div>
+          <div><svg aria-hidden="true"><use href="#i-bars"/></svg>Bradla</div>
+          <div><svg aria-hidden="true"><use href="#i-beam"/></svg>Kladina</div>
+          <div><svg aria-hidden="true"><use href="#i-floor"/></svg>Prostná</div>
+        </div>
+      </div>
+      <div class="table-scroll">
+        <table class="sched">
+          <thead><tr><th>Skupina</th><th>Dny</th><th>Čas</th></tr></thead>
+          <tbody>
+            <tr><td>Přípravka<small>začátečnice od 5 let</small></td><td><div class="days"><i>po</i><i class="on">út</i><i>st</i><i class="on">čt</i><i>pá</i></div></td><td class="mono">15:30–16:30</td></tr>
+            <tr><td>Mírně pokročilé<small>první závody</small></td><td><div class="days"><i>po</i><i class="on">út</i><i>st</i><i class="on">čt</i><i>pá</i></div></td><td class="mono">15:00–17:00</td></tr>
+            <tr><td>Závodní tým<small>krajské přebory a MČR</small></td><td><div class="days"><i>po</i><i class="on">út</i><i>st</i><i class="on">čt</i><i class="on">pá</i></div></td><td class="mono">15:00–17:30</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="vysledky">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Úspěchy</div><h2>Mistrovské přebory</h2></div>
+        <a class="more" href="#vysledky">Všechny úspěchy od roku 1996 →</a>
+      </div>
+      <div class="ach">
+        <div class="ach-year"><h3>2026</h3><ul>
+          <li><span class="place p3">3.</span><span>Maya Matušek<small>MČR · st. žákyně</small></span></li>
+        </ul></div>
+        <div class="ach-year"><h3>2025</h3><ul>
+          <li><span class="place p3">3.</span><span>Maya Matušek<small>ČOS · st. žákyně</small></span></li>
+          <li><span class="place">7.</span><span>Maya Matušek<small>MČOS · st. žákyně</small></span></li>
+          <li><span class="place">9.</span><span>Maya Matušek<small>MČR · st. žákyně</small></span></li>
+        </ul></div>
+        <div class="ach-year"><h3>2021</h3><ul>
+          <li><span class="place p1">1.</span><span>Sára Kulhavá, mistryně republiky<small>MČR Ostrava · ženy</small></span></li>
+          <li><span class="place">8.</span><span>Družstvo Chrudim<small>II. liga</small></span></li>
+        </ul></div>
+      </div>
+      <div class="archive">
+        <b>Výsledkové listiny</b>
+        <a class="chip" href="#vysledky">2025<em>PDF</em></a>
+        <a class="chip" href="#vysledky">2024<em>PDF</em></a>
+        <a class="chip" href="#vysledky">2023<em>PDF</em></a>
+        <a class="chip" href="#vysledky">2022<em>PDF</em></a>
+        <a class="chip" href="#vysledky">2021<em>PDF</em></a>
+        <a class="chip" href="#vysledky">2020<em>PDF</em></a>
+        <a class="chip" href="#vysledky">2019<em>DOC</em></a>
+        <a class="chip" href="#vysledky">starší…</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Fotogalerie</div><h2>Alba ze závodů a tréninků</h2></div>
+        <div class="filters" role="group" aria-label="Období">
+          <button type="button" aria-pressed="true" data-f="new">2023–2026</button>
+          <button type="button" aria-pressed="false" data-f="mid">2015–2022</button>
+          <button type="button" aria-pressed="false" data-f="old">1990–2014</button>
+        </div>
+      </div>
+      <div class="albums" id="albums"></div>
+    </div>
+  </section>
+
+  <section id="historie">
+    <div class="wrap hist">
+      <div>
+        <div class="eyebrow">Historie a osobnosti</div>
+        <h2 style="font-size:var(--s3);font-stretch:112%;font-weight:850;margin:6px 0 28px">Přes 70 let gymnastiky v Tyršově domě</h2>
+        <ol class="timeline">
+          <li><b>1927</b><p>Narodily se Lída Pejchová a Miroslava Šplíchalová, dvě sokolky, které stály u začátků chrudimské gymnastiky.</p></li>
+          <li><b>1953</b><p>Jaroslav Šplíchal zakládá oddíl a buduje gymnastické sály s pevně upevněným nářadím.</p></li>
+          <li><b>1956</b><p>Miroslava Šplíchalová startuje na olympijských hrách v Melbourne.</p></li>
+          <li><b>2017 a 2021</b><p>Sára Kulhavá získává titul mistryně České republiky.</p></li>
+        </ol>
+      </div>
+      <div>
+        <blockquote>„Vždyť jsem tvrdila, že budu cvičit tak dlouho jako Mirka Šplíchalová. Když zemřela ve třiceti letech, splnila jsem své předsevzetí, stala se trenérkou a snažila se děvčata dostat na vyšší úroveň.“
+          <cite>Lída Pejchová, trenérka</cite></blockquote>
+        <div class="videos">
+          <b style="font:700 .95rem var(--f-display)">Videa</b>
+          <a class="chip" href="https://www.youtube.com/watch?v=DSXDI9XjyKc" target="_blank" rel="noopener">8 videí na YouTube ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div>
+      <h3>Kontakt</h3>
+      <p>Simona Linková<br>předsedkyně oddílu, trenérka II. třídy, rozhodčí I. třídy</p>
+      <p class="mono" style="margin-top:10px">
+        <span class="copyable"><span>777 600 052</span><button type="button" data-copy="777 600 052">kopírovat</button></span><br>
+        <span class="copyable"><span>simona@chrudim.cz</span><button type="button" data-copy="simona@chrudim.cz">kopírovat</button></span>
+      </p>
+    </div>
+    <div>
+      <h3>Kde nás najdete</h3>
+      <address>Tyršův dům, 1. patro<br>dveře vpravo od hlavního vchodu do sportovní haly<br>Tyršovo náměstí 249, 537 01 Chrudim</address>
+      <p style="margin-top:10px"><a href="https://mapy.cz/s/nabepunejo" target="_blank" rel="noopener">Otevřít v Mapy.cz ↗</a></p>
+    </div>
+    <div>
+      <h3>Odkazy</h3>
+      <p><a href="https://www.gymfed.cz" target="_blank" rel="noopener">Česká gymnastická federace ↗</a><br>
+         <a href="https://www.chrudim.eu" target="_blank" rel="noopener">Město Chrudim ↗</a><br>
+         <a href="https://www.sokolchrudim.cz" target="_blank" rel="noopener">T.J. Sokol Chrudim ↗</a></p>
+    </div>
+    <div class="legal"><span>Tělocvičná jednota Sokol Chrudim · IČ 15052788</span><span>© 2026 Sportovní gymnastika Chrudim</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'), nav=document.getElementById('mainNav');
+  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+
+  // album list mirrors the current Phoca Gallery categories (name, photo count)
+  var albums={
+    new:[['2026',58],['2025',66],['2024',72],['2023',56]],
+    mid:[['2022',57],['2021 · MČR Ostrava',35],['2021',51],['2019',52]],
+    old:[['2014',25],['2013 · MČR Liberec',17],['2007',16],['1990–2001',22]]
+  };
+  var icons=['i-gymnast','i-beam','i-bars','i-vault'], grid=document.getElementById('albums');
+  function render(k){
+    grid.innerHTML=albums[k].map(function(a,i){
+      var ic=icons[i%4], vb=ic==='i-gymnast'?'0 0 64 64':'0 0 44 30';
+      return '<a class="album" href="#galerie"><div class="ph"><svg viewBox="'+vb+'" aria-hidden="true"><use href="#'+ic+'"/></svg></div><b>'+a[0]+'</b><span>'+a[1]+' fotografií</span></a>';
+    }).join('');
+  }
+  document.querySelectorAll('.filters button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+      render(b.dataset.f);
+    });
+  });
+  render('new');
+
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.copy, done=function(){b.textContent='zkopírováno';setTimeout(function(){b.textContent='kopírovat'},1500)};
+      try{navigator.clipboard.writeText(t).then(done,function(){sel(b)})}catch(e){sel(b)}
+    });
+  });
+  function sel(b){var r=document.createRange();r.selectNodeContents(b.previousElementSibling);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+})();
+</script>
