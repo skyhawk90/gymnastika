@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import NewsCard from "../../../components/NewsCard.astro";
+import YearNav from "../../../components/YearNav.astro";
+export async function getStaticPaths() {
+  const articles = await getCollection("clanky", ({ data }) => !data.draft);
+  const byYear = new Map<number, CollectionEntry<"clanky">[]>();
+  for (const a of articles) {
+    const y = a.data.date.getFullYear();
+    byYear.set(y, [...(byYear.get(y) ?? []), a]);
+  }
+  return [...byYear].map(([year, list]) => ({
+    params: { year: String(year) },
+    props: { year, list: list.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()) },
+  }));
+}
+interface Props {
+  year: number;
+  list: CollectionEntry<"clanky">[];
+}
+const { year, list } = Astro.props;
+---
+
+<Base
+  title={`Články ${year}`}
+  description={`Zprávy ze závodů oddílu sportovní gymnastiky T.J. Sokol Chrudim v roce ${year}.`}
+>
+  <section>
+    <div class="wrap">
+      <h1 class="page-title">Články {year}</h1>
+      <YearNav current={year} />
+      <div class="article-grid">
+        {list.map((a) => <NewsCard entry={a} />)}
+      </div>
+    </div>
+  </section>
+</Base>

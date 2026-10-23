@@ -1352,6 +1352,85 @@ dialog.lb::backdrop {
   border: 0;
 }
 
+/* article archive */
+.year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: -8px 0 28px;
+}
+.year-nav .chip[aria-current="page"] {
+  background: var(--crimson);
+  border-color: var(--crimson);
+  color: var(--crimson-ink);
+}
+.article-grid {
+  align-items: start;
+}
+.news-feature.no-cover {
+  border-top: 3px solid var(--crimson);
+}
+
+/* videos: YouTube thumbnails that open the video on YouTube (no embedded player) */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: 22px;
+}
+.video {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+}
+.video-thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: var(--r);
+  background: var(--beam-soft);
+  max-width: 100%;
+}
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.15, 1);
+}
+.video-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--crimson);
+  color: var(--crimson-ink);
+  transition: transform 0.25s;
+}
+.video-play svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  margin-left: 3px;
+}
+.video:hover .video-thumb img {
+  transform: scale(1.05);
+}
+.video:hover .video-play {
+  transform: scale(1.1);
+}
+.video b {
+  font: 700 1rem/1.3 var(--f-display);
+}
+.video-src {
+  font: 400 0.78rem var(--f-mono);
+  color: var(--ink-2);
+}
+
 /* dark sections alternate with white ones; tokens are re-scoped so every component adapts */
 .dark {
   --paper: #1d1b1c;

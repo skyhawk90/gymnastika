@@ -1,12 +1,50 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Albums from "../../components/Albums.astro";
+import { videa } from "../../data";
 ---
 
 <Base
   title="Fotogalerie"
-  description="Fotografie ze závodů a života oddílu sportovní gymnastiky T.J. Sokol Chrudim."
-  ><section>
-    <div class="wrap"><h1 class="page-title">Fotogalerie</h1><Albums /></div>
-  </section></Base
+  description="Fotografie a videa ze závodů a života oddílu sportovní gymnastiky T.J. Sokol Chrudim."
 >
+  <section>
+    <div class="wrap"><h1 class="page-title">Fotogalerie</h1><Albums /></div>
+  </section>
+  <section class="band dark" id="videa">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Videa</div><h2>Sestavy ze závodů</h2></div>
+      </div>
+      <div class="videos-grid">
+        {
+          videa.map((v) => (
+            <a
+              class="video"
+              href={`https://www.youtube.com/watch?v=${v.id}`}
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="video-thumb">
+                <img
+                  src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                  alt=""
+                  width="480"
+                  height="360"
+                  loading="lazy"
+                />
+                <span class="video-play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </span>
+              </span>
+              <b>{v.title}</b>
+              <span class="video-src">YouTube ↗</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

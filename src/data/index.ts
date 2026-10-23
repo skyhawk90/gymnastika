@@ -5,6 +5,7 @@ import u from "./uspechy.yaml?raw";
 import v from "./vysledky.yaml?raw";
 import k from "./kontakt.yaml?raw";
 import o from "./odkazy.yaml?raw";
+import y from "./videa.yaml?raw";
 export const nabor = parse(n) as {
   active: boolean;
   heading: string;
@@ -35,3 +36,4 @@ export const kontakt = parse(k) as {
 };
 export const odkazy = parse(o) as { title: string; url: string }[];
 export const date = (value: Date) => new Intl.DateTimeFormat("cs-CZ").format(value);
+export const videa = parse(y) as { id: string; title: string }[];

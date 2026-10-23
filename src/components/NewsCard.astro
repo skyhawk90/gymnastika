@@ -8,10 +8,10 @@ interface Props {
 const { entry: a } = Astro.props;
 ---
 
-<article class="news-feature">
-  <a href={`/clanky/${a.id}/`}
-    >{
-      a.data.cover ? (
+<article class:list={["news-feature", { "no-cover": !a.data.cover }]}>
+  <a href={`/clanky/${a.id}/`}>
+    {
+      a.data.cover && (
         <div class="ph">
           <Image
             src={a.data.cover}
@@ -23,19 +23,16 @@ const { entry: a } = Astro.props;
             loading="lazy"
           />
         </div>
-      ) : (
-        <div class="ph">
-          <svg viewBox="0 0 64 64" aria-hidden="true">
-            <use href="#i-gymnast" />
-          </svg>
-        </div>
       )
-    }<div class="body">
+    }
+    <div class="body">
       <div class="meta">
-        <time datetime={a.data.date.toISOString()}>{date(a.data.date)}</time><span
-          >{a.data.place}</span
-        ><span class="medal">{a.data.medals}</span>
-      </div><h3>{a.data.title}</h3><p>{a.data.summary}</p>
-    </div></a
-  >
+        <time datetime={a.data.date.toISOString()}>{date(a.data.date)}</time>
+        {a.data.place && <span>{a.data.place}</span>}
+        {a.data.medals && <span class="medal">{a.data.medals}</span>}
+      </div>
+      <h3>{a.data.title}</h3>
+      <p>{a.data.summary}</p>
+    </div>
+  </a>
 </article>

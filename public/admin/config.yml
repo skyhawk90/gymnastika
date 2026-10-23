@@ -252,6 +252,21 @@ collections:
               - name: url
                 label: Webová adresa
                 widget: string
+      - name: videa
+        label: Videa
+        file: src/data/videa.yaml
+        fields:
+          - name: items
+            label: Videa z YouTube
+            widget: list
+            root: true
+            fields:
+              - name: id
+                label: ID videa (část adresy za watch?v=)
+                widget: string
+              - name: title
+                label: Název
+                widget: string
   - name: stranky
     label: Stránky
     files:

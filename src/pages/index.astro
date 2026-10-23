@@ -7,9 +7,12 @@ import Albums from "../components/Albums.astro";
 import NewsCard from "../components/NewsCard.astro";
 import { getCollection } from "astro:content";
 import { date } from "../data";
-const articles = (await getCollection("clanky", ({ data }) => !data.draft))
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 5);
+const sorted = (await getCollection("clanky", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+// feature the newest article that has a photo; the list shows the newest of the rest
+const featured = sorted.slice(0, 12).find((a) => a.data.cover) ?? sorted[0];
+const latest = sorted.filter((a) => a !== featured).slice(0, 4);
 ---
 
 <Base title="Úvod">
@@ -57,9 +60,9 @@ const articles = (await getCollection("clanky", ({ data }) => !data.draft))
           href="/clanky/">Všechny články →</a
         >
       </div><div class="news">
-        {articles[0] && <NewsCard entry={articles[0]} />}<div class="news-list">
+        {featured && <NewsCard entry={featured} />}<div class="news-list">
           {
-            articles.slice(1).map((a) => (
+            latest.map((a) => (
               <a href={`/clanky/${a.id}/`}>
                 <>
                   <time datetime={a.data.date.toISOString()}>{date(a.data.date)}</time>
@@ -130,12 +133,7 @@ const articles = (await getCollection("clanky", ({ data }) => !data.draft))
         </blockquote>
         <p><a class="more" href="/historie/">Celá historie a osobnosti →</a></p><div class="videos">
           <b style="font:700 .95rem var(--f-display)">Videa</b>
-          <a
-            class="chip"
-            href="https://www.youtube.com/watch?v=DSXDI9XjyKc"
-            target="_blank"
-            rel="noopener">8 videí na YouTube ↗</a
-          >
+          <a class="chip" href="/galerie/#videa">Sestavy ze závodů na videu →</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,21 @@
+---
+// Year chips for the article archive; `current` highlights the year being shown.
+import { getCollection } from "astro:content";
+interface Props {
+  current?: number;
+}
+const articles = await getCollection("clanky", ({ data }) => !data.draft);
+const years = [...new Set(articles.map((a) => a.data.date.getFullYear()))].sort((a, b) => b - a);
+const { current } = Astro.props;
+---
+
+<nav class="year-nav" aria-label="Články podle roku">
+  <a class="chip" href="/clanky/" aria-current={current ? undefined : "page"}>Nejnovější</a>
+  {
+    years.map((y) => (
+      <a class="chip" href={`/clanky/rok/${y}/`} aria-current={y === current ? "page" : undefined}>
+        {y}
+      </a>
+    ))
+  }
+</nav>

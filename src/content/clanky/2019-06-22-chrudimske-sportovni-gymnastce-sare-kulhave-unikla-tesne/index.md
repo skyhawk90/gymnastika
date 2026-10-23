@@ -1,0 +1,15 @@
+---
+title: "Chrudimské sportovní gymnastce Sáře Kulhavé unikla těsně bronzová medaile na MČR!"
+date: "2019-06-22"
+summary: "Letos se z oddílu sportovní gymnastiky T.J. Sokol Chrudim probojovaly dvě nejlepší závodnice na MČR, které se letos konalo podruhé v krásné sportovní hale Věry Čáslavské v Černošicích u Prahy."
+---
+
+**22.6.2019 Černošice**
+
+Letos se z oddílu sportovní gymnastiky T.J. Sokol Chrudim probojovaly dvě nejlepší závodnice na MČR, které se letos konalo podruhé v krásné sportovní hale Věry Čáslavské v Černošicích u Prahy.
+
+Želízkem v ohni byla **naše loňská vícemistryně republiky 14-letá Sára Kulhavá,** která závodila v obtížné kategorie juniorek již podruhé. Bohužel se ji na krajském přeboru moc nedařilo, měla několik pádů a skončila na 3. nepostupovém místě. Museli jsme zažádat o tzv. divokou kartu, aby mohla závodit na MČR a napjatě jsme čekali, zda to vyjde. Šest dní před přeborem se dozvěděla, že může startovat, což ji vyburcovalo k tvrdým tréninkům a vyplatilo se. Svůj čtyřboj zahájila nádhernou sestavou na kladině, kde předvedla bez pádu všechny své obtížné prvky, jako je rychlý přemet vzad, rondát a hlavně nejtěžší salto vpřed na kladině. Za cvičení na prostných předvedené na poutavou taneční hudbu, kde zařadila v řadě svůj obtížný prvek salto vzad toporně s obratem o 360 stupňů, získala zaslouženě třetí nejlepší známku. Na přeskoku se ji také dobře povedl skok rondát s obratem o 360 stupňů. Z posledního nářadí bradel, měla velký respekt, protože ta sestava se jí nepovedla právě na krajském přeboru. Doma ji tak trénovala, až si utrhla mozol, ale na mistrovství zatnula zuby a celou obtížnou sestavu s letovým prvkem předvedla skvěle. Sára i já jako trenérka jsme byly velmi spokojené s předvedeným výkonem a čekali jsme do poslední chvíle, jak to dopadne. Na světelné tabuli figurovala do posledních sestav na třetím místě, ale na závěr se před ní zařadila skvělá vítězka V.Kocková z Domažlic, která přestoupila z mistrovské třídy. **Při vyhlášení se Sára postavila na 4.místo těsně pod stupni vítězů a potvrdila, že loňské stříbro nebyla náhoda a že na Mistrovství republiky patří.** Z toho jsme měli velkou radost.
+
+Do této obtížné kategorie juniorek se letos poprvé probojovala i o rok mladší **Karolína Horníková**, která má stříbro z MČR žákyň v Ostravě. Měla krásný přemet s obraty na přeskoku za třetí nejvyšší známku. Na bradlech zacvičila Karolína obtížnou sestavu s letovým prvkem také skvěle. Na ošidné kladině zvládla své obtížné prvky, jako je vznos, stojka tahem s výdrží a hlavně akrobatickou řadu pomalý a rychlý přemet vzad bez zakolísání, ale nevydařila se jí řada dvou skoků, za což dostala velkou srážku. Celkově **vybojovala pěkné 16.místo,** i to je velmi krásné umístění na MČR v konkurenci 35 vybraných juniorek z velkých oddílů.
+
+Tímto vrcholným závodem naše dvě nejlepší ještě neskončily svoji závodní sezónu. Hned v neděli odjely reprezentovat pardubický kraj na Letní olympiádu mládeže do Liberce. Družstvo tvoří dvě závodnice z Loko Pardubice a naše dvě z TJ Sokol Chrudim, držíme palce, ať se jim vše povede a užijí si tento svátek sportu.

@@ -3,7 +3,6 @@ import { getCollection, render } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { Image, getImage } from "astro:assets";
 import Base from "../../layouts/Base.astro";
-import { date } from "../../data";
 export async function getStaticPaths() {
   return (await getCollection("galerie")).map((entry) => ({
     params: { slug: entry.id },
@@ -41,7 +40,7 @@ const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
         <h1 class="page-title">{entry.data.title}</h1>
         <p class="album-meta mono">
           {count}
-          {noun} · {date(entry.data.date)}
+          {noun}
         </p>
       </header>
       <Content />
@@ -192,15 +191,13 @@ const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
     const from = fromThumb(i);
     thumbs[i].style.visibility = "hidden";
     bg.animate([{ opacity: 0 }, { opacity: 1 }], { duration: dur(320), easing: "ease-out" });
-    dialog
-      .querySelectorAll(".lb-top, .lb-nav, .lb-bottom")
-      .forEach((el) =>
-        el.animate([{ opacity: 0 }, { opacity: 1 }], {
-          duration: dur(260),
-          delay: dur(160),
-          fill: "backwards",
-        }),
-      );
+    dialog.querySelectorAll(".lb-top, .lb-nav, .lb-bottom").forEach((el) =>
+      el.animate([{ opacity: 0 }, { opacity: 1 }], {
+        duration: dur(260),
+        delay: dur(160),
+        fill: "backwards",
+      }),
+    );
     const a = img.animate(
       [
         { transform: from ?? "scale(.92)", opacity: from ? 1 : 0, borderRadius: "6px" },
