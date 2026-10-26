@@ -1,6 +1,6 @@
 ---
 title: Super úspěch máme poprvé dvě medaile z přeboru Čech  oddílů ČOS
-date: 2026-10-24
+date: 2026-10-26
 place: ''
 medals: ''
 summary: Tři chrudimská děvčata postoupila na MČR ČOS.
