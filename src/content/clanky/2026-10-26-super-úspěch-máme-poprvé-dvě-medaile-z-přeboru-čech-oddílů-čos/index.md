@@ -19,7 +19,7 @@ vybojovat postup na celostátní Mistrovství ČOS v Praze. Náš oddíl T.J. S
 
 odjelo reprezentovat tentokrát šest žákyň.
 
-Závod zahájily starší žákyně. Naše 13-letá Maya Matušek, která získala loni
+Závod zahájily starší žákyně. Naše 13-letá **Maya Matušek**, která získala loni
 
 bronz, předvedla výborný přeskok přemet s obraty. Na bradlech ukázala krásný přelet
 
