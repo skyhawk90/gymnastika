@@ -6,7 +6,7 @@ medals: ''
 summary: Tři chrudimská děvčata postoupila na MČR ČOS.
 cover: ''
 coverAlt: ''
-draft: false
+draft: true
 ---
 
 **Tři chrudimská děvčata postoupila na MČR ČOS.** 
