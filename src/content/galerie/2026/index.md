@@ -112,13 +112,19 @@ photos:
   - src: ./foto-054.jpg
     alt: Vítězka V.ligy Valentýna Nováková
   - src: ./foto-055.jpg
-    alt: ČOS Kolín-9.Plachá,2..Nováková,14.Sedláková
+    alt: "ČOS Kolín-2. M.Matušek,6.L.Putíková"
   - src: ./foto-056.jpg
-    alt: ČOS Kolín - 2.m.Nováková
+    alt: "ČOS Kolín-2..Nováková,14.Sedláková,9.Plachá"
   - src: ./foto-057.jpg
-    alt: ČOS Kolín-2.V.Nováková
+    alt: "ČOS Kolín-2.m.Nováková"
   - src: ./foto-058.jpg
-    alt: x
-  - src: 4ČOS Kolín-2.m.st.žákyně Maya Matušek.jpg
-    alt: ČOS Kolín-2.m.st.žákyně Maya Matušek
+    alt: "ČOS Kolín-2.m.st.žákyně Maya Matušek"
+  - src: ./foto-059.jpg
+    alt: "ČOS Kolín-2.Matušek,6.Putíková,7.Bělochová"
+  - src: ./foto-060.jpg
+    alt: "ČOS Kolín-2.V.Nováková"
+  - src: ./foto-061.jpg
+    alt: "ČOS Kolín-9.Plachá,2..Nováková,14.Sedláková"
+  - src: ./foto-062.jpg
+    alt: "ČOS Kolín-Plachá,Nováková,Sedláková"
 ---
