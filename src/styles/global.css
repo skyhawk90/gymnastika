@@ -1289,6 +1289,24 @@ dialog.lb::backdrop {
     padding: 8px;
     font-size: 0.85rem;
   }
+  /* the long name "Sportovní gymnastika Chrudim" has to share the row with the menu */
+  .brand b {
+    font-size: 0.8rem;
+    font-stretch: 100%;
+  }
+}
+@media (max-width: 900px) {
+  /* mobile: the name may wrap onto two lines, the menu button stays beside it */
+  .brand {
+    min-width: 0;
+    max-width: calc(100% - 100px);
+  }
+  .brand b {
+    display: block;
+    font-size: 0.9rem;
+    font-stretch: 112%;
+    line-height: 1.15;
+  }
 }
 @media (max-width: 600px) {
   .article-grid {
@@ -1318,7 +1336,8 @@ dialog.lb::backdrop {
     padding-inline: 3px;
   }
   .brand b {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.01em;
   }
   .brand small {
     font-size: 0.65rem;
@@ -1328,6 +1347,19 @@ dialog.lb::backdrop {
   }
   .article-grid .body {
     padding: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .brand {
+    gap: 10px;
+  }
+  .brand b {
+    font-size: 0.74rem;
+    font-stretch: 100%;
+    letter-spacing: 0;
+  }
+  .brand small {
+    font-size: 0.6rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
