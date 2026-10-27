@@ -27,6 +27,8 @@ const photos = await Promise.all(
 );
 const count = photos.length;
 const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
+// captions are typed by hand in the CMS; only fix the spacing after commas for display
+const tidy = (s: string) => s.replace(/,(?=\S)/g, ", ");
 ---
 
 <Base
@@ -38,38 +40,42 @@ const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
       <a class="more" href="/galerie/">← Všechna alba</a>
       <header class="album-head">
         <h1 class="page-title">{entry.data.title}</h1>
-        <p class="album-meta mono">
-          {count}
-          {noun}
-        </p>
+        <p class="album-meta mono">{`${count} ${noun}`}</p>
       </header>
       <Content />
       <div class="photos">
         {
           photos.map((p, i) => (
-            <a
-              class="photo"
-              href={p.full.src}
-              data-w={p.w}
-              data-h={p.h}
-              aria-label={`Otevřít fotografii ${i + 1} z ${count}${p.alt ? `: ${p.alt}` : ""}`}
-            >
-              <Image
-                src={p.src}
-                alt={p.alt}
-                width={600}
-                height={450}
-                widths={i === 0 ? [600, 1200] : [300, 600]}
-                sizes={i === 0 ? "(max-width: 600px) 100vw, 66vw" : "(max-width: 600px) 50vw, 33vw"}
-                loading={i < 4 ? "eager" : "lazy"}
-              />
-              <span class="photo-zoom" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <circle cx="10.5" cy="10.5" r="6.5" />
-                  <path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6" />
-                </svg>
-              </span>
-            </a>
+            <figure class="shot">
+              <a
+                class="photo"
+                href={p.full.src}
+                data-w={p.w}
+                data-h={p.h}
+                data-caption={tidy(p.alt)}
+                aria-label={`Otevřít fotografii ${i + 1} z ${count}${p.alt ? `: ${p.alt}` : ""}`}
+              >
+                {/* the visible caption below carries the description, so the image itself is decorative */}
+                <Image
+                  src={p.src}
+                  alt=""
+                  width={600}
+                  height={450}
+                  widths={i === 0 ? [600, 1200] : [300, 600]}
+                  sizes={
+                    i === 0 ? "(max-width: 600px) 100vw, 66vw" : "(max-width: 600px) 50vw, 33vw"
+                  }
+                  loading={i < 4 ? "eager" : "lazy"}
+                />
+                <span class="photo-zoom" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="10.5" cy="10.5" r="6.5" />
+                    <path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6" />
+                  </svg>
+                </span>
+              </a>
+              {p.alt && <figcaption class="shot-cap">{tidy(p.alt)}</figcaption>}
+            </figure>
           ))
         }
       </div>
@@ -157,7 +163,7 @@ const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
     const link = links[current];
     const thumb = thumbs[current];
     img.src = thumb.currentSrc || thumb.src;
-    img.alt = thumb.alt;
+    img.alt = link.dataset.caption ?? "";
     fit(current);
     const full = new Image();
     full.onload = () => {
@@ -165,7 +171,7 @@ const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
     };
     full.src = link.href;
     counter.textContent = `${current + 1} / ${links.length}`;
-    caption.textContent = thumb.alt;
+    caption.textContent = link.dataset.caption ?? "";
     stripButtons.forEach((b, n) => b.toggleAttribute("aria-current", n === current));
     stripButtons[current].scrollIntoView({ inline: "center", block: "nearest" });
     [current + 1, current - 1].forEach((n) => {
