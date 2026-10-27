@@ -1031,7 +1031,7 @@ nav a[aria-current="page"] {
   margin-bottom: 6px;
   font-size: 0.8125rem;
   line-height: 1.35;
-  color: var(--ink-2);
+  color: var(--ink);
   text-wrap: pretty;
   overflow-wrap: anywhere;
   display: -webkit-box;
@@ -1042,7 +1042,6 @@ nav a[aria-current="page"] {
 .shot:first-child .shot-cap {
   padding-top: 10px;
   font-size: 0.95rem;
-  color: var(--ink);
   -webkit-line-clamp: 3;
 }
 .photos img {
