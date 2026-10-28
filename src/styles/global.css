@@ -104,8 +104,8 @@ header.top {
   text-decoration: none;
 }
 .brand-mark {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   flex: none;
 }
 .brand b {
@@ -119,10 +119,15 @@ header.top {
 }
 .brand small {
   display: block;
-  font-family: var(--f-mono);
+  font-family: var(--f-display);
+  font-stretch: 118%;
+  font-weight: 650;
   font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
   color: var(--ink-2);
-  margin-top: 3px;
+  margin-top: 5px;
 }
 nav.main {
   margin-left: auto;
@@ -1369,7 +1374,11 @@ dialog.lb::backdrop {
     letter-spacing: 0.01em;
   }
   .brand small {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
+  }
+  .brand-mark {
+    width: 40px;
+    height: 40px;
   }
   .hero .wrap {
     gap: 24px;
@@ -1388,7 +1397,12 @@ dialog.lb::backdrop {
     letter-spacing: 0;
   }
   .brand small {
-    font-size: 0.6rem;
+    font-size: 0.56rem;
+    font-stretch: 100%;
+  }
+  .brand-mark {
+    width: 36px;
+    height: 36px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
