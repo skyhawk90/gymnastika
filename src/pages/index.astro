@@ -7,6 +7,8 @@ import Albums from "../components/Albums.astro";
 import NewsCard from "../components/NewsCard.astro";
 import { getCollection } from "astro:content";
 import { date } from "../data";
+// years since the club was founded; updates with every build
+const years = new Date().getFullYear() - 1953;
 const sorted = (await getCollection("clanky", ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
@@ -32,11 +34,11 @@ const latest = sorted.filter((a) => a !== featured).slice(0, 4);
         <h1>Sportovní gymnastika <span>Chrudim</span></h1>
         <p class="lead">
           Závodní oddíl pro děvčata od 5 let. Trénujeme přeskok, bradla, kladinu a prostná v sálech
-          Tyršova domu.
+          Tyršova domu a ve sportovní hale.
         </p>
         <div class="hero-stats">
           <div><b class="mono">1953</b><span>založení</span></div>
-          <div><b>T.J. Sokol</b><span>Chrudim</span></div>
+          <div><b>T.J. Sokol Chrudim</b><span>župa Pippichova</span></div>
         </div>
       </div>
       <HeroPhotos />
@@ -45,10 +47,10 @@ const latest = sorted.filter((a) => a !== featured).slice(0, 4);
 
   <div class="band-red dark" aria-label="Oddíl v číslech">
     <div class="wrap">
-      <div><b class="mono">73</b><span>let oddílu</span></div>
-      <div><b class="mono">2×</b><span>mistryně ČR</span></div>
+      <div><b class="mono">{years}</b><span>let oddílu</span></div>
+      <div><b class="mono">3×</b><span>mistryně ČR</span></div>
       <div><b class="mono">4</b><span>nářadí</span></div>
-      <div><b class="mono">~20</b><span>závodů ročně</span></div>
+      <div><b class="mono">15</b><span>závodů ročně</span></div>
     </div>
   </div>
 
@@ -120,6 +122,9 @@ const latest = sorted.filter((a) => a !== featured).slice(0, 4);
           </li>
           <li>
             <b>1956</b><p>Miroslava Šplíchalová startuje na olympijských hrách v Melbourne.</p>
+          </li>
+          <li>
+            <b>1993</b><p>Veronika Bočková získává titul mistryně České republiky.</p>
           </li>
           <li><b>2017 a 2021</b><p>Sára Kulhavá získává titul mistryně České republiky.</p></li>
         </ol>
