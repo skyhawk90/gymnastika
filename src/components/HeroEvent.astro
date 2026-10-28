@@ -1,0 +1,44 @@
+---
+import { udalosti } from "../data";
+// the nearest event that has not happened yet (compared by calendar day at build time)
+const today = new Date().toISOString().slice(0, 10);
+const next = [...udalosti].filter((e) => String(e.date) >= today).sort((a, b) => String(a.date).localeCompare(String(b.date)))[0];
+const day = next ? new Date(`${next.date}T12:00:00`) : null;
+const weekday = day ? new Intl.DateTimeFormat("cs-CZ", { weekday: "long" }).format(day) : "";
+const short = day ? `${day.getDate()}. ${day.getMonth() + 1}.` : "";
+---
+
+{
+  next && (
+    <aside class="nabor dark event">
+      <div class="event-top">
+        <div class="eyebrow">Nejbližší závod</div>
+        <span class="event-in" data-countdown={String(next.date)} />
+      </div>
+      <div class="event-date">
+        <b class="mono">{short}</b>
+        <span>{weekday}</span>
+      </div>
+      <h2>{next.title}</h2>
+      <p>{next.text}</p>
+      <dl>
+        <dt>Kde</dt>
+        <dd>{next.place}</dd>
+      </dl>
+      {next.link && (
+        <a class="btn" href={next.link}>
+          {next.linkText ?? "Více"}
+        </a>
+      )}
+    </aside>
+  )
+}
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-countdown]").forEach((el) => {
+    const target = new Date(`${el.dataset.countdown}T00:00:00`).getTime();
+    const days = Math.round((target - new Date().setHours(0, 0, 0, 0)) / 864e5);
+    el.textContent =
+      days > 4 ? `za ${days} dní` : days > 1 ? `za ${days} dny` : days === 1 ? "zítra" : days === 0 ? "dnes" : "";
+  });
+</script>

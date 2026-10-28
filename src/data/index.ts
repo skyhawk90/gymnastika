@@ -6,6 +6,7 @@ import v from "./vysledky.yaml?raw";
 import k from "./kontakt.yaml?raw";
 import o from "./odkazy.yaml?raw";
 import y from "./videa.yaml?raw";
+import e from "./udalosti.yaml?raw";
 export const nabor = parse(n) as {
   active: boolean;
   heading: string;
@@ -37,3 +38,14 @@ export const kontakt = parse(k) as {
 export const odkazy = parse(o) as { title: string; url: string }[];
 export const date = (value: Date) => new Intl.DateTimeFormat("cs-CZ").format(value);
 export const videa = parse(y) as { id: string; title: string }[];
+
+export const udalosti = parse(e) as {
+  date: string;
+  title: string;
+  place: string;
+  text: string;
+  link?: string;
+  linkText?: string;
+}[];
+// captions are typed by hand in the CMS; only fix the spacing after commas for display
+export const tidy = (s: string) => s.replace(/,(?=\S)/g, ", ");
