@@ -148,11 +148,6 @@ nav.main a:hover {
   color: var(--crimson);
   background: var(--red-soft);
 }
-nav.main a.cta {
-  background: var(--crimson);
-  color: var(--crimson-ink);
-  margin-left: 6px;
-}
 .menu-btn {
   display: none;
   margin-left: auto;
@@ -182,10 +177,6 @@ nav.main a.cta {
   }
   nav.main.open {
     display: flex;
-  }
-  nav.main a.cta {
-    margin: 6px 0 0;
-    text-align: center;
   }
 }
 
@@ -1618,7 +1609,9 @@ footer {
 .hp-tile span {
   position: absolute;
   inset: auto 0 0 0;
-  padding: 22px 8px 7px;
+  padding: 22px 8px 0;
+  /* bottom spacing as a border so the clamped third line stays hidden */
+  border-bottom: 7px solid transparent;
   font-size: 0.72rem;
   line-height: 1.25;
   color: #fff;
