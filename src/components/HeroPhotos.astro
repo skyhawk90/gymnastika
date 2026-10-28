@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { tidy } from "../data";
+// the newest album by date; the CMS appends new photos at the end, so the last ones are the newest
+const album = (await getCollection("galerie")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+)[0];
+const shots = album ? album.data.photos.slice(-4).reverse() : [];
+---
+
+{
+  album && shots.length > 0 && (
+    <aside class="hero-photos" aria-label="Nejnovější fotografie">
+      <div class="eyebrow">Fotogalerie</div>
+      <h2>Nejnovější fotky</h2>
+      <div class="hp-grid">
+        {shots.map((p) => (
+          <a
+            class="hp-tile"
+            href={`/galerie/${album.id}/`}
+            aria-label={p.alt ? tidy(p.alt) : `Fotografie z alba ${album.data.title}`}
+          >
+            <Image
+              src={p.src}
+              alt=""
+              width={480}
+              widths={[240, 480]}
+              sizes="(max-width: 860px) 45vw, 240px"
+              loading="eager"
+            />
+            {p.alt && <span>{tidy(p.alt)}</span>}
+          </a>
+        ))}
+      </div>
+      <a class="more" href={`/galerie/${album.id}/`}>
+        Celé album {album.data.title} · {album.data.photos.length} fotografií →
+      </a>
+    </aside>
+  )
+}

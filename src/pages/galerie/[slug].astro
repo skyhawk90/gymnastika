@@ -3,6 +3,7 @@ import { getCollection, render } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { Image, getImage } from "astro:assets";
 import Base from "../../layouts/Base.astro";
+import { tidy } from "../../data";
 export async function getStaticPaths() {
   return (await getCollection("galerie")).map((entry) => ({
     params: { slug: entry.id },
@@ -27,8 +28,6 @@ const photos = await Promise.all(
 );
 const count = photos.length;
 const noun = count > 0 && count < 5 ? "fotografie" : "fotografií";
-// captions are typed by hand in the CMS; only fix the spacing after commas for display
-const tidy = (s: string) => s.replace(/,(?=\S)/g, ", ");
 ---
 
 <Base
