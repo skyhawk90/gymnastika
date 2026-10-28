@@ -37,3 +37,6 @@ export const kontakt = parse(k) as {
 export const odkazy = parse(o) as { title: string; url: string }[];
 export const date = (value: Date) => new Intl.DateTimeFormat("cs-CZ").format(value);
 export const videa = parse(y) as { id: string; title: string }[];
+
+// captions are typed by hand in the CMS; only fix the spacing after commas for display
+export const tidy = (s: string) => s.replace(/,(?=\S)/g, ", ");
