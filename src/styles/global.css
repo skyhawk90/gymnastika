@@ -18,7 +18,8 @@
   --bronze: #a2602f;
   --f-display: "Archivo", "Arial Narrow", Arial, sans-serif;
   --f-body: "Work Sans", "Segoe UI", Roboto, Arial, sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  /* former monospace slot: now the plain sans body font (numbers stay aligned via tabular-nums) */
+  --f-mono: "Work Sans", "Segoe UI", Roboto, Arial, sans-serif;
   --s-1: 0.8125rem;
   --s0: 1rem;
   --s1: 1.25rem;
@@ -202,13 +203,17 @@ nav.main a:hover {
 /* "GYMNASTIKA" is one unbreakable word, so the size follows the column width
    (9.06em wide at this stretch and weight); otherwise it runs under the nábor card */
 .hero h1 {
-  font-size: min(var(--s4), 10.5cqi);
-  font-stretch: 125%;
-  font-weight: 900;
+  font-size: min(clamp(2.2rem, 4.6vw, 3.5rem), 9cqi);
+  font-stretch: 112%;
+  font-weight: 850;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   line-height: 0.92;
   margin-top: 10px;
+}
+.hero .eyebrow {
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  letter-spacing: 0.1em;
 }
 .hero h1 span {
   display: block;
