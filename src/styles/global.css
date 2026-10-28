@@ -462,7 +462,7 @@ section {
 .band-red {
   background: var(--paper);
   color: var(--ink);
-  padding-block: 44px;
+  padding-block: 24px;
   border-bottom: 1px solid var(--line);
 }
 .band-red .wrap {
@@ -476,7 +476,8 @@ section {
 }
 .band-red b {
   display: block;
-  font: 850 var(--s4) / 1 var(--f-display);
+  margin-bottom: 4px;
+  font: 850 clamp(1.8rem, 3.6vw, 2.6rem) / 1 var(--f-display);
   font-stretch: 118%;
   color: var(--crimson);
 }
@@ -489,13 +490,13 @@ section {
 @media (max-width: 760px) {
   .band-red .wrap {
     grid-template-columns: 1fr 1fr;
-    gap: 28px 16px;
+    gap: 18px 16px;
   }
   .band-red .wrap > div + div {
     border-left: 0;
   }
   .band-red b {
-    font-size: var(--s3);
+    font-size: var(--s2);
   }
 }
 .train {
