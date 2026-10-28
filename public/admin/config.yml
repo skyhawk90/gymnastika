@@ -6,8 +6,8 @@ backend:
 locale: cs
 media_folder: src/assets/uploads
 public_folder: /src/assets/uploads
-site_url: https://www.gymnastika.chrudim.cz
-display_url: https://www.gymnastika.chrudim.cz
+site_url: https://gymnastika.musil-matej.workers.dev
+display_url: https://gymnastika.musil-matej.workers.dev
 collections:
   - name: clanky
     label: Články
