@@ -4,7 +4,7 @@ date: 2026-10-17
 place: ''
 medals: ''
 summary: Tři chrudimská děvčata postoupila na MČR ČOS.
-cover: ''
+cover: https://gymnastika.musil-matej.workers.dev/_astro/foto-055.BBaxS6n2_Z1TNYhQ.webp
 coverAlt: ''
 draft: false
 ---
