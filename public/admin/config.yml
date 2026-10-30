@@ -270,6 +270,19 @@ collections:
   - name: stranky
     label: Stránky
     files:
+      - name: aktuality
+        label: Aktuality
+        file: src/content/stranky/aktuality.md
+        # photos inserted into the text are stored next to the page so Astro can optimise them
+        media_folder: /src/content/stranky/obrazky
+        public_folder: ./obrazky
+        fields:
+          - name: title
+            label: Nadpis
+            widget: string
+          - name: body
+            label: Obsah
+            widget: markdown
       - name: historie
         label: Historie
         file: src/content/stranky/historie.md

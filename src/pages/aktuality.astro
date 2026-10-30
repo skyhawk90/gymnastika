@@ -1,0 +1,19 @@
+---
+import Base from "../layouts/Base.astro";
+import { getEntry, render } from "astro:content";
+// a single page edited in the admin under Stránky → Aktuality
+const page = await getEntry("stranky", "aktuality");
+if (!page) throw new Error("Chybí stránka aktuality");
+const { Content } = await render(page);
+---
+
+<Base
+  title={page.data.title}
+  description="Krátké zprávy z oddílu sportovní gymnastiky T.J. Sokol Chrudim – změny tréninků, závody a informace pro rodiče."
+  ><section>
+    <div class="wrap prose">
+      <h1 class="page-title">{page.data.title}</h1>
+      <Content />
+    </div>
+  </section></Base
+>

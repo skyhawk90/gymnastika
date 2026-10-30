@@ -1641,3 +1641,20 @@ footer {
   display: inline-block;
   margin-top: 14px;
 }
+
+/* eight menu items: slightly tighter links on mid-size screens */
+@media (min-width: 1101px) and (max-width: 1300px) {
+  nav.main a {
+    padding: 8px;
+  }
+}
+/* just above the hamburger breakpoint the eight menu items need tighter spacing */
+@media (min-width: 901px) and (max-width: 1000px) {
+  nav.main {
+    gap: 0;
+  }
+  nav.main a {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+}
