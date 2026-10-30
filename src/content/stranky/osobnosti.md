@@ -4,13 +4,15 @@ title: Osobnosti chrudimské gymnastiky
 
 ## Dvě gymnastky.
 
+(Jaroslav Šplíchal, 2003)
+
 Rok 1927 byl rokem zrození dvou výjimečných žen, kterým sudičky daly do vínku životní osud - sportovní gymnastiku
 
 23.července se narodila v Kunčí, v sokolské rodině
-Lída Pejchová
+**Lída Pejchová**
 
 4.září se narodila v Litomyšli v sokolské rodině
-Miroslava Šplíchalová
+**Miroslava Šplíchalová**
 Obě tyto ženy byly vychovávány v sokolských rodinách a věnovaly celý svůj život činnosti v sokole - nejzákladnějšímu cvičení na nářadí a atletice. V poválečné době po roce 1945, když se Sokol rozvinul v osvobozené vlasti setkali se obě tyto mladé ženy - sokolky - na závodech Východočeské župy Pippichovy, kterou reprezentovaly na přeborech ČOS.
 
 Mirka Šplíchalová vynikla svým vítězstvím v Přeboru ČOS žen v roce 1950, pokračovala mnohými mistrovskými tituly ČSR a zakončila svoji kariéru účastí na OH v Melbourne v roce 1956. Osud ji nedopřál pokračovat, protože tragicky zemřela ve svých 30-ti letech v roce 1957.
@@ -43,11 +45,18 @@ Po odchodu Lídy Pejchové v roce 1994 pokračovaly v oddíle Alena Jírová - �
 
 Pro rodinné a pracovní starosti poslední "37. ročník Květnového závodu" uspořádaly v Chrasti v roce 2000. Proto se oddíl SG Chrudim ujal pokračování tohoto závodu k uctění její památky. 
 
-## Jaroslav Šplíchal oslavil 75.narozeniny
+## **Jaroslav Šplíchal oslavil 80.narozeniny**
 
-## Legenda sportovní gymnastiky v Chrudimi.
+#### **Legenda sportovní gymnastiky v Chrudimi.**
 
-14.4.2004 oslavil své životní jubileum Jaroslav Šplíchal, kterému je nyní úctyhodných 75 let. Každý, kdo tohoto člověka zná, musí být ohromen jeho stálou vitalitou. Původní profesí je učitel tělesné výchovy a v roce 1953 založil oddíl sportovní gymnastiky, který vede již 51 let. Za tuto dlouhou dobu měl spoustu výborných výsledků a naučil mnoho mladých lidí k lásce ke sportu. Po sametové revoluci v roce 1989 byl hlavním organizátorem znovuzrození Sokola u nás a stal se prvním starostou T.J. Sokol Chrudim. Nyní je dokonce předsedou odboru sportu Východočeské župy Pippichovy . Mimo to ještě stále aktivně pracuje v oddíle gymnastiky jako hospodář , trénuje žáky a jezdí jako rozhodčí na závody, jeho elán by mu mohl každý závidět.Za všechny, které naučil pracovitosti, poctivosti a píli a na které měl vliv svým pozitivním myšlením, mu chci popřát dlouhá léta v plné síle, aby mohl být vzorem ještě pro mnoho mladých lidí.
+14.4.2009 oslavil své životní jubileum Jaroslav Šplíchal, kterému je nyní úctyhodných 80 let. Každý, kdo tohoto člověka zná, musí být ohromen jeho stálou vitalitou.                     
 
-Předsedkyně oddílu sportovní gymnastiky
-Simona Hovorková
+Původní profesí je učitel českého jazyka a tělesné výchovy. V roce 1953 založil oddíl sportovní gymnastiky, který vede již 56 let. Za tuto dlouhou dobu měl spoustu výborných výsledků, pořádal mnoho velkých republikových i mezinárodních závodů ve sportovní gymnastice v Chrudimi a naučil mnoho mladých lidí lásce ke sportu. Po sametové revoluci v roce 1989 byl hlavním organizátorem znovuzrození Sokola u nás a byl starostou T.J. Sokol Chrudim. Nyní je dokonce předsedou odboru sportu Východočeské župy Pippichovy . Mimo to ještě stále aktivně pracuje v oddíle sportovní gymnastiky jako hospodář, trénuje své juniory a jezdí jako rozhodčí na závody sokolské všestrannosti. Jeho elán by mu mohl každý závidět.
+
+Za všechny, které naučil pracovitosti, poctivosti a píli, a na které měl vliv svým pozitivním, nesobeckým a činorodým myšlením, mu chci popřát dlouhá léta v plné síle, aby mohl být vzorem ještě pro mnoho mladých lidí.
+
+## **Smutná událost !**
+
+Ve čtvrtek 22. září 2011 nás po tragické nehodě v Chrudimi navždy opustil celoživotní sportovní nadšenec a dlouhodobý člen předsednictva župy a předseda župního odboru sportu bratr Jaroslav Šplíchal. Narodil se v sokolské rodině dne 14.4.1929 jako mladší sourozenec pozdější olympioničky Miroslavy Šplíchalové – Brdíčkové, která v roce 1957 tragicky zahynula. Od mládí cvičil v Sokole, nejdříve závodil v lehké atletice a později se angažoval v různých sportovních funkcích jako trenér sportovní gymnastiky a současně se věnoval i lyžování. Zúčastnil se XI. Všesokolského sletu v roce 1948, kterého se současně zúčastnila celá jeho rodina. Po komunistickém puči byli infiltrovanými akčními výbory ze Sokola vyloučeni. Sokolský původ se stal v té době nežádoucí vizitkou pro život. Po vystudování Obchodní akademie a Vyšší školy pedagogické s aprobací na český jazyk a tělesnou výchovu zakotvil v Chrudimi, stal se učitelem tělesné výchovy v Odborném učilišti Transporty. Závodil v atletice, v košíkové a byl žádán jako kvalifikovaný rozhodčí. Trénoval děvčata v oddílu sportovní gymnastiky, který vedl přes 50 let, z mnohých vychoval i výborné cvičitelky. Jako učitel a gymnastický trenér dotáhl svou práci k vysoké úrovni. Aktivně se podílel na obnově sokolského hnutí v Chrudimi v roce 1989 – 1990. Na 10 let se stal starostou T.J. Sokol Chrudim a inicioval obnovu odboru sportu naší župy Východočeské - Pippichovy, jehož funkci předsedy vykonával do roku 2010. Za svoji práci byl vyznamenán ČOS bronzovou a stříbrnou medailí za zásluhy a je nositelem zlaté medaile JUDr. Karla Pippicha, která mu v roce 2010 byla udělena na valné hromadě župy. Město Chrudim mu za jeho činnost a zásluhy udělilo titul „OSOBNOST MĚSTA“. V bratru Jaroslavu Šplíchalovi ztrácíme kamaráda a skvělého člověka. Dělejme vše pro to, aby na nás mohl být v sokolském nebi hrdý.
+
+##
