@@ -4,8 +4,10 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.musil-matej.workers.dev
 locale: cs
-media_folder: src/assets/uploads
-public_folder: /src/assets/uploads
+# "Globální média" in the image picker = the photo gallery, so articles can use album photos.
+# Paths look like @galerie/2026/foto-001.jpg (alias defined in tsconfig.json).
+media_folder: src/content/galerie
+public_folder: "@galerie"
 site_url: https://www.gymnastika.chrudim.cz
 display_url: https://www.gymnastika.chrudim.cz
 collections:
