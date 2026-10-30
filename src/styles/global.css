@@ -644,23 +644,29 @@ section {
   line-height: 1.35;
 }
 .place {
-  font: 600 0.8rem var(--f-mono);
+  font: 700 0.8rem var(--f-mono);
   text-align: center;
-  border-radius: 999px;
-  padding: 2px 0;
+  border-radius: 6px;
+  padding: 3px 0;
   border: 1.5px solid var(--line);
 }
+/* medal places: solid filled squares */
+.p1,
+.p2,
+.p3 {
+  border-color: transparent;
+}
 .p1 {
-  border-color: var(--gold);
-  color: var(--gold);
+  background: #e3b23c;
+  color: #1f1d1e;
 }
 .p2 {
-  border-color: var(--silver);
-  color: var(--silver);
+  background: #b8bec6;
+  color: #1f1d1e;
 }
 .p3 {
-  border-color: var(--bronze);
-  color: var(--bronze);
+  background: #b3652c;
+  color: #fff;
 }
 .ach-year li small {
   display: block;
