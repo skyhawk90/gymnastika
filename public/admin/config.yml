@@ -50,6 +50,8 @@ collections:
         label: Úvodní fotografie
         widget: image
         required: false
+        # photos must be uploaded files, a web address breaks the build
+        choose_url: false
       - name: coverAlt
         label: Popis fotografie
         widget: string
@@ -87,6 +89,7 @@ collections:
       - name: cover
         label: Titulní fotografie
         widget: image
+        choose_url: false
       - name: photos
         label: Fotografie
         widget: list
@@ -94,6 +97,7 @@ collections:
           - name: src
             label: Fotografie
             widget: image
+            choose_url: false
           - name: alt
             label: Popis fotografie
             widget: string
