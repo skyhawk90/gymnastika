@@ -2,25 +2,22 @@
 title: Historie oddílu
 ---
 
-## Smutná událost !
+## **Vznik oddílu sportovní gymnastiky T.J.Chrudim**
 
-Ve čtvrtek 22. září 2011 nás po tragické nehodě v Chrudimi navždy opustil celoživotní sportovní nadšenec a dlouhodobý člen předsednictva župy a předseda župního odboru sportu bratr Jaroslav Šplíchal. Narodil se v sokolské rodině dne 14.4.1929 jako mladší sourozenec pozdější olympioničky Miroslavy Šplíchalové – Brdíčkové, která v roce 1957 tragicky zahynula. Od mládí cvičil v Sokole, nejdříve závodil v lehké atletice a později se angažoval v různých sportovních funkcích jako trenér sportovní gymnastiky a současně se věnoval i lyžování. Zúčastnil se XI. Všesokolského sletu v roce 1948, kterého se současně zúčastnila celá jeho rodina. Po komunistickém puči byli infiltrovanými akčními výbory ze Sokola vyloučeni. Sokolský původ se stal v té době nežádoucí vizitkou pro život. Po vystudování Obchodní akademie a Vyšší školy pedagogické s aprobací na český jazyk a tělesnou výchovu zakotvil v Chrudimi, stal se učitelem tělesné výchovy v Odborném učilišti Transporty. Závodil v atletice, v košíkové a byl žádán jako kvalifikovaný rozhodčí. Trénoval děvčata v oddílu sportovní gymnastiky, který vedl přes 50 let, z mnohých vychoval i výborné cvičitelky. Jako učitel a gymnastický trenér dotáhl svou práci k vysoké úrovni. Aktivně se podílel na obnově sokolského hnutí v Chrudimi v roce 1989 – 1990. Na 10 let se stal starostou T.J. Sokol Chrudim a inicioval obnovu odboru sportu naší župy Východočeské - Pippichovy, jehož funkci předsedy vykonával do roku 2010. Za svoji práci byl vyznamenán ČOS bronzovou a stříbrnou medailí za zásluhy a je nositelem zlaté medaile JUDr. Karla Pippicha, která mu v roce 2010 byla udělena na valné hromadě župy. Město Chrudim mu za jeho činnost a zásluhy udělilo titul „OSOBNOST MĚSTA“. V bratru Jaroslavu Šplíchalovi ztrácíme kamaráda a skvělého člověka. Dělejme vše pro to, aby na nás mohl být v sokolském nebi hrdý.
+           **Oddíl sportovní gymnastiky založil v roce 1953 Jaroslav Šplíchal**. Trénoval děvčata i chlapce v oddílu sportovní gymnastiky, který vedl přes 50 let a z mnohých vychoval výborné sportovce i cvičitelky. Jako učitel a gymnastický trenér dotáhl svou práci k vysoké úrovni. Aktivně se podílel na obnově sokolského hnutí v Chrudimi v roce 1989 – 1990. Na 10 let se stal starostou T.J. Sokol Chrudim a inicioval obnovu odboru sportu naší župy Východočeské - Pippichovy, jehož funkci předsedy vykonával do roku 2010. Bohužel jeho aktivní práce byla přerušena 22.10.2011, kdy nás navždy opustil po tragické nehodě ve věku 82 let.
 
-## Vznik oddílu
+          **Od devadesátých let pokračuje v trenérské práci jeho odchovankyně Simona** **Linková (Hovorková),** která má na svém kontě se svými gymnastkami také mnoho výborných výsledků. Mezi nejúspěšnější chrudimské gymnastky patří **Veronika Bočková**, která byla zařazena do žákovské a pak i juniorské reprezentace. **V roce 1993 získala titul mistrně české republiky a celkem nasbírala** **1 zlatou, 2 stříbrné a 1 bronzovou medaili z MČR !!!**. Dalším obrovským úspěchem chrudimských sportovních gymnastek bylo **3.místo v I.lize družstev** **v ČR v roce 1997**. **Z Mistrovství ČR vybojovaly medaile pro Chrudim** od roku 1990 také tyto závodnice: **Barbora Stará, Jana Faulhamerová, Petra Zítková, Radka Kandusová, Darina Hlaváčová a Katka Libá**. Výborně reprezentovala naše město dcera trenérky **Zuzana Hovorková**, která získala **dvakrát bronz z Mistrovství oddílů ČOS a** **nejcennější stříbro z Mistrovství ČR 2002** **v I. lize žen** **a rok před tím i v II. lize**. Další talentované závodnice odchovankyně trenérky Linkové, které propagovaly dobré jméno chrudimského oddílu, byly **Markéta Pecinová a Jana Novotná**, **ta získala bronz** **s družstvem na Mistrovství ČOS2003 a2.místo na Mistrovství ČOS 2004**. V roce 2005 a 2007 se účastnily obě Olympiády mládeže. Další dvě skvělé gymnastky se pravidelně účastnily MČR v II.lize družstev. **Kateřina Doležalová** byla 5. na MČR juniorek a **Zuzana Malinská, dokonce v roce 2013 získala na MČR žákyň bronzovou medaili.**
 
-Oddíl sportovní gymnastiky založil v roce 1953 Jaroslav Šplíchal, který později vychoval mnoho cvičenek i cvičenců. Od devadesátých let pokračuje v trenérské práci jeho odchovankyňe Simona Hovorková, která má na svém kontě se svými gymnastkami také mnoho výborných výsledků. Nejúspešnější chrudimskou gymnastkou se stala Veronika Bočková, která byla zařazena do žákovské a pak i juniorské reprezentace. V roce 1993 získala titul mistrně republiky a celkem nasbírala 1 zlatou, 2 stříbrné a 1 bronzovou medaili z Mistrovství České republiky. Dalším obrovským úspěchem chrudimských sportovních gymnastek bylo třetí místo v I.lize družstev v ČR. Z MČR vybojovaly medaile pro Chrudim tyto závodnice: B.Stará, J.Faulhamerová, P.Zítková, R.Kandusová, D.Hlaváčová a K.Libá. V jejich úspěšné kariére pokračovala Zuzana Hovorková, která má dvakrát bronz z Mistrovství ČOS a úspešně závodila v I.i II.lize žen, kde získala svoji nejcennější medaili a to stříbro spolecně s družstvem Pardubic, kde hostovala.
+Historický úspěch se povedl v roce 2017. Na MČR žákyň jsme získali dvě medaile najednou. **Titul Mistryně republiky po 24 letech vybojovala 12-letá Sára Kulhavá a o rok mladší skvělá Karolína Horníková získala stříbrnou medaili !!! Sára potvrdila svůj talent a další rok přivezla stříbrnou mistrovskou medaili z MČR juniorek. A ještě větším společným úspěchem bylo, když v roce 2021 vybojovala podruhé zlatou medaili na MČR v kategorii žen.**
 
-Také z Mistrovství ČOS přivezla její děvčata mnoho cenných medailí, jmenovitě V.Bočková, D.Hlaváčová, K.Libá, D.Táborská, Z.Hovorková, P.Nevečeřalová, J.Novotná, K.Havlíková, K.Málková, D.Nešická.
+V roce 2018 odstartovala svoji výbornou závodní kariéru 8-letá **Emily Plachá vítězstvím na přeboru ČOS. Další skvělá závodnice Maya Matušek v roce 2026 reprezentovala náš kraj na LODM v Praze. Největší její úspěch je, že po 5 letech pro nás získala vzácnou bronzovou medaili na MČR starších žákyň i stříbrnou na přeboru ČOS, tak jako mladší žákyně 9-letá Valentýna Nováková. Náš oddíl výborně reprezentuje mnoho dalších skvělých pracovitých gymnastek, které sbírají zkušenosti a vozí medaile z pohárových závodů pod vedením dobrovolných trenérek paní Bočkové, Liptákové a Svatkové.** 
 
-Z další generace úspěšných chrudimských gymnastek můžeme představit Markétu Pecinovou, která krom dalších skvělých umístění získala i 5. místo na Mistrovství České republiky v roce 2003 v juniorkách. Další talentovanou závodnicí je Jana Novotná ze Zaječic, která sklízí úspěchy na závodech již od útlého věku a v nynější juniorské kategorii její sestavy dosahují velmi vysoké obtížnosti. Jejím posledním úspěchem na MCR bylo 4. místo v II. lize v závodě družstev. 
-
-Úspěchu, kterých všechny tyto dívky dosáhly by nebylo bez obětavé práce talentované trenérky Simony Hovorkové, která už více jak 20 let 3-krát až 4-krát týdně učí, chytá a připravuje děti na soutěže v tělocvičně, mnoho víkendu rozhoduje jako rozhodčí I.tr. na závodech, pořádá a organizuje soustředění, školení trenéru a rozhodčích východočeského kraje, souteže pro gymnastky všech kategorií, shání dotace, sponzorské dary, vybavení tělocvičny, zajišťuje popularitu oddílu a nábory nových děvčat. To vše dělá bez nároku na jakoukoliv odměnu, pouze za uznání a poděkování některých rodičů a z lásky k tak vznešenému sportu. 
 
 ## 160 let cvičení na nářadí na Chrudimsku
 
 ## 50 let sportovní gymnastiky v Chrudimi
 
-
+(autor: Jaroslav Šplíchal 2003) 
 
 ### 1843
 
@@ -38,12 +35,9 @@ Cvičení na nářadí se stalo v Sokole hlavní cvičební náplní a programem
 
 Po likvidaci Sokola za německé okupace v době druhé světové války v roce 1940 nastává krátké období pokračování činnosti Sokola po osvobození 1945.
 
-
-
 ### 1948
 
 Po komunistickém puči v roce 1948 započala opět likvidace Sokola a pro sokolské cvičitele a cvičence nastává období, kdy musí z donucení cvičit a pracovat pod jinými názvy. V té době vzniká nový název pro cvičení na nářadí s p o r t o v n í g y m n a s t i k a a po té i pro cvičení s náčiním u m e l ě c k á g y m n a s t i k a později moderní gymnastika.
-
 
 ### 1953
 
@@ -123,12 +117,10 @@ Naše závodnice navazují a dokonce výkonností překonávají cvičenky z min
 
 Dalšími republikovými medailistkami byly Barbora Stará, Jana Faulhamerová, Petra Zítková, Radka Kandusová, Darina Hlaváčová a nejčerstvejší stříbrnou medaili z II.ligy má Zuzana Hovorková. Všechna tato děvčata dovedla na nejvyšší stupně trenérka Simona Hovorková.
 
-
-
 ### 2000
 
 K vysokým výkonum a také k lásce k tomuto sportu přivedla mnoho dalších závodnic, např. Kateřinu Libou, Dorotu Táborskou, Petru Nevečeřalovou, Alenu Kubelkovou, Anetu Raticovou, Alenu Starou, Markétu Pecinovou, Janu Novotnou,..... Ve výčtu bychom mohli pokračovat, protože se objevují nová mladší děvčata, která za pomoci trenérky Marty Strouhalové - Pickové odchovaňkyně Lídy Pejchové, získávají výborné základy pro budoucí úspěchy.
 
-Na závěr musíme zdůraznit, že náš sport a hlavne naše sportovní gymnastika stále baví a všem děvčatům, která prošla leckdy i tvrdým tréninkem, pomohla k uplatnění v osobním i pracovním životě.
+Na závěr musíme zdůraznit, že náš sport a hlavně naše sportovní gymnastika stále baví a všem děvčatům, která prošla leckdy i tvrdým tréninkem, pomohla k uplatnění v osobním i pracovním životě.
 
-S. Hovorková , J. Šplíchal, M.Strouhalová
+##
