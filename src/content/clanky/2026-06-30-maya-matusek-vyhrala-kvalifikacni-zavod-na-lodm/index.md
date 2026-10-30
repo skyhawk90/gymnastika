@@ -1,7 +1,12 @@
 ---
-title: "Maya Matušek vyhrála kvalifikační závod na LODM."
-date: "2026-06-30"
-summary: "21.3.2026 pořádal oddíl sportovní gymnastiky T.J. Sokol Pardubice kvalifikační závod pro gymnastky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže. Za náš oddíl T.J."
+title: Maya Matušek vyhrála kvalifikační závod na LODM.
+date: 2026-04-11
+place: ''
+medals: ''
+summary: 21.3.2026 pořádal oddíl sportovní gymnastiky T.J. Sokol Pardubice kvalifikační závod pro gymnastky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže. Za náš oddíl T.J.
+cover: ''
+coverAlt: ''
+draft: false
 ---
 
 **Naše gymnastky dovezly dvě medaile z Poháru Pardubic.**
