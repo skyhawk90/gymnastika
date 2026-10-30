@@ -777,6 +777,10 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 48px;
 }
+/* homepage: only the quote and the links remain (the timeline was removed) */
+.hist-single {
+  grid-template-columns: minmax(0, 760px);
+}
 .timeline {
   list-style: none;
   margin: 0;
