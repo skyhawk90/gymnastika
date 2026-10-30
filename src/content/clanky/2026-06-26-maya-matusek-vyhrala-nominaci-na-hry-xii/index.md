@@ -1,7 +1,12 @@
 ---
-title: "Maya Matušek vyhrála nominaci na Hry XII."
-date: "2026-06-26"
-summary: "11.4. pořádal oddíl sportovní gymnastiky T.J. Spartak Vrchlabí třetí kvalifikační závod pro gymnastky v obtížnosti sestav pro juniorky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže."
+title: Maya Matušek vyhrála nominaci na Hry XII.
+date: 2026-04-11
+place: ''
+medals: ''
+summary: 11.4. pořádal oddíl sportovní gymnastiky T.J. Spartak Vrchlabí třetí kvalifikační závod pro gymnastky v obtížnosti sestav pro juniorky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže.
+cover: ''
+coverAlt: ''
+draft: false
 ---
 
 **letní olympiády dětí a mládeže ČR 2026 v hlavním městě Praze**
