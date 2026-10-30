@@ -13,7 +13,7 @@ const shots = album ? album.data.photos.slice(-4).reverse() : [];
   album && shots.length > 0 && (
     <aside class="hero-photos" aria-label="Nejnovější fotografie">
       <div class="eyebrow">Fotogalerie</div>
-      <h2>Nejnovější fotky</h2>
+      <h2>Nejnovější fotografie</h2>
       <div class="hp-grid">
         {shots.map((p) => (
           <a
