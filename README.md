@@ -44,6 +44,21 @@ Kořenové seznamy YAML používají ve formulářích CMS `root: true`. Pro na�
 
 Propojte GitHub repozitář s Cloudflare Pages. Produkční větev: `main`, příkaz sestavení: `npm run build`, výstupní složka: `dist`, kořen projektu: kořen repozitáře. Nastavte Node.js 24. Připojte doménu `www.gymnastika.chrudim.cz`. Sitemap se vytváří automaticky; kanonická doména je nastavena v `astro.config.mjs`. Běžný push i uložení v CMS vyvolají nové nasazení.
 
+## Statistiky návštěvnosti
+
+Stránka `/statistiky/` ukazuje správcům návštěvnost z Cloudflare Web Analytics (bez cookies). Data načítá Pages Function `functions/api/statistiky.js` přes Cloudflare GraphQL Analytics API. Stránka není v sitemapě a má `noindex`.
+
+Přístup hlídá Cloudflare Access (Zero Trust → Access → Applications) na `gymnastika.pages.dev/statistiky` a `gymnastika.pages.dev/api/statistiky`. Povolené e-maily správců se nastavují v jeho policy; přihlášení je jednorázovým kódem z e-mailu. Funkce navíc sama ověřuje podpis tokenu Access, takže na ostatních doménách data nevydá a stránka odkáže na `gymnastika.pages.dev/statistiky/`.
+
+Proměnné v Pages (Settings → Variables and Secrets, produkce):
+
+- `CF_API_TOKEN` (secret): API token s oprávněním Account → Account Analytics → Read.
+- `CF_ACCOUNT_ID`, `CF_SITE_TAG`: účet a ID webu ve Web Analytics.
+- `ACCESS_TEAM_DOMAIN`: např. `gymnastika.cloudflareaccess.com`.
+- `ACCESS_AUD`: Application Audience (AUD) Tag aplikace v Access.
+
+Po změně proměnných je potřeba nové nasazení.
+
 ## Podklady k doplnění
 
 Výsledkové soubory PDF (2025–2020) a DOC (2019–1996) zatím nejsou dodané; odkazy jsou připravené. Alba 2025, 2024 a 2021 obsahují zástupné snímky z roku 2026 a mají tuto skutečnost uvedenou v popisu. Jejich data jsou pouze klíče pro řazení, nikoliv tvrzení o dni fotografování. Tři titulní fotografie článků jsou ilustrační. E-mail `simona@chrudim.cz` a odkaz na mapu pocházejí ze schváleného prototypu, protože textový export e-mail skrývá. Historické texty zachovávají dobové formulace a jména.

@@ -1,0 +1,512 @@
+---
+// Návštěvnost webu pro správce. Data načítá /api/statistiky (Pages Function,
+// functions/api/statistiky.js) z Cloudflare Web Analytics. Stránka i API jsou
+// chráněné Cloudflare Access na gymnastika.pages.dev; stránka sama nic tajného neobsahuje.
+import Base from "../../layouts/Base.astro";
+---
+
+<Base title="Statistiky návštěvnosti" noindex
+  ><section class="stats-page">
+    <div class="wrap">
+      <h1 class="page-title">Návštěvnost webu</h1>
+
+      <div class="filters stats-filters" role="group" aria-label="Období">
+        <button type="button" data-days="7" aria-pressed="false">7 dní</button>
+        <button type="button" data-days="30" aria-pressed="true">30 dní</button>
+        <button type="button" data-days="90" aria-pressed="false">90 dní</button>
+      </div>
+
+      <p class="stats-msg" id="stats-msg" role="status">Načítám statistiky…</p>
+
+      <div id="stats" class="stats" hidden>
+        <div class="stat-tiles">
+          <div class="stat-tile"><b id="t-visits">0</b><span>návštěv</span></div>
+          <div class="stat-tile"><b id="t-views">0</b><span>zobrazení stránek</span></div>
+          <div class="stat-tile"><b id="t-avg">0</b><span>návštěv denně (průměr)</span></div>
+        </div>
+
+        <div class="stat-card">
+          <h2>Návštěvy po dnech</h2>
+          <div class="day-chart" id="day-chart" aria-hidden="true">
+            <div class="day-grid" id="day-grid"></div>
+            <div class="day-bars" id="day-bars"></div>
+            <div class="day-axis" id="day-axis"></div>
+            <div class="day-tip" id="day-tip" hidden></div>
+          </div>
+          <details class="day-table">
+            <summary>Zobrazit jako tabulku</summary>
+            <div class="table-scroll">
+              <table class="sched">
+                <thead><tr><th>Den</th><th>Návštěvy</th><th>Zobrazení</th></tr></thead>
+                <tbody id="day-rows"></tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+
+        <div class="stat-lists">
+          <div class="stat-card">
+            <h2>Nejčtenější stránky</h2>
+            <ol class="rank" id="l-paths"></ol>
+          </div>
+          <div class="stat-card">
+            <h2>Odkud přišli</h2>
+            <ol class="rank" id="l-referers"></ol>
+          </div>
+          <div class="stat-card">
+            <h2>Země</h2>
+            <ol class="rank" id="l-countries"></ol>
+          </div>
+          <div class="stat-card">
+            <h2>Zařízení</h2>
+            <ol class="rank" id="l-devices"></ol>
+          </div>
+        </div>
+
+        <p class="stats-note">
+          Data z Cloudflare Web Analytics, bez cookies a bez robotů. Návštěva je příchod na web z
+          jiné stránky nebo přímo; zobrazení je každé načtení stránky. <span id="stats-user"></span>
+        </p>
+      </div>
+    </div>
+  </section></Base
+>
+
+<style>
+  .stats-page {
+    padding: 32px 0 64px;
+  }
+  .stats-filters {
+    margin-bottom: 24px;
+  }
+  .stats-msg {
+    color: var(--ink-2);
+  }
+  .stats {
+    display: grid;
+    gap: 24px;
+    transition: opacity 0.2s;
+  }
+  .stats.loading {
+    opacity: 0.45;
+  }
+  .stat-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .stat-tile {
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 18px 20px;
+  }
+  .stat-tile b {
+    display: block;
+    font: 850 var(--s3) / 1 var(--f-display);
+    font-stretch: 112%;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-tile span {
+    color: var(--ink-2);
+    font-size: 0.92rem;
+  }
+  .stat-card {
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 18px 20px;
+    min-width: 0;
+  }
+  .stat-card h2 {
+    font-size: var(--s1);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .stat-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* daily bar chart: single series, so no legend; the heading names it */
+  .day-chart {
+    position: relative;
+    height: 220px;
+    margin: 8px 0 28px 36px;
+  }
+  .day-grid {
+    position: absolute;
+    inset: 0;
+  }
+  :global(.day-grid div) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--line);
+  }
+  :global(.day-grid span) {
+    position: absolute;
+    right: calc(100% + 8px);
+    top: -0.6em;
+    font-size: 0.75rem;
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .day-bars {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+  }
+  :global(.day-bar) {
+    flex: 1 1 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    cursor: default;
+    min-width: 0;
+  }
+  :global(.day-bar i) {
+    display: block;
+    width: 100%;
+    background: var(--crimson);
+    border-radius: 4px 4px 0 0;
+    min-height: 1px;
+  }
+  :global(.day-bar:hover i),
+  :global(.day-bar:focus-visible i) {
+    background: var(--crimson-deep);
+  }
+  .day-axis {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 6px);
+    height: 1.2em;
+    font-size: 0.75rem;
+    color: var(--ink-2);
+  }
+  :global(.day-axis span) {
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .day-tip {
+    position: absolute;
+    pointer-events: none;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: var(--r);
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    line-height: 1.35;
+    white-space: nowrap;
+    transform: translate(-50%, calc(-100% - 8px));
+    z-index: 2;
+  }
+  :global(.day-tip b) {
+    font-size: 1rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .day-table summary {
+    cursor: pointer;
+    color: var(--crimson);
+    font: 600 0.92rem var(--f-display);
+    margin-bottom: 10px;
+  }
+
+  .rank {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  :global(.rank li) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 12px;
+    font-size: 0.95rem;
+  }
+  :global(.rank .name) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  :global(.rank .val) {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
+  :global(.rank .bar) {
+    grid-column: 1 / -1;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--beam-soft);
+    overflow: hidden;
+  }
+  :global(.rank .bar i) {
+    display: block;
+    height: 100%;
+    background: var(--crimson);
+    border-radius: 2px;
+  }
+  :global(.rank .empty) {
+    color: var(--ink-2);
+  }
+  .stats-note {
+    color: var(--ink-2);
+    font-size: 0.88rem;
+    margin: 0;
+  }
+
+  @media (max-width: 720px) {
+    .stat-tiles,
+    .stat-lists {
+      grid-template-columns: 1fr;
+    }
+    .stat-tiles {
+      gap: 10px;
+    }
+    .day-chart {
+      height: 180px;
+    }
+  }
+</style>
+
+<script>
+  type Row = { key: string; visits: number; views: number };
+  type Day = { date: string; visits: number; views: number };
+  type Data = {
+    user: string | null;
+    days: number;
+    from: string;
+    to: string;
+    total: { visits: number; views: number };
+    byDay: Day[];
+    paths: Row[];
+    referers: Row[];
+    countries: Row[];
+    devices: Row[];
+  };
+
+  const PROD_HOST = "gymnastika.pages.dev";
+  const $ = (id: string) => document.getElementById(id)!;
+  const nf = new Intl.NumberFormat("cs-CZ");
+  const dayFmt = new Intl.DateTimeFormat("cs-CZ", { day: "numeric", month: "numeric" });
+  const longFmt = new Intl.DateTimeFormat("cs-CZ", {
+    weekday: "short",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const regions = new Intl.DisplayNames(["cs"], { type: "region" });
+  const DEVICES: Record<string, string> = {
+    desktop: "Počítač",
+    mobile: "Mobil",
+    tablet: "Tablet",
+    smarttv: "Televize",
+  };
+
+  const msg = $("stats-msg");
+  const box = $("stats");
+
+  function el(tag: string, cls?: string, text?: string) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  function showMessage(text: string, link?: { href: string; label: string }) {
+    msg.replaceChildren(document.createTextNode(text));
+    if (link) {
+      const a = el("a", "more", link.label) as HTMLAnchorElement;
+      a.href = link.href;
+      msg.append(" ", a);
+    }
+    msg.hidden = false;
+  }
+
+  // every day of the period, including days with no visits
+  function fillDays(d: Data): Day[] {
+    const map = new Map(d.byDay.map((x) => [x.date, x]));
+    const out: Day[] = [];
+    const cur = new Date(d.from);
+    const end = new Date(d.to);
+    while (cur <= end) {
+      const key = cur.toISOString().slice(0, 10);
+      out.push(map.get(key) ?? { date: key, visits: 0, views: 0 });
+      cur.setUTCDate(cur.getUTCDate() + 1);
+    }
+    return out;
+  }
+
+  function niceMax(v: number) {
+    if (v <= 4) return 4;
+    const p = Math.pow(10, Math.floor(Math.log10(v)));
+    for (const m of [1, 2, 2.5, 5, 10]) if (m * p >= v) return m * p;
+    return 10 * p;
+  }
+
+  const asDate = (iso: string) => new Date(iso + "T12:00:00Z");
+
+  function renderChart(days: Day[]) {
+    const max = niceMax(Math.max(0, ...days.map((d) => d.visits)));
+    const grid = $("day-grid");
+    grid.replaceChildren();
+    for (let i = 0; i <= 4; i++) {
+      const line = el("div");
+      line.style.top = `${100 - i * 25}%`;
+      line.append(el("span", undefined, nf.format((max / 4) * i)));
+      grid.append(line);
+    }
+
+    const bars = $("day-bars");
+    const tip = $("day-tip");
+    const chart = $("day-chart");
+    bars.replaceChildren();
+    days.forEach((d) => {
+      const b = el("div", "day-bar");
+      b.tabIndex = 0;
+      const fill = el("i");
+      fill.style.height = `${(d.visits / max) * 100}%`;
+      b.append(fill);
+      const show = () => {
+        tip.replaceChildren(
+          el("b", undefined, `${nf.format(d.visits)} návštěv`),
+          el("br"),
+          document.createTextNode(`${nf.format(d.views)} zobrazení · ${longFmt.format(asDate(d.date))}`),
+        );
+        const cr = chart.getBoundingClientRect();
+        const br = b.getBoundingClientRect();
+        const x = Math.min(Math.max(br.left + br.width / 2 - cr.left, 90), cr.width - 90);
+        tip.style.left = `${x}px`;
+        tip.style.top = `${br.bottom - cr.top - (d.visits / max) * br.height}px`;
+        tip.hidden = false;
+      };
+      const hide = () => (tip.hidden = true);
+      b.addEventListener("pointerenter", show);
+      b.addEventListener("focus", show);
+      b.addEventListener("pointerleave", hide);
+      b.addEventListener("blur", hide);
+      bars.append(b);
+    });
+
+    // evenly spaced date labels: about 6 on wide screens, 4 on phones
+    const axis = $("day-axis");
+    axis.replaceChildren();
+    const labels = chart.clientWidth < 480 ? 4 : 6;
+    const step = Math.max(1, Math.ceil(days.length / labels));
+    days.forEach((d, i) => {
+      if (i % step) return;
+      const s = el("span", undefined, dayFmt.format(asDate(d.date)));
+      s.style.left = `${((i + 0.5) / days.length) * 100}%`;
+      axis.append(s);
+    });
+
+    const rowsEl = $("day-rows");
+    rowsEl.replaceChildren(
+      ...days
+        .slice()
+        .reverse()
+        .map((d) => {
+          const tr = el("tr");
+          tr.append(
+            el("td", undefined, longFmt.format(asDate(d.date))),
+            el("td", undefined, nf.format(d.visits)),
+            el("td", undefined, nf.format(d.views)),
+          );
+          return tr;
+        }),
+    );
+  }
+
+  function renderList(id: string, rows: Row[], label: (k: string) => string, metric: "visits" | "views") {
+    const ol = $(id);
+    ol.replaceChildren();
+    if (!rows.length) {
+      ol.append(el("li", "empty", "Zatím žádná data"));
+      return;
+    }
+    const max = Math.max(1, ...rows.map((r) => r[metric]));
+    rows.forEach((r) => {
+      const li = el("li");
+      const name = el("span", "name", label(r.key));
+      name.title = name.textContent || "";
+      const bar = el("span", "bar");
+      const fill = el("i");
+      fill.style.width = `${(r[metric] / max) * 100}%`;
+      bar.append(fill);
+      li.append(name, el("span", "val", nf.format(r[metric])), bar);
+      ol.append(li);
+    });
+  }
+
+  const country = (k: string) => {
+    if (!k) return "Neznámá";
+    try {
+      return /^[A-Z]{2}$/.test(k) ? regions.of(k) || k : k;
+    } catch {
+      return k;
+    }
+  };
+
+  function render(d: Data) {
+    const days = fillDays(d);
+    $("t-visits").textContent = nf.format(d.total.visits);
+    $("t-views").textContent = nf.format(d.total.views);
+    $("t-avg").textContent = nf.format(Math.round(d.total.visits / Math.max(1, days.length)));
+    renderChart(days);
+    renderList("l-paths", d.paths, (k) => k || "/", "views");
+    renderList("l-referers", d.referers, (k) => k || "Přímo / neznámé", "visits");
+    renderList("l-countries", d.countries, country, "visits");
+    renderList("l-devices", d.devices, (k) => DEVICES[k] || k || "Neznámé", "visits");
+    $("stats-user").textContent = d.user ? `Přihlášen(a): ${d.user}.` : "";
+  }
+
+  async function load(days: number) {
+    box.classList.add("loading");
+    try {
+      const res = await fetch(`/api/statistiky?days=${days}`, { credentials: "same-origin" });
+      if (res.status === 401 || res.status === 403) {
+        box.hidden = true;
+        if (location.hostname !== PROD_HOST) {
+          showMessage("Statistiky jsou dostupné jen správcům na adrese", {
+            href: `https://${PROD_HOST}/statistiky/`,
+            label: `${PROD_HOST}/statistiky/`,
+          });
+        } else {
+          showMessage("Statistiky jsou dostupné jen správcům. Obnovte stránku a přihlaste se e-mailem.");
+        }
+        return;
+      }
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        showMessage(
+          body.error === "not_configured"
+            ? "Statistiky ještě nejsou nastavené (chybí API token nebo ID webu v Cloudflare)."
+            : "Statistiky se teď nepodařilo načíst. Zkuste to prosím později.",
+        );
+        return;
+      }
+      render(await res.json());
+      msg.hidden = true;
+      box.hidden = false;
+    } catch {
+      showMessage("Statistiky se teď nepodařilo načíst. Zkontrolujte připojení a zkuste to znovu.");
+    } finally {
+      box.classList.remove("loading");
+    }
+  }
+
+  document.querySelectorAll<HTMLButtonElement>(".stats-filters button").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      document
+        .querySelectorAll(".stats-filters button")
+        .forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+      load(Number(btn.dataset.days));
+    }),
+  );
+
+  load(30);
+</script>

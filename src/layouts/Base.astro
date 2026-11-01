@@ -8,12 +8,14 @@ interface Props {
   description?: string;
   image?: string;
   article?: boolean;
+  noindex?: boolean;
 }
 const {
   title,
   description = "Sportovní gymnastika žen T.J. Sokol Chrudim. Tréninky, nábor děvčat, zprávy ze závodů, výsledky a fotogalerie.",
   image,
   article = false,
+  noindex = false,
 } = Astro.props;
 const fullTitle = `${title} · Sportovní gymnastika Chrudim`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -25,7 +27,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     ><meta charset="UTF-8" /><meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
-    /><title>{fullTitle}</title><meta name="description" content={description} /><link
+    /><title>{fullTitle}</title><meta name="description" content={description} />{
+      noindex && <meta name="robots" content="noindex,nofollow" />
+    }<link
       rel="canonical"
       href={canonical}
     /><meta property="og:title" content={fullTitle} /><meta
