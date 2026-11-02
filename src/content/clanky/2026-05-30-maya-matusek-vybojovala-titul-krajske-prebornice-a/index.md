@@ -4,7 +4,7 @@ date: 2026-05-30
 place: ''
 medals: ''
 summary: V sobotu 30.5.2026 se sjelo do Vrchlabí 95 děvčat na přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen. Náš oddíl T.J. Sokol Chrudim reprezentovalo 5 skvělých závodnic.
-cover: kraj.přebor-Putíková,Plachá,Matušek,Bělochová.jpg
+cover: kraj.přebor-Putíková,Plachá,Matušek,Bělochová-1.jpg
 coverAlt: ''
 draft: false
 ---
