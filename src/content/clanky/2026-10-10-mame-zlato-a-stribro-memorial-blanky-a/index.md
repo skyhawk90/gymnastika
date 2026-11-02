@@ -1,16 +1,21 @@
 ---
-title: "Máme zlato a stříbro. Memoriál Blanky a Verunky Horákových v Pardubicích."
-date: "2026-10-10"
-summary: "Oddíl sportovní gymnastiky Loko Pardubice pořádal 10.10.2026 již 23. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě."
+title: Máme zlato a stříbro. Memoriál Blanky a Verunky Horákových v Pardubicích.
+date: 2026-10-10
+place: ''
+medals: ''
+summary: Oddíl sportovní gymnastiky Loko Pardubice pořádal 10.10.2026 již 23. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě.
+cover: Loko Pardubice chrudimské závodnice.jpg
+coverAlt: ''
+draft: false
 ---
 
-Oddíl sportovní gymnastiky **Loko Pardubice pořádal 10.10.2026** již 23. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě. Byla to trenérka sportovní gymnastiky a dlouholetá závodnice TJ Loko Pardubice se svoji 10-letou dcerou, která také cvičila v tomto oddíle, tímto závodem chtějí každý rok uctít jejich památku.
+Oddíl sportovní gymnastiky **Loko Pardubice pořádal 10.10.2026 již 23.** **ročník Memoriálu Blanky a Verunky Horákových**, které tragicky zahynuly při autonehodě. Byla to trenérka sportovní gymnastiky a dlouholetá závodnice TJ Loko Pardubice se svoji 10-letou dcerou, která také cvičila v tomto oddíle, tímto závodem chtějí každý rok uctít jejich památku.
 
 Závod byl uspořádán pro všechny kategorie jako dvojboj. Sjelo se celkem 85 závodnic ze známých velkých oddílů jako např. GK Šumperk, KSG Most, SG Liberec, TJ Sokol Hradec Králové, TJ Spartak Vrchlabí, TJ Sokol Vysoké Mýto a Pardubice.
 
-Nejlépe si vedla naše mladší žákyně **Valentýna Nováková,** která zacvičila výborně svoji sestavu na kladině s kotoulem bez dohmatu a závěrečným saltem vpřed za nejvyšší známku. Akrobacie se jí také velmi podařila za minimum srážek od rozhodčích. Při vyhlášení jsme byli všichni nadšení z **její krásné zlaté medaile.**
+Nejlépe si vedla naše **mladší žákyně** **Valentýna Nováková,** která zacvičila výborně svoji sestavu na kladině s kotoulem bez dohmatu a závěrečným saltem vpřed za nejvyšší známku. Akrobacie se jí také velmi podařila za minimum srážek od rozhodčích. **Při vyhlášení jsme byli všichni nadšení z** **její krásné zlaté medaile.**
 
-Za starší žákyně VS4B výborně cvičila 12-letá **Elen Bělochová**. Na akrobacii předvedla skvěle sestavu na hudbu. Na kladině měla pomalý přemet vzad i stranou, obtížný prošvihnutý dálkový skok i piruetu s dvojným obratem. Rozhodčím se velmi líbila a měla vysokou výslednou známku a za to si vysloužila skvělou **stříbrnou medaili** v těžké konkurenci dvaceti výborných závodnic.
+Za **starší žákyně** VS4B výborně cvičila 12-letá **Elen Bělochová**. Na akrobacii předvedla skvěle sestavu na hudbu. Na kladině měla pomalý přemet vzad i stranou, obtížný prošvihnutý dálkový skok i piruetu s dvojným obratem. Rozhodčím se velmi líbila a měla vysokou výslednou známku a za to **si** **vysloužila skvělou** **stříbrnou medaili** v těžké konkurenci dvaceti výborných závodnic.
 
 **V kategorii nejmladších žákyň závodily dvě naše 8-leté gymnastky. Adélka Sedláková** zacvičila výborně bez chyb svou sestavu na akrobacii s přemetem stranou a rondátem. Na kladině předvedla poprvé obtížný prvek vznos snožmo a rozskok, za které se získává bonifikace. Bohužel spadla z piruety s jedním obratem a bodová srážka jí vzala bronz, i tak **skončila na krásném 4. místě**. Druhá naše **Josefínka Plachá** zvládla na kladině také poprvé vznos snožmo a celkově se umístila v obtížné konkurenci děvčat ze Šumperka **na pěkném 10. místě** ze 17. děvčat.
 
