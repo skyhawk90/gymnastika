@@ -1,10 +1,15 @@
 ---
-title: "Memoriál Heleny Kupkové v Pardubicích. Máme dvě medaile."
-date: "2026-03-15"
-summary: "Oddíl sportovní gymnastiky Loko Pardubice uspořádal 15.3.2026 poprvé Memoriál Heleny Kupkové, která zasvětila celý svůj život trenérské práci v oddíle a vychovala mnoho výborných závodnic, bohužel loni nečekaně zemřela…"
+title: Memoriál Heleny Kupkové v Pardubicích. Máme dvě medaile.
+date: 2026-03-15
+place: ''
+medals: ''
+summary: Oddíl sportovní gymnastiky Loko Pardubice uspořádal 15.3.2026 poprvé Memoriál Heleny Kupkové, která zasvětila celý svůj život trenérské práci v oddíle a vychovala mnoho výborných závodnic, bohužel loni nečekaně zemřela…
+cover: Memoriál Kupkové chrudimské závodnice.jpg
+coverAlt: ''
+draft: false
 ---
 
-Oddíl sportovní gymnastiky Loko Pardubice uspořádal 15.3.2026 poprvé Memoriál Heleny Kupkové, která zasvětila celý svůj život trenérské práci v oddíle a vychovala mnoho výborných závodnic, bohužel loni nečekaně zemřela na infarkt v 70 letech. Všichni jsme na ni zavzpomínali se slzami v očích.
+Oddíl sportovní gymnastiky **Loko Pardubice uspořádal 15.3.2026 poprvé Memoriál Heleny Kupkové**, která zasvětila celý svůj život trenérské práci v oddíle a vychovala mnoho výborných závodnic, bohužel loni nečekaně zemřela na infarkt v 70 letech. Všichni jsme na ni zavzpomínali se slzami v očích.
 
 Závod byl uspořádán pro všechny kategorie děvčat jako dvojboj. Sjelo se celkem 77 závodnic ze známých velkých oddílů jako např. GK Šumperk, SG Most, SG Liberec, Gymnastika Říčany, TJ Sokol Hradec Králové, TJ Spartak Vrchlabí, TJ Sokol Pardubice.
 
