@@ -1,10 +1,13 @@
 ---
-title: "Neuvěřitelný úspěch naší sportovní gymnastky."
-date: "2026-06-20"
-summary: "20.6.2026 se uskutečnil vrcholný závod sezóny MČR jednotlivkyň ve sportovní gymnastice v Praze. Z našeho oddílu sportovní gymnastiky T.J."
+title: Neuvěřitelný úspěch naší sportovní gymnastky. Maya Matušek získala z MČR skvělou bronzovou medaili !!!
+date: 2026-06-20
+place: ''
+medals: ''
+summary: 20.6.2026 se uskutečnil vrcholný závod sezóny MČR jednotlivkyň ve sportovní gymnastice v Praze. Z našeho oddílu sportovní gymnastiky T.J.
+cover: IMG-20260620-WA0021.jpg
+coverAlt: ''
+draft: false
 ---
-
-**Maya Matušek získala z MČR skvělou bronzovou medaili !!!**
 
 **Po pěti letech máme mistrovskou medaili.**
 
@@ -14,4 +17,4 @@ Závod zahájila svojí nejlepší disciplínou přeskokem, kde skočila krásn�
 
 **Při vyhlášení jsme byly napjaté, jak to všechno dopadne a nakonec vypukl velký aplaus, když si Maya Matušek mohla vystoupat na stupně vítězů pro úžasnou zaslouženou bronzovou medaili !!!. Je to největší úspěch po pěti letech od zisku titulu Mistryně České republiky Sáry Kulhavé.**
 
-Odjížděli jsme všichni šťastní z tohoto zaslouženého úspěchu Mayi, která bude dalším vzorem pro své mladší kolegyně z oddílu. Za snahu a píli v trénincích všem mým svěřenkyním velmi děkuji.
+Odjížděli jsme všichni šťastní z tohoto zaslouženého úspěchu Mayi, která bude dalším vzorem pro své mladší kolegyně z oddílu. Za snahu a píli v trénincích všem mým svěřenkyním velmi děkuji. S. Linková.
