@@ -1,7 +1,12 @@
 ---
-title: "Pohár Krkonoš 11.4.2026 Máme bronz za družstvo."
-date: "2026-04-11"
-summary: "Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjely 11.4.2026 do Vrchlabí na 33. ročník poháru Krkonoš ve dvojboji."
+title: Pohár Krkonoš 11.4.2026 Máme bronz za družstvo.
+date: 2026-04-11
+place: ''
+medals: ''
+summary: Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjely 11.4.2026 do Vrchlabí na 33. ročník poháru Krkonoš ve dvojboji.
+cover: Vrchlabí-závodnice TJ Sokol Chrudim.jpg
+coverAlt: ''
+draft: false
 ---
 
 Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjely 11.4.2026 do Vrchlabí na 33. ročník poháru Krkonoš ve dvojboji.
@@ -14,7 +19,7 @@ V kategorii žákyň **VS4B závodila Lucie Putíková,** která skočila velmi 
 
 Na závěr byla ještě vyhlášena družstva složená z nejvyšších známek tří kategorií a **naše tři nejlepší děvčata vybojovala výborné 3. místo.**
 
-Odpoledne se rozjel **Minipohár Krkonoš** pro nejmladší závodnice. Sjelo se 83 malých děvčátek z Pardubic, Hradce Králové, Liberce, Náchoda, Vrchlabí či TJ Doksy. V kategorii žákyň VS1 narozených 2017 závodila naše **Valentýnka Nováková**. Povedla se jí povinná sestava na kladině s obávanou stojkou a dostala třetí nejlepší známku. Na bradlech se jí také podařilo výborně zacvičit výmyk, toč vzad a podmet a při vyhlášení jsme byli všichni nadšeni z **krásného 2. místa**.
+**Odpoledne se rozjel** **Minipohár Krkonoš** pro nejmladší závodnice. Sjelo se 83 malých děvčátek z Pardubic, Hradce Králové, Liberce, Náchoda, Vrchlabí či TJ Doksy. V kategorii žákyň VS1 narozených 2017 závodila naše **Valentýnka Nováková**. Povedla se jí povinná sestava na kladině s obávanou stojkou a dostala třetí nejlepší známku. Na bradlech se jí také podařilo výborně zacvičit výmyk, toč vzad a podmet a při vyhlášení jsme byli všichni nadšeni z **krásného 2. místa**.
 
 V kategorii žákyň VS0A narozených 2018 závodily dvě naše gymnastky. **Josefínka Plachá** měla pěknou sestavičku na bradlech, ale na kladině se jí nevydařil povinný skok, za což dostala bodovou srážku. Celkově se umístila **na 23. místě**. Další naše maličká **Adélka Sedláková** skončila na **25. místě.**
 
