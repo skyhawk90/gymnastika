@@ -1,7 +1,12 @@
 ---
-title: "Vysokomýtský pohár Máme první dvě letošní medaile."
-date: "2026-02-28"
-summary: "V sobotu 28.2.2026 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim poprvé do starodávné sokolovny ve Vysokém Mýtě. Sjelo se celkem 91 dětí z 9 oddílů, aby si zacvičily na bradlech a na přeskoku."
+title: Vysokomýtský pohár. Máme první dvě letošní medaile.
+date: 2026-02-28
+place: ''
+medals: ''
+summary: V sobotu 28.2.2026 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim poprvé do starodávné sokolovny ve Vysokém Mýtě. Sjelo se celkem 91 dětí z 9 oddílů, aby si zacvičily na bradlech a na přeskoku.
+cover: Vys.Mýto chrudimačky Bělochová,Svatková,Plachá,Putíková,Nováková.jpg
+coverAlt: ''
+draft: false
 ---
 
 V sobotu 28.2.2026 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim poprvé do starodávné sokolovny ve Vysokém Mýtě**.** Sjelo se celkem 91 dětí z 9 oddílů, aby si zacvičily na bradlech a na přeskoku.
