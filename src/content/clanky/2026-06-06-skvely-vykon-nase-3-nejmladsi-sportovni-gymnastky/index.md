@@ -1,7 +1,12 @@
 ---
-title: "Skvělý výkon! Naše 3 nejmladší sportovní gymnastky získaly jednu stříbrnou a dvě bronzové medaile z krajského přeboru."
-date: "2026-06-06"
-summary: "V sobotu 6.6.2026 uspořádal TJ Sokol Pardubice krajský přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen pro nejmladší žákyně. Náš oddíl T.J. Sokol Chrudim reprezentovala 3 děvčátka."
+title: Skvělý výkon! Naše 3 nejmladší sportovní gymnastky získaly jednu stříbrnou a dvě bronzové medaile z krajského přeboru.
+date: 2026-06-06
+place: ''
+medals: ''
+summary: V sobotu 6.6.2026 uspořádal TJ Sokol Pardubice krajský přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen pro nejmladší žákyně. Náš oddíl T.J. Sokol Chrudim reprezentovala 3 děvčátka.
+cover: Pardubice krajský přebor-2.m.Plachá,3.m.Nováková,3m.Sedláková.jpg
+coverAlt: ''
+draft: false
 ---
 
 V sobotu **6.6.2026 uspořádal TJ Sokol Pardubice krajský přebor pardubického a královehradeckého kraje** ve sportovní gymnastice žen pro nejmladší žákyně. Náš oddíl T.J. Sokol Chrudim reprezentovala 3 děvčátka.
