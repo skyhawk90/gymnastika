@@ -1,7 +1,12 @@
 ---
-title: "Chrudimská sportovní gymnastka reprezentovala náš kraj na Olympiádě dětí a mládeže v Praze 21.-25.6.2026 Praha"
-date: "2026-06-25"
-summary: "V neděli 21.6.2026 odjela naše nejlepší gymnastka Maya Matušek na Olympiádu dětí a mládeže konané v Praze, kde měla ještě se dvěma děvčaty z oddílů Loko Pardubice a Sokol Pardubice reprezentovat náš Pardubický kraj."
+title: Chrudimská sportovní gymnastka reprezentovala náš kraj na Olympiádě dětí a mládeže v Praze 21.-25.6.2026 Praha
+date: 2026-06-25
+place: ''
+medals: ''
+summary: V neděli 21.6.2026 odjela naše nejlepší gymnastka Maya Matušek na Olympiádu dětí a mládeže konané v Praze, kde měla ještě se dvěma děvčaty z oddílů Loko Pardubice a Sokol Pardubice reprezentovat náš Pardubický kraj.
+cover: LODM závodnice pardubického kraje.JPG
+coverAlt: ''
+draft: false
 ---
 
 **V neděli 21.6.2026 odjela naše nejlepší gymnastka Maya Matušek na Olympiádu dětí a mládeže konané v Praze, kde měla ještě se dvěma děvčaty z oddílů Loko Pardubice a Sokol Pardubice reprezentovat náš Pardubický kraj**.
