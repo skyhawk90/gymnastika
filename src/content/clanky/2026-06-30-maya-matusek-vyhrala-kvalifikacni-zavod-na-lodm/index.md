@@ -1,21 +1,21 @@
 ---
 title: Maya Matušek vyhrála kvalifikační závod na LODM.
-date: 2026-04-11
+date: 2026-03-21
 place: ''
 medals: ''
 summary: 21.3.2026 pořádal oddíl sportovní gymnastiky T.J. Sokol Pardubice kvalifikační závod pro gymnastky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže. Za náš oddíl T.J.
-cover: ''
+cover: Maya Matušek pojede reprezentovat na LODM.jpg
 coverAlt: ''
 draft: false
 ---
 
-**Naše gymnastky dovezly dvě medaile z Poháru Pardubic.**
+##### **Naše gymnastky dovezly dvě medaile z Poháru Pardubic.**
 
 21.3.2026 pořádal oddíl sportovní gymnastiky T.J. Sokol Pardubice **kvalifikační závod pro gymnastky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže.**
 
 Za náš oddíl T.J. Sokol Chrudim závodila nejlepší **starší žákyně Maya Matušek**. Na přeskoku dostala nejvyšší známku za přemet s obraty, tak jako na bradlech, kde se jí povedl výborně letový prvek mezi žerděmi. Sestavu na kladině s obtížným rychlým přemetem vzad zacvičila skvěle bez pádu. A na líbivou taneční hudbu na prostných předvedla velmi dobře akrobatickou řadu se saltem vpřed i vzad a také rondát a salto vzad toporně. Při vyhlášení výsledků jsme byli všichni mile překvapeni, když **Maya vystoupala na nejvyšší stupínek a získala zlatou medaili** v těžké konkurenci děvčat z LOKO Pardubice. I když budou ještě dva kvalifikační závody na LODM, tak má Maya dobře našlápnuto na tuto celostátní akci, která bude 22.6.2026 v Praze.
 
-Odpoledne se konal **Pohár Pardubic** ve dvojboji pro všechny kategorie sportovních gymnastek, sjelo se 103 dětí ze 7 oddílů. Z Chrudimi závodilo sedm gymnastek.
+**Odpoledne se konal** **Pohár Pardubic** ve dvojboji pro všechny kategorie sportovních gymnastek, sjelo se 103 dětí ze 7 oddílů. Z Chrudimi závodilo sedm gymnastek.
 
 Závod začala **naše žena 16-letá Emily Plachá,** která bohužel nenavázala po přeletu na bradlech vzklopku na vyšší žerdi, ale na akrobacii zvládla všechny prvky skvěle, celkově skončila na **pěkném 4. místě.**
 
