@@ -650,23 +650,49 @@ section {
   padding: 3px 0;
   border: 1.5px solid var(--line);
 }
-/* medal places: solid filled squares */
+/* medal places: metallic badges and a tinted row */
 .p1,
 .p2,
 .p3 {
   border-color: transparent;
+  font-size: 0.85rem;
 }
 .p1 {
-  background: #e3b23c;
-  color: #1f1d1e;
+  background: #ffd23f; /* yellow */
+  color: #2b2100;
+  box-shadow: 0 2px 6px rgb(214 168 0 / 0.45);
 }
 .p2 {
-  background: #b8bec6;
-  color: #1f1d1e;
+  background: #9fd6ff; /* light blue */
+  color: #0d2a40;
+  box-shadow: 0 2px 6px rgb(60 140 200 / 0.4);
 }
 .p3 {
-  background: #b3652c;
-  color: #fff;
+  background: #ffb46e; /* light orange */
+  color: #3a1d05;
+  box-shadow: 0 2px 6px rgb(220 120 40 / 0.4);
+}
+.ach-year li:has(.p1),
+.ach-year li:has(.p2),
+.ach-year li:has(.p3) {
+  margin-inline: -10px;
+  padding: 7px 10px;
+  border-radius: 8px;
+}
+.ach-year li:has(.p1) {
+  background: #fdf1cf;
+}
+.ach-year li:has(.p2) {
+  background: #eef0f3;
+}
+.ach-year li:has(.p3) {
+  background: #f9e4d4;
+}
+.ach-year li:has(.p1, .p2, .p3) > span:last-child {
+  font-weight: 600;
+}
+.ach-year li:has(.p1, .p2, .p3) small {
+  font-weight: 400;
 }
 .ach-year li small {
   display: block;
