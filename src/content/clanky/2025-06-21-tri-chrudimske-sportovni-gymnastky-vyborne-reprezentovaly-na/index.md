@@ -1,7 +1,12 @@
 ---
-title: "Tři chrudimské sportovní gymnastky výborně reprezentovaly na MČR v Černošicích u Prahy."
-date: "2025-06-21"
-summary: "Po delší době se z oddílu sportovní gymnastiky T.J. Sokol Chrudim probojovaly tři nejlepší závodnice na Mistrovství ČR, které se konalo 21.6.2025 v krásné sportovní hale Věry Čáslavské v Černošicích u Prahy."
+title: Tři chrudimské sportovní gymnastky výborně reprezentovaly na MČR v Černošicích u Prahy.
+date: 2025-06-21
+place: ''
+medals: ''
+summary: Po delší době se z oddílu sportovní gymnastiky T.J. Sokol Chrudim probojovaly tři nejlepší závodnice na Mistrovství ČR, které se konalo 21.6.2025 v krásné sportovní hale Věry Čáslavské v Černošicích u Prahy.
+cover: MČR Černošice E.Bělochová 20, M. Matušek 9. a trenérka S.Linková.jpg
+coverAlt: ''
+draft: false
 ---
 
 **Žákyně Maya Matušek získala úžasné 9.místo na MČR !!!**
