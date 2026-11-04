@@ -1,7 +1,12 @@
 ---
-title: "Skvělý úspěch. Máme zlatou medaili a bronz za družstvo."
-date: "2025-04-05"
-summary: "Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjely 5.4.2025 do Vrchlabí na 32.ročník putovního poháru Krkonoš ve dvojboji."
+title: Skvělý úspěch. Máme zlatou medaili a bronz za družstvo.
+date: 2025-04-05
+place: ''
+medals: ''
+summary: Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjely 5.4.2025 do Vrchlabí na 32.ročník putovního poháru Krkonoš ve dvojboji.
+cover: Krakonoš s našimi děvčátky.jpg
+coverAlt: ''
+draft: false
 ---
 
 **Pohár Krkonoš 5.4.2025**
@@ -16,6 +21,6 @@ V kategorii mladších žákyň narozených 2015-16, jsme měli dvě želízka v
 
 Na závěr byla ještě vyhlášena družstva složená z nejvyšších známek tří kategorií a **naše tři nejlepší děvčata vybojovala skvělé 3. místo.**
 
-Odpoledne se rozjel **Minipohár Krkonoš** pro nejmladší závodnice. Sjelo se kolem padesáti malých děvčátek z Pardubic, Hradce Králové, Liberce, Náchoda, Vrchlabí či TJ Doksy. V kategorii žákyň narozených 2017 závodila naše malá gymnastka **Valentýnka Nováková**. Povedla se jí sestava na akrobacii za druhou nejvyšší známku, ale na kladině měla větší výkyv po obratu a to jí připravilo o medaili, i tak byla spokojená s **krásným 4.místem**.
+Odpoledne se rozjel **Minipohár Krkonoš pro nejmladší závodnice**. Sjelo se kolem padesáti malých děvčátek z Pardubic, Hradce Králové, Liberce, Náchoda, Vrchlabí či TJ Doksy. **V kategorii žákyň narozených 2017** závodila naše malá gymnastka **Valentýnka Nováková**. Povedla se jí sestava na akrobacii za druhou nejvyšší známku, ale na kladině měla větší výkyv po obratu a to jí připravilo o medaili, i tak byla spokojená s **krásným 4.místem**.
 
-V kategorii žákyň narozených 2018 závodily poprvé naše dvě maličké začínající gymnastky. Na to, že trénují teprve půl roku se opravdu neztratily. **Josefínka Plachá** je sestřička naší nejstarší závodnice Emily a ta jí dává cenné rady. Měla krásnou sestavičku na nízké kladince za třetí nejvyšší známku a na akrobacii předvedla pěkně čertík a dva kotouly vpřed. Celkově jsme byli všichni nadšeni, že se umístila **na úžasném 5.místě**. Další naše maličká **Adélka Sedláková** měla nezdar u čertíku na kladince, ale sestavu na akrobacii zacvičila velmi pěkně a skončila **na hezkém 12.místě**. Na závěr se za děvčaty přišel podívat i Krakonoš z hor a mohly si s ním udělat na památku foto.
+V kategorii **žákyň narozených 2018** závodily poprvé naše dvě maličké začínající gymnastky. Na to, že trénují teprve půl roku se opravdu neztratily. **Josefínka Plachá** je sestřička naší nejstarší závodnice Emily a ta jí dává cenné rady. Měla krásnou sestavičku na nízké kladince za třetí nejvyšší známku a na akrobacii předvedla pěkně čertík a dva kotouly vpřed. Celkově jsme byli všichni nadšeni, že se umístila **na úžasném 5.místě**. Další naše maličká **Adélka Sedláková** měla nezdar u čertíku na kladince, ale sestavu na akrobacii zacvičila velmi pěkně a skončila **na hezkém 12.místě**. Na závěr se za děvčaty přišel podívat i Krakonoš z hor a mohly si s ním udělat na památku foto.
