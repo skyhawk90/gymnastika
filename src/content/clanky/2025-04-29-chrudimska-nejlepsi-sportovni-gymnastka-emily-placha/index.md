@@ -1,6 +1,6 @@
 ---
 title: Chrudimská nejlepší sportovní gymnastka Emily Plachá získala cennou stříbrnou medaili z Pardubic.
-date: 2025-04-29
+date: 2025-03-29
 place: ''
 medals: ''
 summary: Chrudimské sportovní gymnastky zahájily novou závodní sezónu v Pardubicích, kde oddíl TJ Loko Pardubice pořádal 29.4.2025 Memoriál Jana Hampla ve dvojboji na bradlech a kladině, celkem přijelo 71 gymnastek z celé…
@@ -9,7 +9,7 @@ coverAlt: ''
 draft: false
 ---
 
-Chrudimské sportovní gymnastky zahájily novou závodní sezónu v Pardubicích, kde oddíl **TJ Loko Pardubice pořádal 29.4.2025 Memoriál Jana Hampla** ve dvojboji na bradlech a kladině, celkem přijelo 71 gymnastek z celé republiky.
+Chrudimské sportovní gymnastky zahájily novou závodní sezónu v Pardubicích, kde oddíl **TJ Loko Pardubice pořádal 29.3.2025 Memoriál Jana Hampla** ve dvojboji na bradlech a kladině, celkem přijelo 71 gymnastek z celé republiky.
 
 Naše nejlepší **Emily Plachá** **závodila poprvé v kategorii žen**, která má nejvíce požadavků. Na začátek předvedla velmi dobře obtížnou sestavu na bradlech s přeletem na vyšší žerď. A pak zacvičila velmi dobře bez zakolísání sestavu na kladině, kde má zařazený pomalý přemet vzad, rondát a obtížný dálkový skok s výměnou nohou. **Při vyhlášení si šťastná vyskočila na druhý stupínek pro stříbrnou medaili** za domácí Bakešovou a třetí Mašátovou z Jičína. Rozhodovaly desetiny bodu, protože zde závodilo 16 výborných žen.
 
