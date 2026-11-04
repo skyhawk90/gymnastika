@@ -4,7 +4,7 @@ date: 2026-03-21
 place: ''
 medals: ''
 summary: 21.3.2026 pořádal oddíl sportovní gymnastiky T.J. Sokol Pardubice kvalifikační závod pro gymnastky, které by mohly reprezentovat pardubický kraj na Letní olympiádě dětí a mládeže. Za náš oddíl T.J.
-cover: Maya Matušek pojede reprezentovat na LODM.jpg
+cover: Maya Matušek.jpg
 coverAlt: ''
 draft: false
 ---
