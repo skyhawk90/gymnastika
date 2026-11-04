@@ -4,7 +4,7 @@ date: 2025-10-25
 place: ''
 medals: ''
 summary: 25.10.2025 uspořádal Český gymnastický svaz Mistrovství ČR jednotlivkyň ve sportovní gymnastice kategorie C v krásné sportovní hale ve vzdáleném městě Cheb. Celkem se zúčastnilo 295 závodnic z mnoha oddílů.
-cover: MČR C Cheb Sára Svatková a Lucie Putíková.jpg
+cover: MČR žákyň C Cheb 38..m.Putíková, 42.m.Svatková .jpg
 coverAlt: ''
 draft: false
 ---
