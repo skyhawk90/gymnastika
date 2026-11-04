@@ -1,10 +1,15 @@
 ---
-title: "Velká cena Hradce Králové Naše družstvo vybojovalo skvělé 3.místo."
-date: "2025-05-30"
-summary: "Sportovní gymnastky T.J. Sokol Chrudim odjely 17.5. na pohárový závod 56.ročník Velké ceny Hradce Králové, což je dvojboj na kladině a prostných. V prvním sledu závodila v kategorii žen naše Emily Plachá."
+title: Velká cena Hradce Králové Naše družstvo vybojovalo skvělé 3.místo.
+date: 2025-05-30
+place: ''
+medals: ''
+summary: Sportovní gymnastky T.J. Sokol Chrudim odjely 17.5. na pohárový závod 56.ročník Velké ceny Hradce Králové, což je dvojboj na kladině a prostných. V prvním sledu závodila v kategorii žen naše Emily Plachá.
+cover: HK Zvárová,Svatková,Plachá,Bělochová,Nováková.jpg
+coverAlt: ''
+draft: false
 ---
 
-Sportovní gymnastky T.J. Sokol Chrudim odjely 17.5. na pohárový závod 56.ročník Velké ceny Hradce Králové, což je dvojboj na kladině a prostných.
+Sportovní gymnastky T.J. Sokol Chrudim odjely **17.5. na pohárový závod 56.ročník Velké ceny Hradce Králové**, což je dvojboj na kladině a prostných.
 
 V prvním sledu závodila **v kategorii žen naše Emily Plachá**. Zacvičila skvělou sestavu na prostných i na kladině, kde zařadila novou obtížnou skokovou řadu za bonifikaci 0,3 bodu. Při vyhlášení byla těsně za bronzovým stupínkem na nepopulárním, ale **výborném 4. místě** v konkurenci závodnic z Liberce a Pardubic.
 
