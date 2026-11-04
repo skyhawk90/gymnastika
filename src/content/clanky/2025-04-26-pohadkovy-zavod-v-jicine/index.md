@@ -1,10 +1,15 @@
 ---
-title: "Pohádkový závod v Jičíně"
-date: "2025-04-26"
-summary: "V sobotu 26.4.2025 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 10. ročník „Pohádkového závodu“. Cvičilo se na kladině, prostných a na přeskoku."
+title: Pohádkový závod v Jičíně
+date: 2025-04-26
+place: ''
+medals: ''
+summary: V sobotu 26.4.2025 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 10. ročník „Pohádkového závodu“. Cvičilo se na kladině, prostných a na přeskoku.
+cover: Pohádkový Jičín.jpg
+coverAlt: ''
+draft: false
 ---
 
-V sobotu 26.4.2025 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 10. ročník „Pohádkového závodu“**.** Cvičilo se na kladině, prostných a na přeskoku. Závodilo celkem 110 dětí z 9 oddílů od nejmladších 8-letých až po ženy.
+**V sobotu 26.4.2025 odjelo celkem 5 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 10. ročník „Pohádkového závodu“.** Cvičilo se na kladině, prostných a na přeskoku. Závodilo celkem 110 dětí z 9 oddílů od nejmladších 8-letých až po ženy.
 
 Chrudimská skvělá závodnice **Emily Plachá** závodila letos poprvé jako žena. Předvedla výborně svoji pěknou sestavu na prostných za nejvyšší známku, na přeskoku předvedla hezký přemet s obraty a na kladině zvládla i akrobatickou řadu. Při vyhlášení jsme **byli všichni šťastní za její krásnou stříbrnou medaili**, kterou si vybojovala.
 
