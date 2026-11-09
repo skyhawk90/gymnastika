@@ -131,4 +131,6 @@ photos:
     alt: MČOS Praha 5.st.žákyně M.Matušek
   - src: MČOS Praha 6.žena Emily Plachá.jpg
     alt: MČOS Praha 6.žena Emily Plachá
+  - src: MČOS Praha E.Plachá,M.Matušek.jpg
+    alt: MČOS Praha 6.m.E.Plachá,5.m.M.Matušek
 ---
