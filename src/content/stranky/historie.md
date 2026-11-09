@@ -2,7 +2,7 @@
 title: Historie oddílu
 ---
 
-## **Vznik oddílu sportovní gymnastiky T.J.Chrudim**
+## ![](/src/assets/uploads/1994%20%C5%A0pl%C3%ADchal%2065%20let.jpeg)**Vznik oddílu sportovní gymnastiky T.J.Chrudim**
 
            **Oddíl sportovní gymnastiky založil v roce 1953 Jaroslav Šplíchal**. Trénoval děvčata i chlapce v oddílu sportovní gymnastiky, který vedl přes 50 let a z mnohých vychoval výborné sportovce i cvičitelky. Jako učitel a gymnastický trenér dotáhl svou práci k vysoké úrovni. Aktivně se podílel na obnově sokolského hnutí v Chrudimi v roce 1989 – 1990. Na 10 let se stal starostou T.J. Sokol Chrudim a inicioval obnovu odboru sportu naší župy Východočeské - Pippichovy, jehož funkci předsedy vykonával do roku 2010. Bohužel jeho aktivní práce byla přerušena 22.10.2011, kdy nás navždy opustil po tragické nehodě ve věku 82 let.
 
@@ -11,7 +11,6 @@ title: Historie oddílu
 Historický úspěch se povedl v roce 2017. Na MČR žákyň jsme získali dvě medaile najednou. **Titul Mistryně republiky po 24 letech vybojovala 12-letá Sára Kulhavá a o rok mladší skvělá Karolína Horníková získala stříbrnou medaili !!! Sára potvrdila svůj talent a další rok přivezla stříbrnou mistrovskou medaili z MČR juniorek. A ještě větším společným úspěchem bylo, když v roce 2021 vybojovala podruhé zlatou medaili na MČR v kategorii žen.**
 
 V roce 2018 odstartovala svoji výbornou závodní kariéru 8-letá **Emily Plachá vítězstvím na přeboru ČOS. Další skvělá závodnice Maya Matušek v roce 2026 reprezentovala náš kraj na LODM v Praze. Největší její úspěch je, že po 5 letech pro nás získala vzácnou bronzovou medaili na MČR starších žákyň i stříbrnou na přeboru ČOS, tak jako mladší žákyně 9-letá Valentýna Nováková. Náš oddíl výborně reprezentuje mnoho dalších skvělých pracovitých gymnastek, které sbírají zkušenosti a vozí medaile z pohárových závodů pod vedením dobrovolných trenérek paní Bočkové, Liptákové a Svatkové.** 
-
 
 ## 160 let cvičení na nářadí na Chrudimsku
 
@@ -123,4 +122,4 @@ K vysokým výkonum a také k lásce k tomuto sportu přivedla mnoho dalších z
 
 Na závěr musíme zdůraznit, že náš sport a hlavně naše sportovní gymnastika stále baví a všem děvčatům, která prošla leckdy i tvrdým tréninkem, pomohla k uplatnění v osobním i pracovním životě.
 
-##
+##![](/src/assets/uploads/2001%20odd%C3%ADl%20Chrudim.jpg "2001 oddíl Chrudim")
