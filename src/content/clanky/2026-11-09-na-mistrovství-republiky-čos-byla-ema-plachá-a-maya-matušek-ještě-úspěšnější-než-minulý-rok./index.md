@@ -3,7 +3,7 @@ title: Na Mistrovství republiky ČOS byla Ema Plachá a Maya Matušek ještě �
 date: 2026-11-07
 place: ''
 medals: ''
-summary: Na MČOS byla Ema Plachá a Maya Matušek ještě úspěšnější než minulý rok.
+summary: 7.11.nás jela na Mistrovství gymnastických oddílů ČOS v Praze reprezentovat trojice nejlepších děvčat, které postoupily z přeboru Čech v Kolíně.
 cover: MČOS Praha L.Putíková.,E.Plachá,M.Matušek.jpg
 coverAlt: ''
 draft: false
