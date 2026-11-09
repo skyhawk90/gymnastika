@@ -129,4 +129,6 @@ photos:
     alt: ČOS Kolín-Plachá,Nováková,Sedláková
   - src: MČOS Praha 5.st.žákyně M.Matušek.jpg
     alt: MČOS Praha 5.st.žákyně M.Matušek
+  - src: MČOS Praha 6.žena Emily Plachá.jpg
+    alt: MČOS Praha 6.žena Emily Plachá
 ---
