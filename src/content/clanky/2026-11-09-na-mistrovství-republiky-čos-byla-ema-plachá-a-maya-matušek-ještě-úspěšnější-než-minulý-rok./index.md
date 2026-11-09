@@ -9,7 +9,7 @@ coverAlt: ''
 draft: false
 ---
 
-          7. 11. nás jela na Mistrovství gymnastických oddílů ČOS v Praze reprezentovat trojice nejlepších děvčat, které postoupily z přeboru Čech v Kolíně.
+7.11.nás jela na Mistrovství gymnastických oddílů ČOS v Praze reprezentovat trojice nejlepších děvčat, které postoupily z přeboru Čech v Kolíně.
 
           **V kategorii žen závodila** **naše nejlepší 16-letá Emily Plachá**, které se velice povedla sestava na prostných s akrobatickou řadou se saltem vzad s dvojným obratem kolem podélné osy tzv. vrutem. Od rozhodčích získala druhou nejvyšší známku. Skvěle skočila přemet s obraty a bradla s přeletem na vyšší žerď se jí také povedla. Z kladiny bohužel spadla z akrobatické řady, což jí stálo 1,5 bodu srážky a velmi jí to mrzelo. **Při vyhlášení výsledků jsme byly mile překvapeny, že se Emily mohla postavit na skvělé 6. místo** za výborná děvčata z Poděbrad, Zlína, Kopřivnice a Kampy Praha.
 
