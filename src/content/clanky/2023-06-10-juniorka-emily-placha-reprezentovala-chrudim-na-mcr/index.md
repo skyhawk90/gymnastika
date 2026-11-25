@@ -1,7 +1,12 @@
 ---
-title: "Juniorka Emily Plachá reprezentovala Chrudim na MČR."
-date: "2023-06-10"
-summary: "Letos se z oddílu sportovní gymnastiky T.J. Sokol Chrudim probojovala z oblasti na MČR v Ostravě naše nejlepší závodnice Emily Plachá."
+title: Juniorka Emily Plachá reprezentovala Chrudim na MČR.
+date: 2023-06-10
+place: ''
+medals: ''
+summary: Letos se z oddílu sportovní gymnastiky T.J. Sokol Chrudim probojovala z oblasti na MČR v Ostravě naše nejlepší závodnice Emily Plachá.
+cover: MČR Ostrava Emily Plachá.jpg
+coverAlt: MČR Ostrava Emily Plachá
+draft: false
 ---
 
 Ostrava 10.6.2023
