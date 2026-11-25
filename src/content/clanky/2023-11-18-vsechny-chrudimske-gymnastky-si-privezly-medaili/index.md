@@ -1,7 +1,12 @@
 ---
-title: "Všechny chrudimské gymnastky si přivezly medaili."
-date: "2023-11-18"
-summary: "V sobotu 18.11.2023 se konal oblastní přebor družstev pardubického a hradeckého kraje ve sportovní gymnastice žen v tělocvičně Spartaku Vrchlabí."
+title: Všechny chrudimské gymnastky si přivezly medaili.
+date: 2023-11-18
+place: ''
+medals: ''
+summary: V sobotu 18.11.2023 se konal oblastní přebor družstev pardubického a hradeckého kraje ve sportovní gymnastice žen v tělocvičně Spartaku Vrchlabí.
+cover: 2023 oblast Vrchlabí Bělochová,Putíková,Svatková.jpg
+coverAlt: 2023 oblast Vrchlabí Bělochová,Putíková,Svatková
+draft: false
 ---
 
 **Oblastní přebor družstev ve Vrchlabí.**
