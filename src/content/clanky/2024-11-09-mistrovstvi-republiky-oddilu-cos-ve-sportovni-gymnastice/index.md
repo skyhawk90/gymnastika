@@ -1,7 +1,12 @@
 ---
-title: "Mistrovství republiky oddílů ČOS ve sportovní gymnastice."
-date: "2024-11-09"
-summary: "Mistrovství gymnastických oddílů ČOS se konalo v sobotu 9. 11. v pěkně vybavené tělocvičně Sokola Žižkov Praha. Náš oddíl sportovní gymnastiky T. J."
+title: Mistrovství republiky oddílů ČOS ve sportovní gymnastice.
+date: 2024-11-09
+place: ''
+medals: ''
+summary: Mistrovství gymnastických oddílů ČOS se konalo v sobotu 9. 11. v pěkně vybavené tělocvičně Sokola Žižkov Praha. Náš oddíl sportovní gymnastiky T. J.
+cover: MČOS E.Plachá a M.Matusek.jpg
+coverAlt: MČOS E. Plachá a M. Matušek
+draft: false
 ---
 
 **Praha 9.11.2024**
