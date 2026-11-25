@@ -1,7 +1,12 @@
 ---
-title: "Chrudimské sportovní gymnastky testovaly formu na závodech v Doksech."
-date: "2023-05-07"
-summary: "O svátcích v neděli 7.5.2023 odjely čtyři sportovní gymnastky TJ Sokola Chrudim poprvé na závod v Doksech, kde se konal již 53.ročník „Dokské kladiny“. Závodu se zúčastnilo téměř dvě stovky dětí z deseti oddílů."
+title: Chrudimské sportovní gymnastky testovaly formu na závodech v Doksech.
+date: 2023-05-07
+place: ''
+medals: ''
+summary: O svátcích v neděli 7.5.2023 odjely čtyři sportovní gymnastky TJ Sokola Chrudim poprvé na závod v Doksech, kde se konal již 53.ročník „Dokské kladiny“. Závodu se zúčastnilo téměř dvě stovky dětí z deseti oddílů.
+cover: Doksy 5. .Bělochová, 2. Plachá, 3. Putíková.jpg
+coverAlt: Doksy 5. .Bělochová, 2. Plachá, 3. Putíková
+draft: false
 ---
 
 O svátcích v neděli **7.5.2023** odjely čtyři sportovní gymnastky TJ Sokola Chrudim poprvé na závod v Doksech, kde se konal již 53.ročník „Dokské kladiny“.
