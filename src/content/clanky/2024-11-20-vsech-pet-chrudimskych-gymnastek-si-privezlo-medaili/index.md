@@ -1,7 +1,12 @@
 ---
-title: "Všech pět chrudimských gymnastek si přivezlo medaili z oblastního přeboru družstev ve Vrchlabí."
-date: "2024-11-20"
-summary: "V sobotu 20.11.2024 se konal oblastní přebor družstev pardubického a hradeckého kraje ve sportovní gymnastice žen v tělocvičně Spartaku Vrchlabí. Za družstvo II. ligy T. J."
+title: Všech pět chrudimských gymnastek si přivezlo medaili z oblastního přeboru družstev ve Vrchlabí.
+date: 2024-11-20
+place: ''
+medals: ''
+summary: V sobotu 20.11.2024 se konal oblastní přebor družstev pardubického a hradeckého kraje ve sportovní gymnastice žen v tělocvičně Spartaku Vrchlabí. Za družstvo II. ligy T. J.
+cover: Vrchlabí oblast Putíková,Matusek,Bělochová a Zvárová.jpg
+coverAlt: Vrchlabí oblast Putíková,Matušek,Bělochová a Zvárová
+draft: false
 ---
 
 V sobotu **20.11.2024 se** konal oblastní přebor družstev pardubického a hradeckého kraje ve sportovní gymnastice žen v tělocvičně Spartaku Vrchlabí.
