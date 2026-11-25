@@ -1,7 +1,12 @@
 ---
-title: "49. ročník Memoriálu Jana Hampla v Loko Pardubice."
-date: "2024-04-20"
-summary: "V sobotu 20.4.2024 se konal Memoriál J. Hampla v tělocvičně Loko Pardubice. Je to závod ve dvojboji na bradlech a kladině. Za T.J."
+title: 49. ročník Memoriálu Jana Hampla v Loko Pardubice.
+date: 2024-04-20
+place: ''
+medals: ''
+summary: V sobotu 20.4.2024 se konal Memoriál J. Hampla v tělocvičně Loko Pardubice. Je to závod ve dvojboji na bradlech a kladině. Za T.J.
+cover: E.Bělochová 4.m. a L.Putíková 9.m. .jpg
+coverAlt: E.Bělochová 4.m. a L.Putíková 9.m.
+draft: false
 ---
 
 V sobotu 20.4.2024 se konal Memoriál J. Hampla v tělocvičně Loko Pardubice. Je to závod ve dvojboji na bradlech a kladině.
