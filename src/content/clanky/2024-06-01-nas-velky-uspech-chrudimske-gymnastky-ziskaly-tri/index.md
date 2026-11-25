@@ -1,7 +1,12 @@
 ---
-title: "Náš velký úspěch! Chrudimské gymnastky získaly tři tituly krajských přebornic a jednu stříbrnou medaili."
-date: "2024-06-01"
-summary: "Do pardubické krásně opravené sokolovny se v sobotu 1.6.2024 sjelo 140 děvčat na přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen. Náš oddíl T.J.Sokol Chrudim reprezentovalo 5 skvělých závodnic."
+title: Náš velký úspěch! Chrudimské gymnastky získaly tři tituly krajských přebornic a jednu stříbrnou medaili.
+date: 2024-06-01
+place: ''
+medals: ''
+summary: Do pardubické krásně opravené sokolovny se v sobotu 1.6.2024 sjelo 140 děvčat na přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen. Náš oddíl T.J.Sokol Chrudim reprezentovalo 5 skvělých závodnic.
+cover: kraj 1.Bělochová,4.Putíková,1.Zvárová.jpg
+coverAlt: kraj 1.Bělochová,4.Putíková,1.Zvárová
+draft: false
 ---
 
 **Dvě děvčata postoupila na MČR.**
