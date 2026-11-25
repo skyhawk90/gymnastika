@@ -1,7 +1,12 @@
 ---
-title: "Předvánoční závod v Pardubicích. Naše gymnastky vybojovaly tři zlaté medaile."
-date: "2023-12-09"
-summary: "T.J. Sokol Pardubice již tradičně pořádal 9.12.2023 závod pro sportovní gymnastky v krásné opravené sokolovně. Z našeho oddílu T.J. Sokol Chrudim závodilo šest závodnic, od nejstarších po nejmladší."
+title: Předvánoční závod v Pardubicích. Naše gymnastky vybojovaly tři zlaté medaile.
+date: 2023-12-09
+place: ''
+medals: ''
+summary: T.J. Sokol Pardubice již tradičně pořádal 9.12.2023 závod pro sportovní gymnastky v krásné opravené sokolovně. Z našeho oddílu T.J. Sokol Chrudim závodilo šest závodnic, od nejstarších po nejmladší.
+cover: Bělochová,Zvárová,Plachá,Putíková,Svatková,Nováková.jpg
+coverAlt: Bělochová,Zvárová,Plachá,Putíková,Svatková,Nováková
+draft: false
 ---
 
 T.J. Sokol Pardubice již tradičně pořádal 9.12.2023 závod pro sportovní gymnastky v krásné opravené sokolovně. Z našeho oddílu T.J. Sokol Chrudim závodilo šest závodnic, od nejstarších po nejmladší.
