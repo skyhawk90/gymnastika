@@ -1,7 +1,12 @@
 ---
-title: "Z krajského přeboru jsme přivezli 3 medaile a jeden postup na MČR."
-date: "2023-05-20"
-summary: "V pardubické krásně opravené sokolovně se v sobotu 20.5.2023 uskutečnil přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen. Náš oddíl T.J.Sokol Chrudim reprezentovalo 6 závodnic."
+title: Z krajského přeboru jsme přivezli 3 medaile a jeden postup na MČR.
+date: 2023-05-20
+place: ''
+medals: ''
+summary: V pardubické krásně opravené sokolovně se v sobotu 20.5.2023 uskutečnil přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen. Náš oddíl T.J.Sokol Chrudim reprezentovalo 6 závodnic.
+cover: Oblast Pardubice-4.Svatková,1.Putíková,2.Bělochová,8.Zvárová.jpg
+coverAlt: Oblast Pardubice-4.Svatková,1.Putíková,2.Bělochová,8.Zvárová
+draft: false
 ---
 
 V pardubické krásně opravené sokolovně se **v sobotu 20.5.2023 uskutečnil přebor pardubického a královehradeckého kraje ve sportovní gymnastice žen.** Náš oddíl T.J.Sokol Chrudim reprezentovalo 6 závodnic.
