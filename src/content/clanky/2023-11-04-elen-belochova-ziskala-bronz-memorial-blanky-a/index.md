@@ -1,7 +1,12 @@
 ---
-title: "Elen Bělochová získala bronz. Memoriál Blanky a Verunky Horákových v Pardubicích."
-date: "2023-11-04"
-summary: "Oddíl sportovní gymnastiky Loko Pardubice pořádal 4.11.2023 již 20. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě."
+title: Elen Bělochová získala bronz. Memoriál Blanky a Verunky Horákových v Pardubicích.
+date: 2023-11-04
+place: ''
+medals: ''
+summary: Oddíl sportovní gymnastiky Loko Pardubice pořádal 4.11.2023 již 20. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě.
+cover: Bronzová žákyně E.Bělochová .jpg
+coverAlt: Bronzová žákyně E.Bělochová
+draft: false
 ---
 
 Oddíl sportovní gymnastiky Loko Pardubice pořádal 4.11.2023 již 20. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě. Byla to trenérka sportovní gymnastiky a dlouholetá závodnice TJ Loko Pardubice se svoji 10-letou dcerou, která také cvičila v tomto oddíle, tímto závodem chtějí každý rok uctít jejich památku.
