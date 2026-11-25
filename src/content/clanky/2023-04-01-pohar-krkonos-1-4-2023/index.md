@@ -1,7 +1,12 @@
 ---
-title: "Pohár Krkonoš 1.4.2023"
-date: "2023-04-01"
-summary: "Devět sportovních gymnastek z oddílu T.J.Sokol Chrudim odjelo 1.4.2023 do Vrchlabí na 30.ročník putovního poháru Krkonoš ve dvojboji, kam se sjelo 116 závodnic."
+title: Pohár Krkonoš 1.4.2023
+date: 2023-04-01
+place: ''
+medals: ''
+summary: Devět sportovních gymnastek z oddílu T.J.Sokol Chrudim odjelo 1.4.2023 do Vrchlabí na 30.ročník putovního poháru Krkonoš ve dvojboji, kam se sjelo 116 závodnic.
+cover: Čechlovská, Bělochová, Matusek, Plachá a Krakonoš.jpg
+coverAlt: Čechlovská, Bělochová, Matusek, Plachá a Krakonoš
+draft: false
 ---
 
 Devět sportovních gymnastek z oddílu T.J.Sokol Chrudim odjelo 1.4.2023 do Vrchlabí na 30.ročník putovního poháru Krkonoš ve dvojboji**,** kam se sjelo 116 závodnic.
