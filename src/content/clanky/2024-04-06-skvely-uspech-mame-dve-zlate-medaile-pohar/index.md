@@ -1,12 +1,17 @@
 ---
-title: "Skvělý úspěch. Máme dvě zlaté medaile. Pohár Krkonoš 6.4.2024"
-date: "2024-04-06"
-summary: "Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjelo 6.4.2024 do Vrchlabí na 31.ročník putovního poháru Krkonoš ve dvojboji, kam se sjelo 126 závodnic."
+title: Skvělý úspěch. Máme dvě zlaté medaile. Pohár Krkonoš 6.4.2024
+date: 2024-04-06
+place: ''
+medals: ''
+summary: Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjelo 6.4.2024 do Vrchlabí na 31.ročník putovního poháru Krkonoš ve dvojboji, kam se sjelo 126 závodnic.
+cover: Plachá,Putíková,Bělochová,Matusek s Krakonošem .jpg
+coverAlt: Plachá,Putíková,Bělochová,Matušek s Krakonošem
+draft: false
 ---
 
-Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjelo 6.4.2024 do Vrchlabí na 31.ročník putovního poháru Krkonoš ve dvojboji**,** kam se sjelo 126 závodnic.
+Sportovní gymnastky z oddílu T.J.Sokol Chrudim odjelo 6.4.2024 do Vrchlabí na 31.ročník putovního poháru Krkonoš ve dvojboji\*\*,\*\* kam se sjelo 126 závodnic.
 
-Hned ráno závodila **naše starší žákyně 4B Maya Matusek**, která zvládla na přeskoku poprvé přemet s obratem v první i druhé letové fázi. Sestava na prostných se jí velice povedla a při vyhlášení výsledků jsme měli velikou radost, když ji **vyhlásili překvapivě jako celkovou vítězku**.
+Hned ráno závodila **naše starší žákyně 4B Maya Matušek**, která zvládla na přeskoku poprvé přemet s obratem v první i druhé letové fázi. Sestava na prostných se jí velice povedla a při vyhlášení výsledků jsme měli velikou radost, když ji **vyhlásili překvapivě jako celkovou vítězku**.
 
 Ve druhém sledu závodila naše **juniorka Emily Plachá,** které se skvěle povedla sestava na ošidné kladině a na bradlech také zvládla přelet na vyšší žerď, celkově se umístila **na skvělém 5. místě.**
 
