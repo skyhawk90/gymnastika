@@ -1,7 +1,12 @@
 ---
-title: "Maya Matusek přivezla stříbrnou medaili. Memoriál Blanky a Verunky Horákových v Pardubicích."
-date: "2024-11-02"
-summary: "Oddíl sportovní gymnastiky Loko Pardubice pořádal 2.11.2024 již 21. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě."
+title: Maya Matusek přivezla stříbrnou medaili. Memoriál Blanky a Verunky Horákových v Pardubicích.
+date: 2024-11-02
+place: ''
+medals: ''
+summary: Oddíl sportovní gymnastiky Loko Pardubice pořádal 2.11.2024 již 21. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě.
+cover: chrudimské závodnice L.Putíková,M.Matusek,E.Plachá,e.Bělochová,V.Zvárová.jpg
+coverAlt: chrudimské závodnice L.Putíková,M.Matušek,E.Plachá,e.Bělochová,V.Zvárová
+draft: false
 ---
 
 Oddíl sportovní gymnastiky Loko Pardubice pořádal 2.11.2024 již 21. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě. Byla to trenérka sportovní gymnastiky a dlouholetá závodnice TJ Loko Pardubice se svoji 10-letou dcerou, která také cvičila v tomto oddíle, tímto závodem chtějí každý rok uctít jejich památku.
