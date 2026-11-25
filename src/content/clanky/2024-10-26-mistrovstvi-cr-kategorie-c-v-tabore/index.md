@@ -1,7 +1,12 @@
 ---
-title: "Mistrovství ČR kategorie C v Táboře."
-date: "2024-10-26"
-summary: "26.10.2024 uspořádal Český gymnastický svaz Mistrovství ČR jednotlivkyň ve sportovní gymnastice kategorie C v krásné nové hale v Táboře."
+title: Mistrovství ČR kategorie C v Táboře.
+date: 2024-10-26
+place: ''
+medals: ''
+summary: 26.10.2024 uspořádal Český gymnastický svaz Mistrovství ČR jednotlivkyň ve sportovní gymnastice kategorie C v krásné nové hale v Táboře.
+cover: MČR C Tábor Elen Bělochová, Lucie Putíková.jpg
+coverAlt: MČR C Tábor Elen Bělochová, Lucie Putíková
+draft: false
 ---
 
 26.10.2024 uspořádal Český gymnastický svaz Mistrovství ČR jednotlivkyň ve sportovní gymnastice kategorie C v krásné nové hale v Táboře. Tento závod je pro závodnice, které sice nedosahují vrcholové gymnastiky, ale rády cvičí, z nich potom bývají dobré trenérky. Celkem se zúčastnilo 266 závodnic z mnoha oddílů.
