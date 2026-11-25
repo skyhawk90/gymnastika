@@ -1,7 +1,12 @@
 ---
-title: "Přebor Čech oddílů ČOS ve sportovní gymnastice."
-date: "2023-10-21"
-summary: "V sobotu 21.10.2023 se konal v krásné kolínské sokolovně přebor Čech pro žákyně všech oddílů ČOS ve sportovní gymnastice. Přijelo 103 žákyň, které si chtěly vybojovat postup na celostátní Mistrovství ČOS v Praze."
+title: Přebor Čech oddílů ČOS ve sportovní gymnastice.
+date: 2023-10-21
+place: ''
+medals: ''
+summary: V sobotu 21.10.2023 se konal v krásné kolínské sokolovně přebor Čech pro žákyně všech oddílů ČOS ve sportovní gymnastice. Přijelo 103 žákyň, které si chtěly vybojovat postup na celostátní Mistrovství ČOS v Praze.
+cover: ČOS Kolín S.Svatková,E.Bělochová,L.Putíková,.jpg
+coverAlt: ČOS Kolín S.Svatková,E.Bělochová,L.Putíková,
+draft: false
 ---
 
 V sobotu **21.10.2023 se konal v krásné kolínské sokolovně přebor Čech pro žákyně všech oddílů ČOS ve sportovní gymnastice**. Přijelo 103 žákyň, které si chtěly vybojovat postup na celostátní Mistrovství ČOS v Praze. Náš oddíl T.J. Sokol Chrudim odjely reprezentovat tři žákyně.
