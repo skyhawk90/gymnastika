@@ -1,7 +1,12 @@
 ---
-title: "Naše gymnastky dovezly dvě medaile z Vánočního závodu."
-date: "2024-12-14"
-summary: "T.J.Sokol Pardubice již tradičně pořádal 14.12.2024 závod pro sportovní gymnastky v krásně opravené sokolovně kam se sjelo přes sto dětí. Z našeho oddílu T.J."
+title: Naše gymnastky dovezly dvě medaile z Vánočního závodu.
+date: 2024-12-14
+place: ''
+medals: ''
+summary: T.J.Sokol Pardubice již tradičně pořádal 14.12.2024 závod pro sportovní gymnastky v krásně opravené sokolovně kam se sjelo přes sto dětí. Z našeho oddílu T.J.
+cover: Pardubice Emily Plachá, Maya Matusek.jpg
+coverAlt: Pardubice Emily Plachá, Maya Matušek
+draft: false
 ---
 
 T.J.Sokol Pardubice již tradičně pořádal 14.12.2024 závod pro sportovní gymnastky v krásně opravené sokolovně kam se sjelo přes sto dětí. Z našeho oddílu T.J. Sokol Chrudim závodilo sedm závodnic od nejstarších po nejmladší.
