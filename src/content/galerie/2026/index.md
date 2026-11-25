@@ -141,16 +141,16 @@ photos:
     alt: Trenérka S.Linková byla oceněna k jubileu za celoživotní práci pro sportovní gymnastiku VČ kraje.
   - src: Maya Matušek vyhlášena nejúspěšnější st.žákyní 2026 za bronz na MČR.jpg
     alt: Maya Matušek vyhlášena nejúspěšnější st.žákyní 2026 za bronz na MČR
+  - src: KP Pardubice-naše Emily Plachá byla nejlepší v družstvu II.ligy Sokol Pardubice.jpg
+    alt: KP Pardubice-naše Emily Plachá byla nejlepší v družstvu II. ligy Sokol Pardubice
+  - src: KP Pardubice-vítězky V.ligy Nováková,Sedláková,Plachá,Musilová.jpg
+    alt: KP Pardubice-vítězky V. ligy Nováková, Sedláková, Plachá, Musilová
   - src: KP Pardubice-V.liga 1.m.Sokol Chrudim.jpg
     alt: KP Pardubice-V .liga 1.m.Sokol Chrudim
   - src: KP Pardubice-IV.liga 2.m.Sokol Chrudim.jpg
     alt: KP Pardubice-IV.liga 2.m.Sokol Chrudim
   - src: KP Pardubice-II.liga družstev 1.Loko Pardubice, 2.Sokol Pardubice.jpg
     alt: KP Pardubice-II. liga družstev 1.Loko Pardubice, 2.Sokol Pardubice
-  - src: KP Pardubice-naše Emily Plachá byla nejlepší v družstvu II.ligy Sokol Pardubice.jpg
-    alt: KP Pardubice-naše Emily Plachá byla nejlepší v družstvu II. ligy Sokol Pardubice
-  - src: KP Pardubice-vítězky V.ligy Nováková,Sedláková,Plachá,Musilová.jpg
-    alt: KP Pardubice-vítězky V. ligy Nováková, Sedláková, Plachá, Musilová
   - src: KP Pardubice-vítězné družstvo Sedláková,Nováková,Plachá.jpg
     alt: KP Pardubice-vítězné družstvo Sedláková, Nováková, Plachá
 ---
