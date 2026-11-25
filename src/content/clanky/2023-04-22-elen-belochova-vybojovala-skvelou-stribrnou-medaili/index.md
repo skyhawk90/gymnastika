@@ -1,14 +1,19 @@
 ---
-title: "Elen Bělochová vybojovala skvělou stříbrnou medaili."
-date: "2023-04-22"
-summary: "Šest sportovních gymnastek T.J. Sokola Chrudim se vydalo po čtyřech letech v sobotu 22.4.2023 na svůj oblíbený závod Bedřichovský ježek do Jihlavy. Ráno zahájily závod ty nejmladší cvičenky narozené v roce 2017."
+title: Elen Bělochová vybojovala skvělou stříbrnou medaili.
+date: 2023-04-22
+place: ''
+medals: ''
+summary: Šest sportovních gymnastek T.J. Sokola Chrudim se vydalo po čtyřech letech v sobotu 22.4.2023 na svůj oblíbený závod Bedřichovský ježek do Jihlavy. Ráno zahájily závod ty nejmladší cvičenky narozené v roce 2017.
+cover: M.Matusek, S.Svatková, L.Putíková, V.Nováková.jpg
+coverAlt: M.Matušek, S.Svatková, L.Putíková, V.Nováková
+draft: false
 ---
 
 Šest sportovních gymnastek T.J. Sokola Chrudim se vydalo po čtyřech letech v sobotu **22.4.2023 na svůj oblíbený závod Bedřichovský ježek do Jihlavy.**
 
 Ráno zahájily závod ty nejmladší cvičenky **narozené v roce 2017**. Za náš oddíl podruhé závodila **Valentýnka Nováková**, která měla třetí nejvyšší známku na prostných, ale bohužel spadla ze skoku na lavičce, což ji odsunulo **na 9.místo.**
 
-Dále cvičila v **těžší kategorii žákyň VS4B 10-letá Maya Matusek**. Svoji novou sestavu na pěknou hudbu na prostných předvedla výborně za třetí nejlepší známku, ale zradila ji ošidná kladina, kde spadla z kotoulu bez rukou a umístila se **na 10.místě** ze 17 závodnic.
+Dále cvičila v **těžší kategorii žákyň VS4B 10-letá Maya Matušek**. Svoji novou sestavu na pěknou hudbu na prostných předvedla výborně za třetí nejlepší známku, ale zradila ji ošidná kladina, kde spadla z kotoulu bez rukou a umístila se **na 10.místě** ze 17 závodnic.
 
 V kategorii **žákyň narozených v roce 2015-16** jsme měli dvě želízka v ohni. **Sára Svatková** zvládla lépe sestavu na kladince, kde má obtížný náskok vznos. Celkově vybojovala **pěkné 8.místo z 19. Lucie Putíková** předvedla zase lepší sestavu na akrobacii, ale spadla z kladinky z náskoku a proto skončila až **na 13.místě.**
 
