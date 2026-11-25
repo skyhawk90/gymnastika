@@ -4,7 +4,7 @@ date: 2023-11-04
 place: ''
 medals: ''
 summary: Oddíl sportovní gymnastiky Loko Pardubice pořádal 4.11.2023 již 20. ročník Memoriálu Blanky a Verunky Horákových, které tragicky zahynuly při autonehodě.
-cover: Bronzová žákyně E.Bělochová .jpg
+cover: Memoriál E.Bělochová 3.m. .jpg
 coverAlt: Bronzová žákyně E.Bělochová
 draft: false
 ---
