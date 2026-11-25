@@ -135,4 +135,6 @@ photos:
     alt: MČOS Praha 6.m.E.Plachá,5.m.M.Matušek
   - src: MČOS Praha L.Putíková.,E.Plachá,M.Matušek.jpg
     alt: MČOS Praha L.Putíková.,E.Plachá,M.Matušek
+  - src: KP Pardubice-2.družstvo IV.ligy-Zvárová,Svatková,Putíková,Ženková.jpg
+    alt: KP Pardubice-2.družstvo IV. ligy-Zvárová, Svatková, Putíková, Ženková
 ---
