@@ -1,7 +1,12 @@
 ---
-title: "Velká cena Hradce Králové Emily Plachá má první medaili v nové sezóně roku 2024."
-date: "2024-06-30"
-summary: "Sportovní gymnastky T.J. Sokol Chrudim odjely 16.3. na svůj první letošní pohárový závod 55.ročník Velké ceny Hradce Králové, což je dvojboj na kladině a prostných. V mladších žákyních II jsme měli dvě závodnice."
+title: Velká cena Hradce Králové Emily Plachá má první medaili v nové sezóně roku 2024.
+date: 2024-03-16
+place: ''
+medals: ''
+summary: Sportovní gymnastky T.J. Sokol Chrudim odjely 16.3. na svůj první letošní pohárový závod 55.ročník Velké ceny Hradce Králové, což je dvojboj na kladině a prostných. V mladších žákyních II jsme měli dvě závodnice.
+cover: Emily Plachá se stříbrnou medailí z VC HK.jpg
+coverAlt: Emily Plachá se stříbrnou medailí z VC HK
+draft: false
 ---
 
 Sportovní gymnastky T.J. Sokol Chrudim odjely 16.3. na svůj první letošní pohárový závod 55.ročník Velké ceny Hradce Králové, což je dvojboj na kladině a prostných.
