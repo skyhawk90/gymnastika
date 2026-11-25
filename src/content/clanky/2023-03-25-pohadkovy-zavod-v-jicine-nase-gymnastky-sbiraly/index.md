@@ -1,7 +1,12 @@
 ---
-title: "Pohádkový závod v Jičíně Naše gymnastky sbíraly medaile i zkušenosti."
-date: "2023-03-25"
-summary: "V sobotu 25.3.2023 odjelo celkem 6 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 8.ročník „Pohádkového závodu“. Cvičilo se na kladině, prostných a na přeskoku."
+title: Pohádkový závod v Jičíně Naše gymnastky sbíraly medaile i zkušenosti.
+date: 2023-03-25
+place: ''
+medals: ''
+summary: V sobotu 25.3.2023 odjelo celkem 6 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 8.ročník „Pohádkového závodu“. Cvičilo se na kladině, prostných a na přeskoku.
+cover: Čechlovská,Bělochová,Putíková,Svatková,Matusek,Plachá.jpg
+coverAlt: Čechlovská,Bělochová,Putíková,Svatková,Matusek,Plachá
+draft: false
 ---
 
 V sobotu 25.3.2023 odjelo celkem 6 sportovních gymnastek oddílu T.J. Sokol Chrudim do krásného Jičína na 8.ročník „Pohádkového závodu“**.** Cvičilo se na kladině, prostných a na přeskoku. Závodilo celkem 73 dětí ze 7 oddílů od nejmladších 8-letých až po ženy.
